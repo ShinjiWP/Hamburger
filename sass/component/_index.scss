@@ -1,3 +1,4 @@
 /*パーシャルファイルが増えたら追記すること*/
-@forward "color";
-@forward "font-family";
+@use "c-flex";
+@use "c-grid";
+@use "c-btn";

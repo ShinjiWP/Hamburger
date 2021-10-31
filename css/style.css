@@ -1,11 +1,3 @@
 @charset "UTF-8";
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  /*ベースを16px⇒10pxに出来た*/
-}
+/*フォルダ構成が変わったり、フォルダの数が増えない限り、変更する必要はない*/
 /*# sourceMappingURL=style.css.map */

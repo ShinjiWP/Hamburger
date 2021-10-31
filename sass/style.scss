@@ -1,12 +1,7 @@
-@use "variables";
-
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%; /*ベースを16px⇒10pxに出来た*/
-
-  body {
-    
-  }
-}
+/*フォルダ構成が変わったり、フォルダの数が増えない限り、変更する必要はない*/
+@use "foundation";
+@use "layout";
+@use "component";
+@use "javascript";
+@use "project";
+@use "utility";
