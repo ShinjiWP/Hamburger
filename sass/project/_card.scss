@@ -1,10 +1,9 @@
 @use "../global" as g;
 
-.p-box {
-  width: 250px;
-  height: 700px;
-  background-color: g.$blue;
-  @include g.pc {
-    width: 50%;
+@include g.pc {
+  .p-box {
+    width: 250px;
+    height: 700px;
+    background-color: g.$blue;
   }
 }
