@@ -1,0 +1,7 @@
+@use "../global" as g;
+
+.p-box {
+  width: 250px;
+  height: 700px;
+  background-color: g.$blue;
+}
