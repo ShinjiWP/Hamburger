@@ -9,27 +9,33 @@
     grid-template:
       "header header  sidebar" 100px
       "figure   figure   sidebar" 200px
-      "main    main    sidebar" 1fr
+      "main    main    sidebar" 500px
       "access  access  sidebar" 200px
       "footer   footer   footer" 100px
       /40% 40% 20%;
   }
   header {
     grid-area: header;
+    background-color:g.$red;
   }
   figure {
     grid-area: figure;
+    margin: 0;
+    background-color: g.$gray;
   }
   main {
     grid-area: main;
+    background-color:g.$open-hover;
   }
   .sidebar {
     grid-area: sidebar;
+    background-color: g.$blue;
   }
   .access {
     grid-area: access;
   }
   footer {
     grid-area: footer;
+    background-color:g.$green;
   }
 }
