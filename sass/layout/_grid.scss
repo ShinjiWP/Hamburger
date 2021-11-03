@@ -1,0 +1,35 @@
+@use "../global" as g;
+
+@include g.pc {
+  .l-wrapper {
+    // width: 800px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template:
+      "header header  sidebar" 100px
+      "figure   figure   sidebar" 200px
+      "main    main    sidebar" 1fr
+      "access  access  sidebar" 200px
+      "footer   footer   footer" 100px
+      /40% 40% 20%;
+  }
+  header {
+    grid-area: header;
+  }
+  figure {
+    grid-area: figure;
+  }
+  main {
+    grid-area: main;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .access {
+    grid-area: access;
+  }
+  footer {
+    grid-area: footer;
+  }
+}
