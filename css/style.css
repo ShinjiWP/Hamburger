@@ -360,37 +360,25 @@ ul li {
   .l-wrapper {
     min-height: 100vh;
     display: grid;
-    grid-template: "header" 100px "figure  " 200px "main   " 500px "sidebar" auto "access " 200px "footer  " 100px/100%;
+    grid-template: "header" 100px "figure  " 200px "main   " 500px "sidebar" auto "access " 200px "footer  " 100px/100vw;
   }
-
-  header {
+  .l-wrapper header {
     grid-area: header;
     background-color: #f16b6b;
   }
-
-  figure {
+  .l-wrapper figure {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
   }
-
-  main {
+  .l-wrapper main {
     grid-area: main;
     background-color: #d4f1f8;
   }
-
-  .sidebar {
-    grid-area: sidebar;
-    background-color: #2498b3;
-    position: absolute;
-    left: 500px;
-  }
-
-  .access {
+  .l-wrapper .access {
     grid-area: access;
   }
-
-  footer {
+  .l-wrapper footer {
     grid-area: footer;
     background-color: #28c700;
   }
@@ -472,6 +460,16 @@ ul li {
   footer {
     grid-area: footer;
     background-color: #28c700;
+  }
+}
+@media screen and (max-width: 757px) {
+  .l-wrapper .sidebar {
+    grid-area: sidebar;
+    background-color: #2498b3;
+    position: absolute;
+    left: 1000px;
+    min-width: 300px;
+    overflow: hidden;
   }
 }
 .l-header {

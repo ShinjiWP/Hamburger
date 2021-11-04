@@ -1,0 +1,16 @@
+
+@use "../global" as g;
+
+@include g.sp{
+  .l-wrapper{
+    .sidebar {
+      grid-area: sidebar;
+      background-color: g.$blue;
+      position: absolute;
+      left: 1000px;
+      min-width: 300px;
+      overflow: hidden;
+    }
+
+  }
+}
