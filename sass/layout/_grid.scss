@@ -1,8 +1,94 @@
 @use "../global" as g;
 
+@include g.sp {
+  .l-wrapper {
+    min-height: 100vh;
+    // position: relative;
+    display: grid;
+    grid-template:
+      "header" 100px
+      "figure  " 200px
+      "main   " 500px
+      "sidebar" auto
+      "access " 200px
+      "footer  " 100px
+      /100%;
+  }
+  header {
+    grid-area: header;
+    background-color: g.$red;
+  }
+  figure {
+    grid-area: figure;
+    margin: 0;
+    background-color: g.$gray;
+  }
+  main {
+    grid-area: main;
+    background-color: g.$open-hover;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    background-color: g.$blue;
+    position: absolute;
+    left: 500px;
+  }
+  .access {
+    grid-area: access;
+  }
+  footer {
+    grid-area: footer;
+    background-color: g.$green;
+  }
+}
+
+@include g.tab{
+   .l-wrapper {
+    min-height: 100vh;
+    // position: relative;
+    display: grid;
+    grid-template:
+      "header" 100px
+      "figure  " 200px
+      "main   " 500px
+      "sidebar" auto
+      "access " 200px
+      "footer  " 100px
+      /100%;
+  }
+  header {
+    grid-area: header;
+    background-color: g.$red;
+  }
+  figure {
+    grid-area: figure;
+    margin: 0;
+    background-color: g.$gray;
+  }
+  main {
+    grid-area: main;
+    background-color: g.$open-hover;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    background-color: g.$blue;
+    position: absolute;
+    left: 500px;
+  }
+  .access {
+    grid-area: access;
+  }
+  footer {
+    grid-area: footer;
+    background-color: g.$green;
+  }
+
+}
+
 @include g.pc {
   .l-wrapper {
     // width: 800px;
+    position: static;
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
@@ -16,7 +102,7 @@
   }
   header {
     grid-area: header;
-    background-color:g.$red;
+    background-color: g.$red;
   }
   figure {
     grid-area: figure;
@@ -25,17 +111,18 @@
   }
   main {
     grid-area: main;
-    background-color:g.$open-hover;
+    background-color: g.$open-hover;
   }
   .sidebar {
     grid-area: sidebar;
     background-color: g.$blue;
+    position: static;
   }
   .access {
     grid-area: access;
   }
   footer {
     grid-area: footer;
-    background-color:g.$green;
+    background-color: g.$green;
   }
 }
