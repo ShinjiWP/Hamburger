@@ -1,3 +1,15 @@
-.l-header{
-  display: flex;
+@use "../global" as g;
+
+
+@include g.sp{
+  .c-sidebar{
+    
+  }
+}
+
+@include g.pc{
+  .l-header{
+    display: flex;
+  }
+
 }

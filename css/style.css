@@ -359,26 +359,42 @@ ul li {
 @media screen and (max-width: 757px) {
   .l-wrapper {
     min-height: 100vh;
+    overflow-x: hidden;
     display: grid;
     grid-template: "header" 100px "figure  " 200px "main   " 500px "sidebar" auto "access " 200px "footer  " 100px/100vw;
   }
-  .l-wrapper header {
+
+  .l-header {
     grid-area: header;
     background-color: #f16b6b;
   }
-  .l-wrapper figure {
+
+  .l-mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
   }
-  .l-wrapper main {
+
+  .l-contents {
     grid-area: main;
     background-color: #d4f1f8;
   }
-  .l-wrapper .access {
+
+  .l-sidebar {
+    grid-area: sidebar;
+    width: 100%;
+    position: absolute;
+    min-width: 300px;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    background-color: #f3fafb;
+  }
+
+  .l-access {
     grid-area: access;
   }
-  .l-wrapper footer {
+
+  .l-footer {
     grid-area: footer;
     background-color: #28c700;
   }
@@ -390,34 +406,34 @@ ul li {
     grid-template: "header" 100px "figure  " 200px "main   " 500px "sidebar" auto "access " 200px "footer  " 100px/100%;
   }
 
-  header {
+  .l-header {
     grid-area: header;
     background-color: #f16b6b;
   }
 
-  figure {
+  .l-mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
   }
 
-  main {
+  .l-contents {
     grid-area: main;
     background-color: #d4f1f8;
   }
 
-  .sidebar {
+  .l-sidebar {
     grid-area: sidebar;
     background-color: #2498b3;
     position: absolute;
     left: 500px;
   }
 
-  .access {
+  .l-access {
     grid-area: access;
   }
 
-  footer {
+  .l-footer {
     grid-area: footer;
     background-color: #28c700;
   }
@@ -431,50 +447,48 @@ ul li {
     grid-template: "header header  sidebar" 100px "figure   figure   sidebar" 200px "main    main    sidebar" 500px "access  access  sidebar" 200px "footer   footer   footer" 100px/40% 40% 20%;
   }
 
-  header {
+  .l-header {
     grid-area: header;
     background-color: #f16b6b;
   }
 
-  figure {
+  .l-mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
   }
 
-  main {
+  .l-contents {
     grid-area: main;
     background-color: #d4f1f8;
   }
 
-  .sidebar {
+  .l-sidebar {
     grid-area: sidebar;
     background-color: #2498b3;
     position: static;
   }
 
-  .access {
+  .l-access {
     grid-area: access;
   }
 
-  footer {
+  .l-footer {
     grid-area: footer;
     background-color: #28c700;
   }
 }
-@media screen and (max-width: 757px) {
-  .l-wrapper .sidebar {
-    grid-area: sidebar;
-    background-color: #2498b3;
-    position: absolute;
-    left: 1000px;
-    min-width: 300px;
-    overflow: hidden;
+@media screen and (min-width: 1080px) {
+  .l-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
-.l-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (max-width: 757px) {
+  .c-sidebar {
+    width: 100%;
+    background-color: #2498b3;
+  }
 }
 /*# sourceMappingURL=style.css.map */

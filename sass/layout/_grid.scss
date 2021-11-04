@@ -3,6 +3,7 @@
 @include g.sp {
   .l-wrapper {
     min-height: 100vh;
+    overflow-x: hidden;
     // position: relative;
     display: grid;
     grid-template:
@@ -13,32 +14,40 @@
       "access " 200px
       "footer  " 100px
       /100vw;
-    header {
-      grid-area: header;
-      background-color: g.$red;
-    }
-    figure {
-      grid-area: figure;
-      margin: 0;
-      background-color: g.$gray;
-    }
-    main {
-      grid-area: main;
-      background-color: g.$open-hover;
-    }
-    
-    .access {
-      grid-area: access;
-    }
-    footer {
-      grid-area: footer;
-      background-color: g.$green;
-    }
+  }
+  .l-header {
+    grid-area: header;
+    background-color: g.$red;
+  }
+  .l-mainvisual {
+    grid-area: figure;
+    margin: 0;
+    background-color: g.$gray;
+  }
+  .l-contents {
+    grid-area: main;
+    background-color: g.$open-hover;
+  }
+  .l-sidebar {
+    grid-area: sidebar;
+    width: 100%;
+    position: absolute;
+    min-width: 300px;
+    transform: translate(0, 0);
+    background-color: g.$gray;
+  }
+
+  .l-access {
+    grid-area: access;
+  }
+  .l-footer {
+    grid-area: footer;
+    background-color: g.$green;
   }
 }
 
-@include g.tab{
-   .l-wrapper {
+@include g.tab {
+  .l-wrapper {
     min-height: 100vh;
     // position: relative;
     display: grid;
@@ -51,33 +60,32 @@
       "footer  " 100px
       /100%;
   }
-  header {
+  .l-header {
     grid-area: header;
     background-color: g.$red;
   }
-  figure {
+  .l-mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: g.$gray;
   }
-  main {
+  .l-contents {
     grid-area: main;
     background-color: g.$open-hover;
   }
-  .sidebar {
+  .l-sidebar {
     grid-area: sidebar;
     background-color: g.$blue;
     position: absolute;
     left: 500px;
   }
-  .access {
+  .l-access {
     grid-area: access;
   }
-  footer {
+  .l-footer {
     grid-area: footer;
     background-color: g.$green;
   }
-
 }
 
 @include g.pc {
@@ -95,28 +103,28 @@
       "footer   footer   footer" 100px
       /40% 40% 20%;
   }
-  header {
+  .l-header {
     grid-area: header;
     background-color: g.$red;
   }
-  figure {
+  .l-mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: g.$gray;
   }
-  main {
+  .l-contents {
     grid-area: main;
     background-color: g.$open-hover;
   }
-  .sidebar {
+  .l-sidebar {
     grid-area: sidebar;
     background-color: g.$blue;
     position: static;
   }
-  .access {
+  .l-access {
     grid-area: access;
   }
-  footer {
+  .l-footer {
     grid-area: footer;
     background-color: g.$green;
   }

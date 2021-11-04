@@ -1,16 +1,15 @@
 
-@use "../global" as g;
+// @use "../global" as g;
 
-@include g.sp{
-  .l-wrapper{
-    .sidebar {
-      grid-area: sidebar;
-      background-color: g.$blue;
-      position: absolute;
-      left: 1000px;
-      min-width: 300px;
-      overflow: hidden;
-    }
+// @include g.sp{
+//   .l-wrapper{
+//     .sidebar {
+//       grid-area: sidebar;
+//       background-color: g.$blue;
+//       position: absolute;
+//       min-width: 300px;
+//       transform: translate(100%,0);
+//     }
 
-  }
-}
+//   }
+// }
