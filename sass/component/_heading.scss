@@ -1,0 +1,11 @@
+@use "../global" as g;
+
+@include g.sp{
+  .c-header{
+    text-align: center;
+    
+  }
+  .c-search{
+    text-align: center;
+  }
+}

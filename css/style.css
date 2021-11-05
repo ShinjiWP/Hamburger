@@ -361,7 +361,7 @@ ul li {
     min-height: 100vh;
     overflow-x: hidden;
     display: grid;
-    grid-template: "header" 100px "figure  " 200px "main   " 500px "sidebar" auto "access " 200px "footer  " 100px/100vw;
+    grid-template: "header" auto "figure  " auto "main   " 500px "sidebar" auto "access " 200px "footer  " 100px/100vw;
   }
 
   .l-header {
@@ -403,7 +403,7 @@ ul li {
   .l-wrapper {
     min-height: 100vh;
     display: grid;
-    grid-template: "header" 100px "figure  " 200px "main   " 500px "sidebar" auto "access " 200px "footer  " 100px/100%;
+    grid-template: "header" auto "figure  " 200px "main   " 500px "sidebar" auto "access " 200px "footer  " 100px/100%;
   }
 
   .l-header {
@@ -444,7 +444,7 @@ ul li {
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template: "header header  sidebar" 100px "figure   figure   sidebar" 200px "main    main    sidebar" 500px "access  access  sidebar" 200px "footer   footer   footer" 100px/40% 40% 20%;
+    grid-template: "header header  sidebar" auto "figure   figure   sidebar" 200px "main    main    sidebar" 500px "access  access  sidebar" 200px "footer   footer   footer" 100px/40% 40% 20%;
   }
 
   .l-header {
@@ -479,9 +479,28 @@ ul li {
   }
 }
 @media screen and (max-width: 757px) {
+  .c-header {
+    text-align: center;
+  }
+
+  .c-search {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 757px) {
+  .c-search {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 757px) {
   .p-sidebar {
     width: 100%;
     background-color: #2498b3;
+  }
+}
+@media screen and (max-width: 757px) {
+  .u-header {
+    background-color: #f2EDE9;
   }
 }
 /*# sourceMappingURL=style.css.map */

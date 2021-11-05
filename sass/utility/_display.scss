@@ -1,0 +1,7 @@
+@use "../global" as g;
+
+@include g.sp{
+  .u-mainvisual{
+    display: block;
+  }
+}

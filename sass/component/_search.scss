@@ -1,0 +1,7 @@
+@use "../global" as g;
+
+@include g.sp {
+  .c-search {
+    text-align: center;
+  }
+}
