@@ -8,9 +8,9 @@
     grid-template:
       "header" auto
       "figure  " auto
-      "main   " 500px
+      "main   " auto
       "sidebar" auto
-      "access " 200px
+      "access " auto
       "footer  " 100px
       /100vw;
   }
@@ -51,10 +51,10 @@
     display: grid;
     grid-template:
       "header" auto
-      "figure  " 200px
-      "main   " 500px
+      "figure  " auto
+      "main   " auto
       "sidebar" auto
-      "access " 200px
+      "access " auto
       "footer  " 100px
       /100%;
   }
@@ -94,9 +94,9 @@
     display: grid;
     grid-template:
       "header header  sidebar" auto
-      "figure   figure   sidebar" 200px
-      "main    main    sidebar" 500px
-      "access  access  sidebar" 200px
+      "figure   figure   sidebar" auto
+      "main    main    sidebar" auto
+      "access  access  sidebar" auto
       "footer   footer   footer" 100px
       /40% 40% 20%;
   }

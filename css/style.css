@@ -361,7 +361,7 @@ ul li {
     min-height: 100vh;
     overflow-x: hidden;
     display: grid;
-    grid-template: "header" auto "figure  " auto "main   " 500px "sidebar" auto "access " 200px "footer  " 100px/100vw;
+    grid-template: "header" auto "figure  " auto "main   " auto "sidebar" auto "access " auto "footer  " 100px/100vw;
   }
 
   .l-header {
@@ -403,7 +403,7 @@ ul li {
   .l-wrapper {
     min-height: 100vh;
     display: grid;
-    grid-template: "header" auto "figure  " 200px "main   " 500px "sidebar" auto "access " 200px "footer  " 100px/100%;
+    grid-template: "header" auto "figure  " auto "main   " auto "sidebar" auto "access " auto "footer  " 100px/100%;
   }
 
   .l-header {
@@ -444,7 +444,7 @@ ul li {
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template: "header header  sidebar" auto "figure   figure   sidebar" 200px "main    main    sidebar" 500px "access  access  sidebar" 200px "footer   footer   footer" 100px/40% 40% 20%;
+    grid-template: "header header  sidebar" auto "figure   figure   sidebar" auto "main    main    sidebar" auto "access  access  sidebar" auto "footer   footer   footer" 100px/40% 40% 20%;
   }
 
   .l-header {
@@ -479,11 +479,7 @@ ul li {
   }
 }
 @media screen and (max-width: 757px) {
-  .c-header {
-    text-align: center;
-  }
-
-  .c-search {
+  .c-header, .c-footer, .c-search {
     text-align: center;
   }
 }
@@ -496,6 +492,40 @@ ul li {
   .p-sidebar {
     width: 100%;
     background-color: #2498b3;
+  }
+}
+@media screen and (max-width: 757px) {
+  .u-mainvisual__sp {
+    vertical-align: bottom;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+  .u-mainvisual__pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 758px) {
+  .u-mainvisual__sp {
+    display: none;
+  }
+  .u-mainvisual__pc {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .u-mainvisual__sp {
+    display: none;
+  }
+  .u-mainvisual__pc {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
   }
 }
 @media screen and (max-width: 757px) {
