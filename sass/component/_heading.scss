@@ -1,14 +1,14 @@
 @use "../global" as g;
 
 @include g.sp{
-  .c-header{
+  .c-heading{
     text-align: center;
   }
   .c-search{
-    @extend .c-header;
+    @extend .c-heading;
   }
   .c-footer{
-    @extend .c-header;
+    @extend .c-heading;
   }
 }
 // @include g.tab{

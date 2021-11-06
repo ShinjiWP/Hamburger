@@ -486,12 +486,12 @@ ul {
   }
 }
 @media screen and (max-width: 757px) {
-  .c-header, .c-footer, .c-search {
+  .c-heading, .c-footer, .c-search {
     text-align: center;
   }
 }
 @media screen and (max-width: 757px) {
-  .c-search {
+  .p-search {
     text-align: center;
   }
 }
