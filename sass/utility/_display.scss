@@ -1,27 +1,26 @@
 @use "../global" as g;
 
-@include g.sp{
-  .u-mainvisual{
-    // background-color: #000;
-    &__sp{
+@include g.sp {
+  .u-mainvisual {
+    &__sp {
       // display: block;
       vertical-align: bottom;
       object-fit: cover;
       width: 100%;
       height: auto;
     }
-    &__pc{
+    &__pc {
       display: none;
     }
   }
 }
 
-@include g.tab{
-  .u-mainvisual{
-    &__sp{
+@include g.tab {
+  .u-mainvisual {
+    &__sp {
       display: none;
     }
-    &__pc{
+    &__pc {
       display: block;
       object-fit: cover;
       width: 100%;
@@ -29,16 +28,15 @@
   }
 }
 
-@include g.pc{
-  .u-mainvisual{
-    &__sp{
+@include g.pc {
+  .u-mainvisual {
+    &__sp {
       display: none;
     }
-    &__pc{
+    &__pc {
       display: block;
       object-fit: cover;
       width: 100%;
     }
   }
 }
-

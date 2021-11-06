@@ -2,7 +2,7 @@
 
 @include g.sp {
   .l-wrapper {
-    min-height: 100vh;
+    // min-height: 100vh;
     overflow-x: hidden;
     display: grid;
     grid-template:
@@ -22,6 +22,7 @@
     grid-area: figure;
     margin: 0;
     background-color: g.$gray;
+    font-size: 0;
   }
   .l-contents {
     grid-area: main;
@@ -93,12 +94,12 @@
     margin: 0 auto;
     display: grid;
     grid-template:
-      "header header  sidebar" auto
-      "figure   figure   sidebar" auto
-      "main    main    sidebar" auto
-      "access  access  sidebar" auto
-      "footer   footer   footer" 100px
-      /40% 40% 20%;
+      "header  sidebar" auto
+      "figure   sidebar" auto
+      "main    sidebar" auto
+      "access  sidebar" auto
+      "footer   footer" 100px
+      /80% 20%;
   }
   .l-header {
     grid-area: header;

@@ -358,7 +358,6 @@ ul li {
 
 @media screen and (max-width: 757px) {
   .l-wrapper {
-    min-height: 100vh;
     overflow-x: hidden;
     display: grid;
     grid-template: "header" auto "figure  " auto "main   " auto "sidebar" auto "access " auto "footer  " 100px/100vw;
@@ -373,6 +372,7 @@ ul li {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
+    font-size: 0;
   }
 
   .l-contents {
@@ -444,7 +444,7 @@ ul li {
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template: "header header  sidebar" auto "figure   figure   sidebar" auto "main    main    sidebar" auto "access  access  sidebar" auto "footer   footer   footer" 100px/40% 40% 20%;
+    grid-template: "header  sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   footer" 100px/80% 20%;
   }
 
   .l-header {
