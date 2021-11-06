@@ -3,7 +3,7 @@
 @include g.sp {
   .l-wrapper {
     // min-height: 100vh;
-    overflow-x: hidden;
+    
     display: grid;
     grid-template:
       "header" auto
@@ -12,7 +12,7 @@
       "sidebar" auto
       "access " auto
       "footer  " 100px
-      /100vw;
+      /100%;
   }
   .l-header {
     grid-area: header;
@@ -22,7 +22,6 @@
     grid-area: figure;
     margin: 0;
     background-color: g.$gray;
-    font-size: 0;
   }
   .l-contents {
     grid-area: main;
@@ -30,11 +29,13 @@
   }
   .l-sidebar {
     grid-area: sidebar;
-    width: 100%;
+    width: 100%;/*この辺は仮の設定*/
     position: absolute;
     min-width: 300px;
     transform: translate(100%, 0);
     background-color: g.$gray;
+    // overflow-x: hidden;
+    // position: relative;
   }
 
   .l-access {
@@ -42,7 +43,7 @@
   }
   .l-footer {
     grid-area: footer;
-    background-color: g.$green;
+    background-color: g.$brown;
   }
 }
 
@@ -83,7 +84,7 @@
   }
   .l-footer {
     grid-area: footer;
-    background-color: g.$green;
+    background-color: g.$brown;
   }
 }
 
@@ -124,6 +125,6 @@
   }
   .l-footer {
     grid-area: footer;
-    background-color: g.$green;
+    background-color: g.$brown;
   }
 }

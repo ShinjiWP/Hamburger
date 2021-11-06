@@ -1,14 +1,31 @@
 @use "../global" as g;
 
+@include g.sp{
+  .p-header{
+    background-color: g.$beige;
+
+  }
+  .p-content{
+    &__visual{
+      display: block;
+      width:100% ;
+    }
+  }
+  .p-sidebar{
+    width: 80%;
+  }
+}
+
+
 @include g.sp {
-  .u-mainvisual {
+  .p-mainvisual {
     &__sp {
       // display: block;
-      vertical-align: bottom;
       object-fit: cover;
       width: 100%;
-      height: auto;
+      // height: auto;
     }
+   
     &__pc {
       display: none;
     }
@@ -16,7 +33,7 @@
 }
 
 @include g.tab {
-  .u-mainvisual {
+  .p-mainvisual {
     &__sp {
       display: none;
     }
@@ -29,7 +46,7 @@
 }
 
 @include g.pc {
-  .u-mainvisual {
+  .p-mainvisual {
     &__sp {
       display: none;
     }
@@ -40,3 +57,4 @@
     }
   }
 }
+

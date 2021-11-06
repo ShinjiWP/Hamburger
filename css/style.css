@@ -356,11 +356,18 @@ ul li {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+
 @media screen and (max-width: 757px) {
   .l-wrapper {
-    overflow-x: hidden;
     display: grid;
-    grid-template: "header" auto "figure  " auto "main   " auto "sidebar" auto "access " auto "footer  " 100px/100vw;
+    grid-template: "header" auto "figure  " auto "main   " auto "sidebar" auto "access " auto "footer  " 100px/100%;
   }
 
   .l-header {
@@ -372,7 +379,6 @@ ul li {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
-    font-size: 0;
   }
 
   .l-contents {
@@ -383,6 +389,7 @@ ul li {
   .l-sidebar {
     grid-area: sidebar;
     width: 100%;
+    /*この辺は仮の設定*/
     position: absolute;
     min-width: 300px;
     -webkit-transform: translate(100%, 0);
@@ -396,7 +403,7 @@ ul li {
 
   .l-footer {
     grid-area: footer;
-    background-color: #28c700;
+    background-color: #96806B;
   }
 }
 @media screen and (min-width: 758px) {
@@ -435,7 +442,7 @@ ul li {
 
   .l-footer {
     grid-area: footer;
-    background-color: #28c700;
+    background-color: #96806B;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -475,7 +482,7 @@ ul li {
 
   .l-footer {
     grid-area: footer;
-    background-color: #28c700;
+    background-color: #96806B;
   }
 }
 @media screen and (max-width: 757px) {
@@ -495,22 +502,34 @@ ul li {
   }
 }
 @media screen and (max-width: 757px) {
-  .u-mainvisual__sp {
-    vertical-align: bottom;
+  .p-header {
+    background-color: #DED8D3;
+  }
+
+  .p-content__visual {
+    display: block;
+    width: 100%;
+  }
+
+  .p-sidebar {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 757px) {
+  .p-mainvisual__sp {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    height: auto;
   }
-  .u-mainvisual__pc {
+  .p-mainvisual__pc {
     display: none;
   }
 }
 @media screen and (min-width: 758px) {
-  .u-mainvisual__sp {
+  .p-mainvisual__sp {
     display: none;
   }
-  .u-mainvisual__pc {
+  .p-mainvisual__pc {
     display: block;
     -o-object-fit: cover;
        object-fit: cover;
@@ -518,19 +537,14 @@ ul li {
   }
 }
 @media screen and (min-width: 1080px) {
-  .u-mainvisual__sp {
+  .p-mainvisual__sp {
     display: none;
   }
-  .u-mainvisual__pc {
+  .p-mainvisual__pc {
     display: block;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-  }
-}
-@media screen and (max-width: 757px) {
-  .u-header {
-    background-color: #f2EDE9;
   }
 }
 /*# sourceMappingURL=style.css.map */
