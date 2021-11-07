@@ -1,0 +1,11 @@
+@use "../global" as g;
+
+@include g.sp {
+  .p-heading {
+    &--lg {
+      font-family: g.$Robot;
+      color: g.$font-gray;
+      font-size: 8vw;
+    }
+  }
+}
