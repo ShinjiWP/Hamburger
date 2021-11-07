@@ -467,7 +467,24 @@ ul {
   }
 }
 @media screen and (max-width: 757px) {
-  .c-heading, .c-footer, .c-search {
+  .c-heading {
+    text-align: center;
+  }
+
+  .c-footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 758px) {
+  .c-heading {
+    text-align: center;
+  }
+
+  .p-search {
+    text-align: center;
+  }
+
+  .c-footer {
     text-align: center;
   }
 }
