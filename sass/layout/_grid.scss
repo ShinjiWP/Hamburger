@@ -1,9 +1,7 @@
 @use "../global" as g;
 
 @include g.sp {
-  .l-wrapper {
-    // min-height: 100vh;
-    
+  .l-grid {
     display: grid;
     grid-template:
       "header" auto
@@ -13,42 +11,42 @@
       "access " auto
       "footer  " 100px
       /100%;
-  }
-  .l-header {
-    grid-area: header;
-    background-color: g.$red;
-  }
-  .l-mainvisual {
-    grid-area: figure;
-    margin: 0;
-    background-color: g.$gray;
-  }
-  .l-contents {
-    grid-area: main;
-    background-color: g.$open-hover;
-  }
-  .l-sidebar {
-    grid-area: sidebar;
-    width: 100%;/*この辺は仮の設定*/
-    position: absolute;
-    min-width: 300px;
-    transform: translate(0%, 0);
-    background-color: g.$gray;
-    // overflow-x: hidden;
-    // position: relative;
-  }
+    &--header {
+      grid-area: header;
+      background-color: g.$red;
+    }
+    &--mainvisual {
+      grid-area: figure;
+      margin: 0;
+      background-color: g.$gray;
+    }
+    &--contents {
+      grid-area: main;
+      background-color: g.$open-hover;
+    }
+    &--sidebar {
+      grid-area: sidebar;
+      width: 100%; /*この辺は仮の設定*/
+      // height: 100%;
+      position: absolute;
+      min-width: 300px;
+      transform: translate(0%, 0);
+      // overflow-x: hidden;
+      // position: relative;
+    }
 
-  .l-access {
-    grid-area: access;
-  }
-  .l-footer {
-    grid-area: footer;
-    background-color: g.$brown;
+    &--access {
+      grid-area: access;
+    }
+    &--footer {
+      grid-area: footer;
+      background-color: g.$brown;
+    }
   }
 }
 
 @include g.tab {
-  .l-wrapper {
+  .l-grid {
     min-height: 100vh;
     display: grid;
     grid-template:
@@ -59,37 +57,37 @@
       "access " auto
       "footer  " 100px
       /100%;
-  }
-  .l-header {
-    grid-area: header;
-    background-color: g.$red;
-  }
-  .l-mainvisual {
-    grid-area: figure;
-    margin: 0;
-    background-color: g.$gray;
-  }
-  .l-contents {
-    grid-area: main;
-    background-color: g.$open-hover;
-  }
-  .l-sidebar {
-    grid-area: sidebar;
-    background-color: g.$blue;
-    position: absolute;
-    left: 500px;
-  }
-  .l-access {
-    grid-area: access;
-  }
-  .l-footer {
-    grid-area: footer;
-    background-color: g.$brown;
+    &--header {
+      grid-area: header;
+      background-color: g.$red;
+    }
+    &--mainvisual {
+      grid-area: figure;
+      margin: 0;
+      background-color: g.$gray;
+    }
+    &--contents {
+      grid-area: main;
+      background-color: g.$open-hover;
+    }
+    &--sidebar {
+      grid-area: sidebar;
+      background-color: g.$blue;
+      position: absolute;
+      left: 500px;
+    }
+    &--access {
+      grid-area: access;
+    }
+    &--footer {
+      grid-area: footer;
+      background-color: g.$brown;
+    }
   }
 }
 
 @include g.pc {
-  .l-wrapper {
+  .l-grid {
     position: static;
     min-height: 100vh;
     margin: 0 auto;
@@ -101,30 +99,30 @@
       "access  sidebar" auto
       "footer   footer" 100px
       /80% 20%;
-  }
-  .l-header {
-    grid-area: header;
-    background-color: g.$red;
-  }
-  .l-mainvisual {
-    grid-area: figure;
-    margin: 0;
-    background-color: g.$gray;
-  }
-  .l-contents {
-    grid-area: main;
-    background-color: g.$open-hover;
-  }
-  .l-sidebar {
-    grid-area: sidebar;
-    background-color: g.$blue;
-    position: static;
-  }
-  .l-access {
-    grid-area: access;
-  }
-  .l-footer {
-    grid-area: footer;
-    background-color: g.$brown;
+    &--header {
+      grid-area: header;
+      background-color: g.$red;
+    }
+    &--mainvisual {
+      grid-area: figure;
+      margin: 0;
+      background-color: g.$gray;
+    }
+    &--contents {
+      grid-area: main;
+      background-color: g.$open-hover;
+    }
+    &--sidebar {
+      grid-area: sidebar;
+      background-color: g.$blue;
+      position: static;
+    }
+    &--access {
+      grid-area: access;
+    }
+    &--footer {
+      grid-area: footer;
+      background-color: g.$brown;
+    }
   }
 }

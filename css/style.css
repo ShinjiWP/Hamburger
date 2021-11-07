@@ -365,28 +365,24 @@ ul {
 }
 
 @media screen and (max-width: 757px) {
-  .l-wrapper {
+  .l-grid {
     display: grid;
     grid-template: "header" auto "figure  " auto "main   " auto "sidebar" auto "access " auto "footer  " 100px/100%;
   }
-
-  .l-header {
+  .l-grid--header {
     grid-area: header;
     background-color: #f16b6b;
   }
-
-  .l-mainvisual {
+  .l-grid--mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
   }
-
-  .l-contents {
+  .l-grid--contents {
     grid-area: main;
     background-color: #d4f1f8;
   }
-
-  .l-sidebar {
+  .l-grid--sidebar {
     grid-area: sidebar;
     width: 100%;
     /*この辺は仮の設定*/
@@ -394,93 +390,78 @@ ul {
     min-width: 300px;
     -webkit-transform: translate(0%, 0);
             transform: translate(0%, 0);
-    background-color: #f3fafb;
   }
-
-  .l-access {
+  .l-grid--access {
     grid-area: access;
   }
-
-  .l-footer {
+  .l-grid--footer {
     grid-area: footer;
     background-color: #96806B;
   }
 }
 @media screen and (min-width: 758px) {
-  .l-wrapper {
+  .l-grid {
     min-height: 100vh;
     display: grid;
     grid-template: "header" auto "figure  " auto "main   " auto "sidebar" auto "access " auto "footer  " 100px/100%;
   }
-
-  .l-header {
+  .l-grid--header {
     grid-area: header;
     background-color: #f16b6b;
   }
-
-  .l-mainvisual {
+  .l-grid--mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
   }
-
-  .l-contents {
+  .l-grid--contents {
     grid-area: main;
     background-color: #d4f1f8;
   }
-
-  .l-sidebar {
+  .l-grid--sidebar {
     grid-area: sidebar;
     background-color: #2498b3;
     position: absolute;
     left: 500px;
   }
-
-  .l-access {
+  .l-grid--access {
     grid-area: access;
   }
-
-  .l-footer {
+  .l-grid--footer {
     grid-area: footer;
     background-color: #96806B;
   }
 }
 @media screen and (min-width: 1080px) {
-  .l-wrapper {
+  .l-grid {
     position: static;
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
     grid-template: "header  sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   footer" 100px/80% 20%;
   }
-
-  .l-header {
+  .l-grid--header {
     grid-area: header;
     background-color: #f16b6b;
   }
-
-  .l-mainvisual {
+  .l-grid--mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
   }
-
-  .l-contents {
+  .l-grid--contents {
     grid-area: main;
     background-color: #d4f1f8;
   }
-
-  .l-sidebar {
+  .l-grid--sidebar {
     grid-area: sidebar;
     background-color: #2498b3;
     position: static;
   }
-
-  .l-access {
+  .l-grid--access {
     grid-area: access;
   }
-
-  .l-footer {
+  .l-grid--footer {
     grid-area: footer;
     background-color: #96806B;
   }
@@ -495,6 +476,7 @@ ul {
     text-align: center;
   }
 }
+/*補助的な背景を定義する*/
 @media screen and (max-width: 757px) {
   .p-header {
     background-color: #DED8D3;
@@ -505,8 +487,14 @@ ul {
     width: 100%;
   }
 
-  .p-sidebar {
-    width: 80%;
+  .p-display {
+    background-color: rgba(112, 112, 112, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 @media screen and (max-width: 757px) {
@@ -544,7 +532,7 @@ ul {
 @media screen and (max-width: 757px) {
   .p-sidebar {
     width: 80%;
-    background-color: #2498b3;
+    background-color: #F2EDE9;
   }
 }
 /*# sourceMappingURL=style.css.map */

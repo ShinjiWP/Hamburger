@@ -1,21 +1,23 @@
+/*補助的な背景を定義する*/
 @use "../global" as g;
 
-@include g.sp{
-  .p-header{
+@include g.sp {
+  .p-header {
     background-color: g.$beige;
-
   }
-  .p-content{
-    &__visual{
+  .p-content {
+    &__visual {
       display: block;
-      width:100% ;
+      width: 100%;
     }
   }
-  .p-sidebar{
-    width: 80%;
+  .p-display {
+    background-color: rgba(112, 112, 112, 0.9);
+    display: flex;
+    justify-content: flex-end;
+    
   }
 }
-
 
 @include g.sp {
   .p-mainvisual {
@@ -25,7 +27,7 @@
       width: 100%;
       // height: auto;
     }
-   
+
     &__pc {
       display: none;
     }
@@ -57,4 +59,3 @@
     }
   }
 }
-
