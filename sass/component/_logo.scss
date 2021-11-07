@@ -1,0 +1,9 @@
+@use "../global" as g;
+
+@include g.sp{
+  .c-logo{
+    &__header{
+      font-size: 5vw;
+    }
+  }
+}

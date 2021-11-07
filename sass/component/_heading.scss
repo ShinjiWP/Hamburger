@@ -3,6 +3,7 @@
 @include g.sp{
   .c-heading{
     text-align: center;
+    // font-size: 10vw;
   }
   .c-search{
     @extend .c-heading;

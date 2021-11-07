@@ -365,103 +365,103 @@ ul {
 }
 
 @media screen and (max-width: 757px) {
-  .l-grid {
+  .c-grid {
     display: grid;
-    grid-template: "header" auto "figure  " auto "main   " auto "sidebar" auto "access " auto "footer  " 100px/100%;
+    grid-template: "header sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 100px/100% 100%;
   }
-  .l-grid--header {
+  .c-grid--header {
     grid-area: header;
     background-color: #f16b6b;
   }
-  .l-grid--mainvisual {
+  .c-grid--mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
   }
-  .l-grid--contents {
+  .c-grid--contents {
     grid-area: main;
     background-color: #d4f1f8;
   }
-  .l-grid--sidebar {
+  .c-grid--sidebar {
     grid-area: sidebar;
     width: 100%;
     /*この辺は仮の設定*/
-    position: absolute;
+    height: 100%;
     min-width: 300px;
     -webkit-transform: translate(0%, 0);
             transform: translate(0%, 0);
   }
-  .l-grid--access {
+  .c-grid--access {
     grid-area: access;
   }
-  .l-grid--footer {
+  .c-grid--footer {
     grid-area: footer;
     background-color: #96806B;
   }
 }
 @media screen and (min-width: 758px) {
-  .l-grid {
+  .c-grid {
     min-height: 100vh;
     display: grid;
     grid-template: "header" auto "figure  " auto "main   " auto "sidebar" auto "access " auto "footer  " 100px/100%;
   }
-  .l-grid--header {
+  .c-grid--header {
     grid-area: header;
     background-color: #f16b6b;
   }
-  .l-grid--mainvisual {
+  .c-grid--mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
   }
-  .l-grid--contents {
+  .c-grid--contents {
     grid-area: main;
     background-color: #d4f1f8;
   }
-  .l-grid--sidebar {
+  .c-grid--sidebar {
     grid-area: sidebar;
     background-color: #2498b3;
     position: absolute;
     left: 500px;
   }
-  .l-grid--access {
+  .c-grid--access {
     grid-area: access;
   }
-  .l-grid--footer {
+  .c-grid--footer {
     grid-area: footer;
     background-color: #96806B;
   }
 }
 @media screen and (min-width: 1080px) {
-  .l-grid {
+  .c-grid {
     position: static;
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
     grid-template: "header  sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   footer" 100px/80% 20%;
   }
-  .l-grid--header {
+  .c-grid--header {
     grid-area: header;
     background-color: #f16b6b;
   }
-  .l-grid--mainvisual {
+  .c-grid--mainvisual {
     grid-area: figure;
     margin: 0;
     background-color: #f3fafb;
   }
-  .l-grid--contents {
+  .c-grid--contents {
     grid-area: main;
     background-color: #d4f1f8;
   }
-  .l-grid--sidebar {
+  .c-grid--sidebar {
     grid-area: sidebar;
     background-color: #2498b3;
     position: static;
   }
-  .l-grid--access {
+  .c-grid--access {
     grid-area: access;
   }
-  .l-grid--footer {
+  .c-grid--footer {
     grid-area: footer;
     background-color: #96806B;
   }
@@ -474,6 +474,11 @@ ul {
 @media screen and (max-width: 757px) {
   .p-search {
     text-align: center;
+  }
+}
+@media screen and (max-width: 757px) {
+  .c-logo__header {
+    font-size: 5vw;
   }
 }
 /*補助的な背景を定義する*/
@@ -495,6 +500,7 @@ ul {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    height: 100%;
   }
 }
 @media screen and (max-width: 757px) {
@@ -533,6 +539,7 @@ ul {
   .p-sidebar {
     width: 80%;
     background-color: #F2EDE9;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

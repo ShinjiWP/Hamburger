@@ -15,11 +15,11 @@
     <script src="自分で作ったjQueryを読み込む"></script>
   </head>
   <body>
-    <div class="l-grid">
-      <header class="l-grid--header">
+    <div class="c-grid">
+      <header class="c-grid--header">
         <div class="p-header">
-          <h1 class="c-heading c-heading-lg">
-            <img class="c-logo" src="/image/png/hamburger-logo_sp.png" alt="" />
+          <h1 class="c-heading c-heading--lg">
+            <img class="c-logo__header" src="/image/png/hamburger-logo_sp.png" alt="" />
           </h1>
           <div class="p-search">
             <!--ここに疑似クラスを持ってくる予定-->
@@ -30,12 +30,12 @@
           </div>
         </div>
       </header>
-      <figure class="l-grid--mainvisual p-mainvisual">
+      <figure class="c-grid--mainvisual p-mainvisual">
         <img class="p-mainvisual__sp" src="/image/png/header-visual_sp.png" alt="ダミーサイト" />
         <img class="p-mainvisual__pc" src="/image/png/header-visual_pc.png" alt="ダミーサイト" />
         <h2>ダミーサイト</h2>
       </figure>
-      <main class="l-grid--contents">
+      <main class="c-grid--contents">
         <article class="p-content">
           <img class="p-content__visual" src="/image/png/main-visual-1_sp.png" alt="" />
           <h2 class="c-content__header">Take Out</h2>
@@ -62,9 +62,9 @@
         </article>
       </main>
       <!-- 以下の命名規則はおおむね合っていると判断。以後参考にする。 -->
-      <div class="l-grid--sidebar">
+      <div class="c-grid--sidebar">
         <div class="p-display">
-          <aside class="p-sidebar">
+          <aside class="l-sidebar p-sidebar">
             <h2 class="c-heading--md p-sidebar__header">Menu</h2>
             <h3 class="c-heading--sm p-sidebar__ttl">バーガー</h3>
             <ul class="c-aside p-sidebar__menu">
@@ -95,8 +95,8 @@
           </aside>
         </div>
       </div>
-      <section class="l-grid--access">map</section>
-      <footer class="l-grid--footer p-footer">
+      <section class="c-grid--access">map</section>
+      <footer class="c-grid--footer p-footer">
         <div class="c-footer">
           <h3 class="c-footer__info">ショップ情報 ｜ ヒストリー</h3>
           <small class="c-footer__cr">&copy; RaiseTech</small>

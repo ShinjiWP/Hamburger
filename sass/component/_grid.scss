@@ -1,16 +1,16 @@
 @use "../global" as g;
 
 @include g.sp {
-  .l-grid {
+  .c-grid {
+    // overflow-x: hidden;
     display: grid;
     grid-template:
-      "header" auto
-      "figure  " auto
-      "main   " auto
-      "sidebar" auto
-      "access " auto
-      "footer  " 100px
-      /100%;
+      "header sidebar" auto
+      "figure   sidebar" auto
+      "main    sidebar" auto
+      "access  sidebar" auto
+      "footer   sidebar" 100px
+      /100% 100%;
     &--header {
       grid-area: header;
       background-color: g.$red;
@@ -27,12 +27,9 @@
     &--sidebar {
       grid-area: sidebar;
       width: 100%; /*この辺は仮の設定*/
-      // height: 100%;
-      position: absolute;
+      height: 100%;
       min-width: 300px;
       transform: translate(0%, 0);
-      // overflow-x: hidden;
-      // position: relative;
     }
 
     &--access {
@@ -46,7 +43,7 @@
 }
 
 @include g.tab {
-  .l-grid {
+  .c-grid {
     min-height: 100vh;
     display: grid;
     grid-template:
@@ -87,7 +84,7 @@
 }
 
 @include g.pc {
-  .l-grid {
+  .c-grid {
     position: static;
     min-height: 100vh;
     margin: 0 auto;
