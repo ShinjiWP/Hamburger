@@ -1,0 +1,7 @@
+@use "../global"as g;
+
+@include g.tab{
+  .p-content-box{
+    display: flex;
+  }
+}

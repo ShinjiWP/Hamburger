@@ -12,3 +12,27 @@
     }
   }
 }
+@include g.tab{
+  .p-header{
+    text-align: center;
+    &__heading{
+      &--lg{
+        font-family: g.$Robot;
+        color: g.$font-gray;
+        font-size: 8vw;
+      }
+    }
+  }
+}
+@include g.pc{
+  .p-header{
+    // text-align: center;
+    &__heading{
+      &--lg{
+        font-family: g.$Robot;
+        color: g.$font-gray;
+        font-size: 8vw;
+      }
+    }
+  }
+}

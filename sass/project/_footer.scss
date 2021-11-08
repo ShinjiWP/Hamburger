@@ -6,3 +6,17 @@
     text-align: center;
   }
 }
+
+@include g.tab {
+ 
+  .p-footer__box {
+    text-align: center;
+  }
+}
+
+@include g.pc {
+ 
+  .p-footer__box {
+    text-align: center;
+  }
+}

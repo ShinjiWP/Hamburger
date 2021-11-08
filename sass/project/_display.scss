@@ -35,24 +35,32 @@
 }
 
 @include g.tab {
-  .p-mainvisual {
-    &__sp {
+  .p-header {
+    background-color: g.$bgc-beige;
+  }
+  .p-mainvisual__photo {
+    &--sp {
       display: none;
     }
-    &__pc {
+    &--pc {
       display: block;
       object-fit: cover;
       width: 100%;
+      // height: 30%;
+      object-fit: cover;
     }
   }
 }
 
 @include g.pc {
-  .p-mainvisual {
-    &__sp {
+  .p-header {
+    background-color: g.$bgc-beige;
+  }
+  .p-mainvisual__photo {
+    &--sp {
       display: none;
     }
-    &__pc {
+    &--pc {
       display: block;
       object-fit: cover;
       width: 100%;
