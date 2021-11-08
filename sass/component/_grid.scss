@@ -9,7 +9,7 @@
       "figure   sidebar" auto
       "main    sidebar" auto
       "access  sidebar" auto
-      "footer   sidebar" 100px
+      "footer   sidebar" 150px
       /100% 100%;
     &--header {
       grid-area: header;
@@ -46,13 +46,12 @@
     min-height: 100vh;
     display: grid;
     grid-template:
-      "header" auto
-      "figure  " auto
-      "main   " auto
-      "sidebar" auto
-      "access " auto
-      "footer  " 100px
-      /100%;
+      "header sidebar" auto
+      "figure   sidebar" auto
+      "main    sidebar" auto
+      "access  sidebar" auto
+      "footer   sidebar" 150px
+      /100% 100%;
     &--header {
       grid-area: header;
       background-color: g.$red;
@@ -69,8 +68,10 @@
     &--sidebar {
       grid-area: sidebar;
       background-color: g.$blue;
-      position: absolute;
-      left: 500px;
+      width: 100%; /*この辺は仮の設定*/
+      height: 100%;
+      min-width: 300px;
+      transform: translate(0%, 0);
     }
     &--access {
       grid-area: access;
@@ -93,7 +94,7 @@
       "figure   sidebar" auto
       "main    sidebar" auto
       "access  sidebar" auto
-      "footer   footer" 100px
+      "footer   footer" 150px
       /80% 20%;
     &--header {
       grid-area: header;

@@ -369,7 +369,7 @@ ul {
 @media screen and (max-width: 757px) {
   .c-grid {
     display: grid;
-    grid-template: "header sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 100px/100% 100%;
+    grid-template: "header sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
   }
   .c-grid--header {
     grid-area: header;
@@ -404,7 +404,7 @@ ul {
   .c-grid {
     min-height: 100vh;
     display: grid;
-    grid-template: "header" auto "figure  " auto "main   " auto "sidebar" auto "access " auto "footer  " 100px/100%;
+    grid-template: "header sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
   }
   .c-grid--header {
     grid-area: header;
@@ -422,8 +422,12 @@ ul {
   .c-grid--sidebar {
     grid-area: sidebar;
     background-color: #2498b3;
-    position: absolute;
-    left: 500px;
+    width: 100%;
+    /*この辺は仮の設定*/
+    height: 100%;
+    min-width: 300px;
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
   }
   .c-grid--access {
     grid-area: access;
@@ -439,7 +443,7 @@ ul {
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template: "header  sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   footer" 100px/80% 20%;
+    grid-template: "header  sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   footer" 150px/80% 20%;
   }
   .c-grid--header {
     grid-area: header;
@@ -519,6 +523,17 @@ ul {
     width: 100%;
     object-fit: cover;
   }
+
+  .p-bg-display {
+    background-color: rgba(112, 112, 112, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
+  }
 }
 @media screen and (min-width: 1080px) {
   .p-header {
@@ -547,11 +562,36 @@ ul {
     width: 80%;
     background-color: #F2EDE9;
     height: 100%;
+    padding: 20% 15%;
   }
   .p-sidebar__heading--md {
     font-family: "Roboto", sans-serif;
     color: #707070;
-    font-size: 8vw;
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 758px) {
+  .p-sidebar {
+    width: 43%;
+    background-color: #F2EDE9;
+    height: 100%;
+  }
+  .p-sidebar__heading--md {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-sidebar {
+    width: 100%;
+    background-color: #F2EDE9;
+    height: 100%;
+  }
+  .p-sidebar__heading--md {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-size: 2vw;
   }
 }
 @media screen and (max-width: 757px) {
