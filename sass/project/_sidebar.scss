@@ -1,9 +1,17 @@
 @use "../global" as g;
 
-@include g.sp{
-  .p-sidebar{
+@include g.sp {
+  .p-sidebar {
     width: 80%;
     background-color: g.$light-beige;
     height: 100%;
+    &__heading {
+      &--md {
+        font-family: g.$Robot;
+        color: g.$font-gray;
+        font-size: 8vw;
+      }
+    }
   }
 }
+

@@ -1,7 +1,8 @@
 @use "../global" as g;
 
-@include g.tab {
-  .p-search {
+@include g.sp {
+ 
+  .p-footer__box {
     text-align: center;
   }
 }

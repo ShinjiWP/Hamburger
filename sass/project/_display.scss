@@ -20,15 +20,15 @@
 }
 
 @include g.sp {
-  .p-mainvisual {
-    &__sp {
+  .p-mainvisual__photo {
+    &--sp {
       // display: block;
       object-fit: cover;
       width: 100%;
       // height: auto;
     }
 
-    &__pc {
+    &--pc {
       display: none;
     }
   }
