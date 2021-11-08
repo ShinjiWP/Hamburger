@@ -510,7 +510,7 @@ ul {
     width: 100%;
   }
 
-  .p-display {
+  .p-bg-display {
     background-color: rgba(112, 112, 112, 0.9);
     display: -webkit-box;
     display: -ms-flexbox;
