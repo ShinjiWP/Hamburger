@@ -5,7 +5,7 @@
     // overflow-x: hidden;
     display: grid;
     grid-template:
-      "header sidebar" auto
+      "header sidebar" 217px
       "figure   sidebar" auto
       "main    sidebar" auto
       "access  sidebar" auto
@@ -46,7 +46,7 @@
     min-height: 100vh;
     display: grid;
     grid-template:
-      "header sidebar" auto
+      "header sidebar" 217px
       "figure   sidebar" auto
       "main    sidebar" auto
       "access  sidebar" auto
@@ -90,7 +90,7 @@
     margin: 0 auto;
     display: grid;
     grid-template:
-      "header  sidebar" auto
+      "header  sidebar" 217px
       "figure   sidebar" auto
       "main    sidebar" auto
       "access  sidebar" auto

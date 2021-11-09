@@ -4,6 +4,7 @@
   .p-header{
     text-align: center;
     padding: 10% 5%;
+    height: 100%;
     &__heading{
       &--lg{
         font-family: g.$Robot;
@@ -16,6 +17,7 @@
 @include g.tab{
   .p-header{
     text-align: center;
+    height: 100%;
     &__heading{
       &--lg{
         font-family: g.$Robot;

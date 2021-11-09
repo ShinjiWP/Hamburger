@@ -1,6 +1,10 @@
 @use "../global" as g;
 
 @include g.sp {
+  .p-search {
+    // padding: 5% 10%;
+  }
+
   .p-search::before {
     font-family: "Font Awesome 5 Free";
     content: "\f002";
@@ -9,6 +13,6 @@
     width: 10%;
   }
   .p-search__form {
-    height: 1vh;
+    // height: 2vh;
   }
 }

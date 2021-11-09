@@ -369,7 +369,7 @@ ul {
 @media screen and (max-width: 757px) {
   .c-grid {
     display: grid;
-    grid-template: "header sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
+    grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
   }
   .c-grid--header {
     grid-area: header;
@@ -404,7 +404,7 @@ ul {
   .c-grid {
     min-height: 100vh;
     display: grid;
-    grid-template: "header sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
+    grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
   }
   .c-grid--header {
     grid-area: header;
@@ -443,7 +443,7 @@ ul {
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template: "header  sidebar" auto "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   footer" 150px/80% 20%;
+    grid-template: "header  sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   footer" 150px/80% 20%;
   }
   .c-grid--header {
     grid-area: header;
@@ -483,10 +483,6 @@ ul {
     font-weight: 700;
     color: #707070;
     width: 10%;
-  }
-
-  .p-search__form {
-    height: 1vh;
   }
 }
 /*補助的な背景を定義する*/
@@ -611,6 +607,7 @@ ul {
   .p-header {
     text-align: center;
     padding: 10% 5%;
+    height: 100%;
   }
   .p-header__heading--lg {
     font-family: "Roboto", sans-serif;
@@ -621,6 +618,7 @@ ul {
 @media screen and (min-width: 758px) {
   .p-header {
     text-align: center;
+    height: 100%;
   }
   .p-header__heading--lg {
     font-family: "Roboto", sans-serif;
