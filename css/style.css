@@ -476,6 +476,19 @@ ul {
     font-size: 5vw;
   }
 }
+@media screen and (max-width: 757px) {
+  .p-search::before {
+    font-family: "Font Awesome 5 Free";
+    content: "";
+    font-weight: 700;
+    color: #707070;
+    width: 10%;
+  }
+
+  .p-search__form {
+    height: 1vh;
+  }
+}
 /*補助的な背景を定義する*/
 @media screen and (max-width: 757px) {
   .p-header {
@@ -597,11 +610,12 @@ ul {
 @media screen and (max-width: 757px) {
   .p-header {
     text-align: center;
+    padding: 10% 5%;
   }
   .p-header__heading--lg {
     font-family: "Roboto", sans-serif;
     color: #707070;
-    font-size: 8vw;
+    font-size: 10vw;
   }
 }
 @media screen and (min-width: 758px) {

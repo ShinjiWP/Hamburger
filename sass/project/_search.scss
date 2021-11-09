@@ -1,2 +1,14 @@
 @use "../global" as g;
 
+@include g.sp {
+  .p-search::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+    font-weight: 700;
+    color: g.$font-gray;
+    width: 10%;
+  }
+  .p-search__form {
+    height: 1vh;
+  }
+}
