@@ -499,6 +499,7 @@ dl, dd {
   .p-grid--article {
     display: grid;
     grid-template: "article" auto/auto;
+    padding: 5% 5% 0% 5%;
   }
 
   .p-content__image {
@@ -511,6 +512,11 @@ dl, dd {
 
   .p-content__box {
     grid-area: article;
+  }
+}
+@media screen and (max-width: 757px) {
+  .p-mainvisual--text {
+    padding: 5%;
   }
 }
 @media screen and (max-width: 757px) {
@@ -598,15 +604,36 @@ dl, dd {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-
   .p-content__image {
     width: 100%;
   }
-
+  .p-content__header {
+    padding: 5%;
+    position: relative;
+  }
+  .p-content__header::before {
+    display: inline-block;
+    content: "";
+    width: 9vw;
+    height: 0.7vh;
+    background: #fff;
+    position: absolute;
+    left: 5%;
+    top: 13%;
+  }
   .p-content__inner {
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0 3% 3% 3%;
     padding: 5%;
+  }
+  .p-content__inner__ttl {
+    margin: 5% 0;
+  }
+  .p-content__inner__text {
+    height: 11vh;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 758px) {
@@ -660,11 +687,6 @@ dl, dd {
     height: 100%;
     background-color: #DED8D3;
   }
-  .p-header__heading--lg {
-    font-family: "Roboto", sans-serif;
-    color: #707070;
-    font-size: 10vw;
-  }
 }
 @media screen and (min-width: 758px) {
   .p-header {
@@ -704,6 +726,27 @@ dl, dd {
   }
 }
 @media screen and (max-width: 757px) {
+  .u-font--header {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-size: 10vw;
+  }
+
+  .u-font--mainvisual {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 9vw;
+  }
+
+  .u-font--content {
+    font-family: "Roboto", sans-serif;
+    font-size: 10vw;
+    color: #fff;
+  }
+  .u-font--content-ttl {
+    font-size: 5vw;
+    font-weight: 700;
+  }
   .u-font--sideheader {
     font-family: "Roboto", sans-serif;
     color: #707070;

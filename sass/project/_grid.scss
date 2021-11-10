@@ -17,6 +17,7 @@
   .p-grid--article {
     display: grid;
     grid-template: "article" auto/auto;
+    padding: 5% 5% 0% 5%;
   }
   .p-content__image {
     grid-area: article;
@@ -25,7 +26,6 @@
   .p-content__header {
     grid-area: article;
     // display: block;
-
   }
   .p-content__box {
     grid-area: article;

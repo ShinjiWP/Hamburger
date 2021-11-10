@@ -7,13 +7,7 @@
     height: 100%;
     background-color: g.$bgc-beige;
 
-    &__heading {
-      &--lg {
-        font-family: g.$Robot;
-        color: g.$font-gray;
-        font-size: 10vw;
-      }
-    }
+    
   }
 }
 @include g.tab {

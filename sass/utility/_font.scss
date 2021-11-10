@@ -1,6 +1,30 @@
 @use "../global" as g;
 
 @include g.sp {
+  .u-font--header {
+    font-family: g.$Robot;
+    color: g.$font-gray;
+    font-size: 10vw;
+  }
+
+  .u-font--mainvisual {
+    font-family: g.$Robot;
+    color: #fff;
+    font-size: 9vw;
+  }
+  .u-font--content {
+    font-family: g.$Robot;
+    font-size: 10vw;
+    color: #fff;
+
+    &-ttl {
+      font-size: 5vw;
+      font-weight: 700;
+    }
+    &-text {
+    }
+  }
+
   .u-font--sideheader {
     font-family: g.$Robot;
     color: g.$font-gray;

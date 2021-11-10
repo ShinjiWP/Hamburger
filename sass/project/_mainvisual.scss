@@ -1,0 +1,11 @@
+@use "../global" as g;
+@include g.sp {
+  .p-mainvisual--text{
+    padding:  5%;
+
+  }
+}
+@include g.tab {
+}
+@include g.pc {
+} ;
