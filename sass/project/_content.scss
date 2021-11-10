@@ -37,6 +37,8 @@
         width: 100%;
         display: inline-block;
         overflow: hidden;
+        text-overflow: ellipsis;
+        /*どうやって文章をうまく隠すか要検討*/
       }
     }
   }
