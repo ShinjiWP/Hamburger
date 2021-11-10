@@ -20,7 +20,7 @@
       <header class="c-grid--header">
         <div class="p-header">
           <!--ここにサイドメニューを表示する疑似要素を持ってくる予定-->
-          <h1 class="p-header__heading--lg">
+          <h1 class="p-header__heading--lg u-font--header">
             Hamburger
             <!-- <img class="c-logo__header" src="/image/png/hamburger-logo_sp.png" alt="" /> -->
           </h1>
@@ -33,47 +33,51 @@
           <!-- </div> -->
         </div>
       </header>
-      <figure class="c-grid--mainvisual p-mainvisual">
-        <div class="p-mainvisual--photo">
-          <img class="p-mainvisual__photo--sp" src="/image/png/header-visual_sp.png" alt="ダミーサイト" />
-          <img class="p-mainvisual__photo--pc" src="/image/png/header-visual_pc.png" alt="ダミーサイト" />
-        </div>
-        <div class="p-mainvisual--text">
-          <h2 class="p-mainvisual__heading">ダミーサイト</h2>
+      <figure class="c-grid--mainvisual">
+        <div class="p-grid--mainvisual">
+          <div class="p-mainvisual--photo">
+            <img class="p-mainvisual__photo--sp" src="/image/png/top-image_sp.png" alt="ダミーサイト" />
+            <img class="p-mainvisual__photo--pc" src="/image/png/top-image_pc.png" alt="ダミーサイト" />
+          </div>
+          <div class="p-mainvisual--text u-font--mainvisual">
+            <h2 class="p-mainvisual__heading--md u-font--mainvisual">ダミーサイト</h2>
+          </div>
         </div>
       </figure>
-      <main class="c-grid--contents p-content-box">
-        <article class="p-content">
-          <img class="p-content__visual" src="/image/png/main-visual-1_sp.png" alt="" />
+      <main class="c-grid--contents">
+        <article class="p-grid--article">
+          <img class="p-content__image" src="/image/png/main-visual-1_sp.png" alt="" />
           <h2 class="p-content__header">Take Out</h2>
-          <dl class="p-content__box">
-            <dt class="p-content__box__ttl">Take OUT</dt>
-            <dd class="p-content__box__desctiption">当店のテイクアウトで利用できる商品を掲載しています</dd>
-          </dl>
-          <dl class="p-content__box">
-            <dt class="p-content__box__ttl">Take OUT</dt>
-            <dd class="p-content__box__desctiption">当店のテイクアウトで利用できる商品を掲載しています</dd>
-          </dl>
+          <div class="p-content__box">
+            <dl class="p-content__inner">
+              <dt class="p-content__inner__ttl">Take OUT</dt>
+              <dd class="p-content__inner__desctiption">当店のテイクアウトで利用できる商品を掲載しています</dd>
+            </dl>
+            <dl class="p-content__inner">
+              <dt class="p-content__inner__ttl">Take OUT</dt>
+              <dd class="p-content__inner__desctiption">当店のテイクアウトで利用できる商品を掲載しています</dd>
+            </dl>
+          </div>
         </article>
-        <article class="p-content">
-          <img class="p-content__visual" src="/image/png/main-visual-2_sp.png" alt="" />
+        <article class="p-grid--article">
+          <img class="p-content__image" src="/image/png/main-visual-2_sp.png" alt="" />
           <h2 class="p-content__header">Eat In</h2>
-          <dl class="p-content__box">
-            <dt class="p-content__box__ttl">Eat In</dt>
-            <dd class="p-content__box__desctiption">当店のイートインで利用できる商品を掲載しています</dd>
-          </dl>
-          <dl class="p-content__box">
-            <dt class="p-content__box__ttl">Eat In</dt>
-            <dd class="p-content__box__desctiption">当店のイートインで利用できる商品を掲載しています</dd>
-          </dl>
+          <div class="p-content__box">
+            <dl class="p-content__inner">
+              <dt class="p-content__inner__ttl">Take OUT</dt>
+              <dd class="p-content__inner__desctiption">当店のテイクアウトで利用できる商品を掲載しています</dd>
+            </dl>
+            <dl class="p-content__inner">
+              <dt class="p-content__inner__ttl">Take OUT</dt>
+              <dd class="p-content__inner__desctiption">当店のテイクアウトで利用できる商品を掲載しています</dd>
+            </dl>
         </article>
       </main>
-      <!-- 以下の命名規則はおおむね合っていると判断。以後参考にする。 -->
       <div class="c-grid--sidebar">
         <div class="p-bg-display">
           <aside class="l-sidebar p-sidebar">
-            <h2 class="p-sidebar__heading--md">Menu</h2>
-            <h3 class="p-sidebar__heading--sm">バーガー</h3>
+            <h2 class="p-sidebar__heading--md u-font--sideheader">Menu</h2>
+            <h3 class="p-sidebar__heading--sm u-font--sidebar">バーガー</h3>
             <ul class="p-sidebar__menu">
               <li class="p-sidebar__menu__list">ハンバーガー</li>
               <li class="p-sidebar__menu__list">チーズバーガー</li>
@@ -83,14 +87,14 @@
               <li class="p-sidebar__menu__list">ベーコンバーガー</li>
               <li class="p-sidebar__menu__list">チキンバーガー</li>
             </ul>
-            <h3 class="p-sidebar__heading--sm">サイド</h3>
+            <h3 class="p-sidebar__heading--sm u-font--sidebar">サイド</h3>
             <ul class="p-sidebar__menu">
               <li class="p-sidebar__menu__list">ポテト</li>
               <li class="p-sidebar__menu__list">サラダ</li>
               <li class="p-sidebar__menu__list">ナゲット</li>
               <li class="p-sidebar__menu__list">コーン</li>
             </ul>
-            <h3 class="p-sidebar__heading--sm">ドリンク</h3>
+            <h3 class="p-sidebar__heading--sm u-font--sidebar">ドリンク</h3>
             <ul class="p-sidebar__menu">
               <li class="p-sidebar__menu__list">コーラ</li>
               <li class="p-sidebar__menu__list">ファンタ</li>

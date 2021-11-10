@@ -1,12 +1,14 @@
 @use "../global" as g;
 
-@include g.sp{
-  .p-header{
+@include g.sp {
+  .p-header {
     text-align: center;
     padding: 10% 5%;
     height: 100%;
-    &__heading{
-      &--lg{
+    background-color: g.$bgc-beige;
+
+    &__heading {
+      &--lg {
         font-family: g.$Robot;
         color: g.$font-gray;
         font-size: 10vw;
@@ -14,12 +16,14 @@
     }
   }
 }
-@include g.tab{
-  .p-header{
+@include g.tab {
+  .p-header {
     text-align: center;
+    background-color: g.$bgc-beige;
+
     height: 100%;
-    &__heading{
-      &--lg{
+    &__heading {
+      &--lg {
         font-family: g.$Robot;
         color: g.$font-gray;
         font-size: 8vw;
@@ -27,11 +31,13 @@
     }
   }
 }
-@include g.pc{
-  .p-header{
+@include g.pc {
+  .p-header {
+    background-color: g.$bgc-beige;
+
     // text-align: center;
-    &__heading{
-      &--lg{
+    &__heading {
+      &--lg {
         font-family: g.$Robot;
         color: g.$font-gray;
         font-size: 8vw;

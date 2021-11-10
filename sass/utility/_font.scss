@@ -1,0 +1,39 @@
+@use "../global" as g;
+
+@include g.sp {
+  .u-font--sideheader {
+    font-family: g.$Robot;
+    color: g.$font-gray;
+    font-size: 6vw;
+  }
+}
+
+@include g.tab {
+  .p-sidebar {
+    width: 43%;
+    background-color: g.$light-beige;
+    height: 100%;
+    &__heading {
+      &--md {
+        font-family: g.$Robot;
+        color: g.$font-gray;
+        font-size: 4vw;
+      }
+    }
+  }
+}
+
+@include g.pc {
+  .p-sidebar {
+    width: 100%;
+    background-color: g.$light-beige;
+    height: 100%;
+    &__heading {
+      &--md {
+        font-family: g.$Robot;
+        color: g.$font-gray;
+        font-size: 2vw;
+      }
+    }
+  }
+}

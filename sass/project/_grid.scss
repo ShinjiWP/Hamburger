@@ -1,0 +1,34 @@
+@use "../global" as g;
+
+@include g.sp {
+  .p-grid--mainvisual {
+    display: grid;
+    grid-template: "image" auto/auto;
+  }
+  .p-mainvisual--photo {
+    grid-area: image;
+  }
+  .p-mainvisual--text {
+    grid-area: image;
+    display: flex;
+    align-items: center;
+  }
+
+  .p-grid--article {
+    display: grid;
+    grid-template: "article" auto/auto;
+  }
+  .p-content__image {
+    grid-area: article;
+    // display: block;
+  }
+  .p-content__header {
+    grid-area: article;
+    // display: block;
+
+  }
+  .p-content__box {
+    grid-area: article;
+    // display: block;
+  }
+}
