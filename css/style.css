@@ -367,7 +367,7 @@ dl, dd {
   margin: 0;
 }
 
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .c-grid {
     display: grid;
     grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
@@ -401,7 +401,7 @@ dl, dd {
     background-color: #96806B;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 600px) {
   .c-grid {
     min-height: 100vh;
     display: grid;
@@ -472,12 +472,12 @@ dl, dd {
     background-color: #96806B;
   }
 }
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .c-logo__header {
     font-size: 5vw;
   }
 }
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .p-grid--mainvisual {
     display: grid;
     grid-template: "image" auto/auto;
@@ -515,12 +515,12 @@ dl, dd {
     grid-area: article;
   }
 }
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .p-mainvisual--text {
     padding: 5%;
   }
 }
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .p-search {
     padding: 10% 0;
   }
@@ -534,11 +534,16 @@ dl, dd {
   .p-search__form__input {
     width: 65vw;
     height: 15vw;
-    border-radius: 5px;
+    border-radius: 10px;
+  }
+  .p-search__form__btn {
+    width: 18vw;
+    height: 10vh;
+    border-radius: 10px;
   }
 }
 /*補助的な背景を定義する*/
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .p-bg-display {
     background-color: rgba(112, 112, 112, 0.9);
     display: -webkit-box;
@@ -550,7 +555,7 @@ dl, dd {
     height: 100%;
   }
 }
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .p-mainvisual__photo--sp {
     width: 100%;
   }
@@ -558,7 +563,7 @@ dl, dd {
     display: none;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 600px) {
   .p-header {
     background-color: #DED8D3;
   }
@@ -600,7 +605,7 @@ dl, dd {
     width: 100%;
   }
 }
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .p-content__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -647,14 +652,14 @@ dl, dd {
     /*どうやって文章をうまく隠すか要検討*/
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 600px) {
   .p-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .p-sidebar {
     width: 86%;
     background-color: #F2EDE9;
@@ -673,7 +678,7 @@ dl, dd {
     visibility: hidden;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 600px) {
   .p-sidebar {
     width: 43%;
     background-color: #F2EDE9;
@@ -697,7 +702,7 @@ dl, dd {
     font-size: 2vw;
   }
 }
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .p-header {
     text-align: center;
     padding: 10% 5%;
@@ -705,7 +710,7 @@ dl, dd {
     background-color: #DED8D3;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 600px) {
   .p-header {
     text-align: center;
     background-color: #DED8D3;
@@ -727,12 +732,12 @@ dl, dd {
     font-size: 8vw;
   }
 }
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .p-footer__box {
     text-align: center;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 600px) {
   .p-footer__box {
     text-align: center;
   }
@@ -742,7 +747,7 @@ dl, dd {
     text-align: center;
   }
 }
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 599px) {
   .u-font--header {
     font-family: "Roboto", sans-serif;
     color: #707070;
@@ -771,7 +776,7 @@ dl, dd {
     font-size: 4vw;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 600px) {
   .p-sidebar {
     width: 43%;
     background-color: #F2EDE9;

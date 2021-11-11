@@ -1,7 +1,7 @@
 /*ブレイクポイントを指定*/
 $pc: 1080px;
-$tab: 758px;
-$sp: 757px;
+$tab: 600px;
+$sp: 599px;
 
 @mixin sp {
   @media screen and(max-width:($sp)) {
