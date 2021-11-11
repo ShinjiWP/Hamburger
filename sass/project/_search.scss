@@ -2,17 +2,21 @@
 
 @include g.sp {
   .p-search {
-    // padding: 5% 10%;
-  }
-
-  .p-search::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f002";
-    font-weight: 700;
-    color: g.$font-gray;
-    width: 10%;
-  }
-  .p-search__form {
-    // height: 2vh;
+    padding: 10% 0;
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f002";
+      font-weight: 700;
+      color: g.$font-gray;
+      width: 10%;
+    }
+    &__form {
+      &__input{
+        width: 65vw;
+        height: 15vw;
+        border-radius: 5px;
+        
+      }
+    }
   }
 }

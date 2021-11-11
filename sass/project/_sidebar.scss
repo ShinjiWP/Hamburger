@@ -2,15 +2,24 @@
 
 @include g.sp {
   .p-sidebar {
-    width: 80%;
+    width: 86%;
     background-color: g.$light-beige;
     height: 100%;
     padding: 20% 15%;
+    &__menu{
+      padding: 10% 5%;
+      &__list{
+        margin: 10% 0;
+      }
+    }
     &__heading {
       &--md {
         font-family: g.$Robot;
-        color: g.$font-gray;
-        font-size: 6vw;
+        color: g.$font-gray;        
+        visibility: hidden;
+      }
+      &--sm{
+        
       }
     }
   }

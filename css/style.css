@@ -356,6 +356,7 @@ template {
 ul, li {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -520,12 +521,20 @@ dl, dd {
   }
 }
 @media screen and (max-width: 757px) {
+  .p-search {
+    padding: 10% 0;
+  }
   .p-search::before {
     font-family: "Font Awesome 5 Free";
     content: "";
     font-weight: 700;
     color: #707070;
     width: 10%;
+  }
+  .p-search__form__input {
+    width: 65vw;
+    height: 15vw;
+    border-radius: 5px;
   }
 }
 /*補助的な背景を定義する*/
@@ -635,6 +644,7 @@ dl, dd {
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
+    /*どうやって文章をうまく隠すか要検討*/
   }
 }
 @media screen and (min-width: 758px) {
@@ -646,15 +656,21 @@ dl, dd {
 }
 @media screen and (max-width: 757px) {
   .p-sidebar {
-    width: 80%;
+    width: 86%;
     background-color: #F2EDE9;
     height: 100%;
     padding: 20% 15%;
   }
+  .p-sidebar__menu {
+    padding: 10% 5%;
+  }
+  .p-sidebar__menu__list {
+    margin: 10% 0;
+  }
   .p-sidebar__heading--md {
     font-family: "Roboto", sans-serif;
     color: #707070;
-    font-size: 6vw;
+    visibility: hidden;
   }
 }
 @media screen and (min-width: 758px) {
@@ -732,13 +748,11 @@ dl, dd {
     color: #707070;
     font-size: 10vw;
   }
-
   .u-font--mainvisual {
     font-family: "Roboto", sans-serif;
     color: #fff;
     font-size: 9vw;
   }
-
   .u-font--content {
     font-family: "Roboto", sans-serif;
     font-size: 10vw;
@@ -748,10 +762,13 @@ dl, dd {
     font-size: 5vw;
     font-weight: 700;
   }
-  .u-font--sideheader {
-    font-family: "Roboto", sans-serif;
+  .u-font--side--ttl {
     color: #707070;
-    font-size: 6vw;
+    font-size: 5vw;
+  }
+  .u-font--side--list {
+    color: #707070;
+    font-size: 4vw;
   }
 }
 @media screen and (min-width: 758px) {
