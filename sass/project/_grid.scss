@@ -10,13 +10,13 @@
     grid-area: image;
   }
   .p-mainvisual--text {
-    grid-area: image;    
+    grid-area: image;
   }
 
   /*headerのグリッド配置*/
   // .p-grid--header{
   //   display: grid;
-  //   grid-template: 
+  //   grid-template:
   //   "menu"auto
   //   "header" auto
   //   "search" auto
@@ -50,7 +50,21 @@
   }
 
   /*accessのグリッド配置*/
-  .p-grid--access{
-    
+  .p-grid--access {
+    display: grid;
+    grid-template: 
+    "-------" 20px
+    "access" 100%
+    /auto;
+
+  }
+  .p-access__map {
+    grid-area: access;
+  }
+  .p-bg-display--access {
+    grid-area: access;
+  }
+  .p-access__inner {
+    grid-area: access;
   }
 }

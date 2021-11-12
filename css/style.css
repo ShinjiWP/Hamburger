@@ -511,16 +511,74 @@ dl, dd {
   .p-content__box {
     grid-area: article;
   }
+
+  /*accessのグリッド配置*/
+  .p-grid--access {
+    display: grid;
+    grid-template: "-------" 20px "access" 100%/auto;
+  }
+
+  .p-access__map {
+    grid-area: access;
+  }
+
+  .p-bg-display--access {
+    grid-area: access;
+  }
+
+  .p-access__inner {
+    grid-area: access;
+  }
 }
 @media screen and (max-width: 599px) {
-  .p-mainvisual--text {
-    padding: 5%;
+  .p-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background-color: #DED8D3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .p-header__box {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 3%;
+  }
+  .p-header__heading--lg {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .p-header {
+    text-align: center;
+    background-color: #DED8D3;
+    height: 100%;
+  }
+  .p-header__heading--lg {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-size: 8vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-header {
+    background-color: #DED8D3;
+  }
+  .p-header__heading--lg {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-size: 8vw;
   }
 }
 @media screen and (max-width: 599px) {
@@ -556,72 +614,15 @@ dl, dd {
     border-radius: 10px;
   }
 }
-/*補助的な背景を定義する*/
 @media screen and (max-width: 599px) {
-  .p-bg-display--sidebar {
-    background-color: rgba(112, 112, 112, 0.9);
+  .p-mainvisual--text {
+    padding: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    height: 100%;
-  }
-
-  .p-bg-display--access {
-    background-color: rgba(112, 112, 112, 0.9);
-    height: 50%;
-  }
-}
-@media screen and (max-width: 599px) {
-  .p-mainvisual__photo--sp {
-    width: 100%;
-  }
-  .p-mainvisual__photo--pc {
-    display: none;
-  }
-}
-@media screen and (min-width: 600px) {
-  .p-header {
-    background-color: #DED8D3;
-  }
-
-  .p-mainvisual__photo--sp {
-    display: none;
-  }
-  .p-mainvisual__photo--pc {
-    display: block;
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .p-bg-display {
-    background-color: rgba(112, 112, 112, 0.9);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    height: 100%;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .p-header {
-    background-color: #DED8D3;
-  }
-
-  .p-mainvisual__photo--sp {
-    display: none;
-  }
-  .p-mainvisual__photo--pc {
-    display: block;
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (max-width: 599px) {
@@ -721,55 +722,87 @@ dl, dd {
     font-size: 2vw;
   }
 }
+/*補助的な背景を定義する*/
 @media screen and (max-width: 599px) {
-  .p-header {
+  .p-bg-display--sidebar {
+    background-color: rgba(112, 112, 112, 0.9);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 100%;
-    background-color: #DED8D3;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
-  .p-header__box {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 3%;
+
+  .p-bg-display--access {
+    background-color: rgba(112, 112, 112, 0.5);
+    height: 50%;
   }
-  .p-header__heading--lg {
+}
+@media screen and (max-width: 599px) {
+  .p-mainvisual__photo--sp {
     width: 100%;
+  }
+  .p-mainvisual__photo--pc {
+    display: none;
   }
 }
 @media screen and (min-width: 600px) {
   .p-header {
-    text-align: center;
     background-color: #DED8D3;
-    height: 100%;
   }
-  .p-header__heading--lg {
-    font-family: "Roboto", sans-serif;
-    color: #707070;
-    font-size: 8vw;
+
+  .p-mainvisual__photo--sp {
+    display: none;
+  }
+  .p-mainvisual__photo--pc {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .p-bg-display {
+    background-color: rgba(112, 112, 112, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1080px) {
   .p-header {
     background-color: #DED8D3;
   }
-  .p-header__heading--lg {
-    font-family: "Roboto", sans-serif;
-    color: #707070;
-    font-size: 8vw;
+
+  .p-mainvisual__photo--sp {
+    display: none;
+  }
+  .p-mainvisual__photo--pc {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-access__map {
+    width: 100%;
+  }
+
+  .p-access__inner {
+    padding: 8%;
+  }
+  .p-access__inner__text {
+    width: 100%;
+    display: inline-block;
+    line-height: 2.35;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 599px) {
@@ -842,6 +875,14 @@ dl, dd {
   .u-font--side--list {
     color: #707070;
     font-size: 4vw;
+  }
+  .u-font--access-ttl {
+    font-family: "Roboto", sans-serif;
+    font-size: 7vw;
+    color: #fff;
+  }
+  .u-font--access-text {
+    color: #fff;
   }
   .u-font--footer {
     font-size: 4vw;

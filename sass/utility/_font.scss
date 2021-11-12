@@ -14,7 +14,7 @@
       color: g.$font-gray;
       font-size: 10vw;
     }
-    &--search{
+    &--search {
       font-family: g.$Robot;
       color: g.$font-gray;
       font-weight: 700;
@@ -48,6 +48,16 @@
         font-size: 4vw;
       }
     }
+
+    &--access-ttl {
+      font-family: g.$Robot;
+      font-size: 7vw;
+      color: #fff;
+    }
+    &--access-text {
+      color: #fff;
+    }
+
     &--footer {
       font-size: 4vw;
       color: #fff;

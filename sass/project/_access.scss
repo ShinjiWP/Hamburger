@@ -1,0 +1,22 @@
+@use "../global" as g;
+@include g.sp {
+  .p-access__map{
+    width: 100%;
+  }
+  .p-access__inner{
+    padding: 8% ;
+    // height: 100%;
+    &__text{
+      // height: 100%;
+      width: 100%;
+      display: inline-block;
+      // margin-top: 50px;
+      line-height: 2.35;
+      overflow: hidden;
+    }
+  }
+}
+@include g.tab {
+}
+@include g.pc {
+} 
