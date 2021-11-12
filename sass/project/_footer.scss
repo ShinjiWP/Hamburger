@@ -6,6 +6,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    &__box__info{
+      margin-bottom: 20px;
+    }
+
   }
    
 }

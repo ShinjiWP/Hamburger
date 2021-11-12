@@ -20,14 +20,14 @@
       <header class="c-grid--header">
         <div class="p-grid-header p-header">
           <!--ここにサイドメニューを表示する疑似要素を持ってくる予定-->
-          <div class="p-header__box">Menu</div>
+          <div class="p-header__box u-font--btn">Menu</div>
           <h1 class="p-header__heading--lg u-font--header">
             Hamburger
            </h1>
            <!--p-searchの疑似要素に虫眼鏡を配置する-->
           <form class="p-search p-search__form">
             <input type="search" name="search" class="p-search__form__input c-input"/>
-            <button type="submit" class="p-search__form__btn c-btn">検索</button>
+            <button type="submit" class="p-search__form__btn c-btn u-font--search">検索</button>
           </form>
           <!-- </div> -->
         </div>
@@ -77,7 +77,7 @@
         </article>
       </main>
       <div class="c-grid--sidebar">
-        <div class="p-bg-display">
+        <div class="p-bg-display--sidebar">
           <aside class="l-sidebar p-sidebar">
             <h2 class="p-sidebar__heading--md u-font--side--header">Menu</h2>
             <h3 class="p-sidebar__heading--sm u-font--side--ttl">バーガー</h3>
@@ -109,11 +109,18 @@
           </aside>
         </div>
       </div>
-      <section class="c-grid--access">map</section>
+      <section class="c-grid--access">
+        <div class="p-grid--access">
+          <img src="/image/png/map.png" alt="アクセスマップ">
+          <div class="p-bg-display--access"></div>
+          <h2 class="p-access__ttl">見出しが入ります</h2>
+          
+        </div>
+      </section>
       <footer class="c-grid--footer p-footer">
         <div class="p-footer__box">
-          <h3 class="p-footer__box__info">ショップ情報 ｜ ヒストリー</h3>
-          <small class="p-footer__box__cr">&copy; RaiseTech</small>
+          <h3 class="p-footer__box__info u-font--footer">ショップ情報 ｜ ヒストリー</h3>
+          <small class="p-footer__box__cr u-font--cr">&copy; RaiseTech</small>
         </div>
       </footer>
     </div>

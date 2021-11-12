@@ -558,7 +558,7 @@ dl, dd {
 }
 /*補助的な背景を定義する*/
 @media screen and (max-width: 599px) {
-  .p-bg-display {
+  .p-bg-display--sidebar {
     background-color: rgba(112, 112, 112, 0.9);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -567,6 +567,11 @@ dl, dd {
         -ms-flex-pack: end;
             justify-content: flex-end;
     height: 100%;
+  }
+
+  .p-bg-display--access {
+    background-color: rgba(112, 112, 112, 0.9);
+    height: 50%;
   }
 }
 @media screen and (max-width: 599px) {
@@ -731,17 +736,18 @@ dl, dd {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .p-header__box {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    padding: 3%;
   }
   .p-header__heading--lg {
-    margin-top: auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 600px) {
@@ -781,6 +787,10 @@ dl, dd {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
+  }
+  .p-footer__box__info {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -794,10 +804,22 @@ dl, dd {
   }
 }
 @media screen and (max-width: 599px) {
+  .u-font--btn {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-size: 4vw;
+    font-weight: 700;
+  }
   .u-font--header {
     font-family: "Roboto", sans-serif;
     color: #707070;
     font-size: 10vw;
+  }
+  .u-font--search {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-weight: 700;
+    font-size: 4vw;
   }
   .u-font--mainvisual {
     font-family: "Roboto", sans-serif;
@@ -820,6 +842,14 @@ dl, dd {
   .u-font--side--list {
     color: #707070;
     font-size: 4vw;
+  }
+  .u-font--footer {
+    font-size: 4vw;
+    color: #fff;
+  }
+  .u-font--cr {
+    font-size: 2vw;
+    color: #fff;
   }
 }
 @media screen and (min-width: 600px) {

@@ -2,10 +2,23 @@
 
 @include g.sp {
   .u-font {
+    &--btn {
+      font-family: g.$Robot;
+      color: g.$font-gray;
+      font-size: 4vw;
+      font-weight: 700;
+    }
+
     &--header {
       font-family: g.$Robot;
       color: g.$font-gray;
       font-size: 10vw;
+    }
+    &--search{
+      font-family: g.$Robot;
+      color: g.$font-gray;
+      font-weight: 700;
+      font-size: 4vw;
     }
 
     &--mainvisual {
@@ -34,6 +47,14 @@
         color: g.$font-gray;
         font-size: 4vw;
       }
+    }
+    &--footer {
+      font-size: 4vw;
+      color: #fff;
+    }
+    &--cr {
+      font-size: 2vw;
+      color: #fff;
     }
   }
 }
