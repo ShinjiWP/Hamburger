@@ -370,7 +370,7 @@ dl, dd {
 @media screen and (max-width: 599px) {
   .c-grid {
     display: grid;
-    grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
+    grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
   }
   .c-grid--header {
     grid-area: header;
@@ -515,7 +515,7 @@ dl, dd {
   /*accessのグリッド配置*/
   .p-grid--access {
     display: grid;
-    grid-template: "-------" 20px "access" 100%/auto;
+    grid-template: "access" auto/auto;
   }
 
   .p-access__map {
@@ -798,9 +798,24 @@ dl, dd {
   .p-access__inner {
     padding: 8%;
   }
-  .p-access__inner__text {
-    width: 100%;
+  .p-access__inner__ttl {
+    padding: 5% 0;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .p-access__inner__ttl::before {
     display: inline-block;
+    content: "";
+    width: 18vw;
+    height: 0.2vh;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .p-access__inner__text {
+    height: 55vw;
+    width: 100%;
     line-height: 2.35;
     overflow: hidden;
   }
@@ -883,6 +898,7 @@ dl, dd {
   }
   .u-font--access-text {
     color: #fff;
+    font-size: 4vw;
   }
   .u-font--footer {
     font-size: 4vw;

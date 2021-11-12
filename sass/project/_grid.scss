@@ -53,8 +53,7 @@
   .p-grid--access {
     display: grid;
     grid-template: 
-    "-------" 20px
-    "access" 100%
+    "access" auto
     /auto;
 
   }

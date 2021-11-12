@@ -1,22 +1,37 @@
 @use "../global" as g;
 @include g.sp {
-  .p-access__map{
-    width: 100%;
-  }
-  .p-access__inner{
-    padding: 8% ;
-    // height: 100%;
-    &__text{
-      // height: 100%;
-      width: 100%;
-      display: inline-block;
-      // margin-top: 50px;
-      line-height: 2.35;
-      overflow: hidden;
-    }
-  }
+	.p-access__map {
+		width: 100%;
+	}
+	.p-access__inner {
+		padding: 8%;
+		// height: 100%;
+		&__ttl {
+			padding: 5% 0;
+			position: relative;
+      margin-bottom: 20px;
+			&::before {
+				display: inline-block;
+				content: "";
+				width: 18vw;
+				height: 0.2vh;
+				background: #fff;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+		}
+		&__text {
+			height: 55vw;
+			width: 100%;
+			// margin-top: 50px;
+			line-height: 2.35;
+			overflow: hidden;
+		}
+	}
 }
 @include g.tab {
 }
 @include g.pc {
-} 
+}
+
