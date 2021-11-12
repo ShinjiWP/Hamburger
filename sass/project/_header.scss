@@ -2,10 +2,16 @@
 
 @include g.sp {
   .p-header {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 10% 5%;
+    // padding: 5% 5%;
     height: 100%;
     background-color: g.$bgc-beige;
+    justify-content: center;
+    &__heading--lg{
+      margin: 5% 0;
+    }
   }
 }
 @include g.tab {

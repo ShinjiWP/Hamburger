@@ -1,10 +1,13 @@
 @use "../global" as g;
 
 @include g.sp {
- 
-  .p-footer__box {
-    text-align: center;
+  .p-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+   
 }
 
 @include g.tab {

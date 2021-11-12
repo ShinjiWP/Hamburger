@@ -2,7 +2,6 @@
 
 @include g.sp {
   .p-search {
-    padding: 10% 0;
     &::before {
       font-family: "Font Awesome 5 Free";
       content: "\f002";
@@ -13,12 +12,14 @@
     &__form {
       &__input{
         width: 65vw;
-        height: 15vw;
-        border-radius: 10px;        
+        height: 100%;
+        border-radius: 10px; 
+        font-size: 5vw; 
+        vertical-align: bottom;
       }
       &__btn{
         width: 18vw;
-        height: 10vh;
+        height: 100%;
         border-radius: 10px;
       }
     }

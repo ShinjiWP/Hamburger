@@ -9,10 +9,20 @@
     grid-area: image;
   }
   .p-mainvisual--text {
-    grid-area: image;
-    display: flex;
-    align-items: center;
+    grid-area: image;    
   }
+
+  .p-grid--header{
+    display: grid;
+    grid-template: "header" auto/auto;
+  }
+  .p-header__heading--lg{
+    grid-area: header;
+  }
+  .p-search{
+    grid-area: header;
+  }
+
 
   .p-grid--article {
     display: grid;
