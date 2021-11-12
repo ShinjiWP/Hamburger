@@ -1,6 +1,7 @@
 @use "../global" as g;
 
 @include g.sp {
+  /*mainvisualのグリッド配置*/
   .p-grid--mainvisual {
     display: grid;
     grid-template: "image" auto/auto;
@@ -12,17 +13,23 @@
     grid-area: image;    
   }
 
-  .p-grid--header{
-    display: grid;
-    grid-template: "header" auto/auto;
-  }
-  .p-header__heading--lg{
-    grid-area: header;
-  }
-  .p-search{
-    grid-area: header;
-  }
+  /*headerのグリッド配置*/
+  // .p-grid--header{
+  //   display: grid;
+  //   grid-template: 
+  //   "menu"auto
+  //   "header" auto
+  //   "search" auto
+  //   /auto;
+  // }
+  // .p-header__heading--lg{
+  //   grid-area: header;
+  // }
+  // .p-search{
+  //   grid-area: search;
+  // }
 
+  /*articleのグリッド配置*/
 
   .p-grid--article {
     display: grid;

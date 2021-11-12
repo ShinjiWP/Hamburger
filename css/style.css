@@ -478,6 +478,7 @@ dl, dd {
   }
 }
 @media screen and (max-width: 599px) {
+  /*mainvisualのグリッド配置*/
   .p-grid--mainvisual {
     display: grid;
     grid-template: "image" auto/auto;
@@ -491,19 +492,8 @@ dl, dd {
     grid-area: image;
   }
 
-  .p-grid--header {
-    display: grid;
-    grid-template: "header" auto/auto;
-  }
-
-  .p-header__heading--lg {
-    grid-area: header;
-  }
-
-  .p-search {
-    grid-area: header;
-  }
-
+  /*headerのグリッド配置*/
+  /*articleのグリッド配置*/
   .p-grid--article {
     display: grid;
     grid-template: "article" auto/auto;
@@ -534,12 +524,24 @@ dl, dd {
   }
 }
 @media screen and (max-width: 599px) {
+  .p-search {
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+  }
   .p-search::before {
+    display: block;
     font-family: "Font Awesome 5 Free";
     content: "";
     font-weight: 700;
     color: #707070;
-    width: 10%;
+    font-size: 5vw;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -2.5vw;
   }
   .p-search__form__input {
     width: 65vw;
@@ -730,8 +732,16 @@ dl, dd {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .p-header__box {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
   .p-header__heading--lg {
-    margin: 5% 0;
+    margin-top: auto;
   }
 }
 @media screen and (min-width: 600px) {
