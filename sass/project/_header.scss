@@ -1,54 +1,59 @@
 @use "../global" as g;
 
 @include g.sp {
-  .p-header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    // padding: 5% 5%;
-    height: 100%;
-    background-color: g.$bgc-beige;
-    justify-content: center;
-    align-items: flex-end;
+	.p-header {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		// padding: 5% 5%;
+		height: 100%;
+		background-color: g.$bgc-beige;
+		justify-content: center;
+		align-items: flex-end;
 
-    &__box{
-      width: fit-content;
-      padding: 3%;
-    }
+		&__box {
+			width: fit-content;
+			padding: 3%;
+		}
 
-    
-    &__heading--lg{
-      
-      width: 100%;
-    }
-  }
+		&__heading--lg {
+			width: 100%;
+		}
+	}
 }
 @include g.tab {
-  .p-header {
-    text-align: center;
-    background-color: g.$bgc-beige;
+	.p-header {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		// padding: 5% 5%;
+		height: 100%;
+		background-color: g.$bgc-beige;
+		justify-content: center;
+		align-items: flex-end;
 
-    height: 100%;
-    &__heading {
-      &--lg {
-        font-family: g.$Robot;
-        color: g.$font-gray;
-        font-size: 8vw;
-      }
-    }
-  }
+		&__box {
+			width: fit-content;
+			padding: 3%;
+		}
+
+		&__heading--lg {
+			width: 100%;
+		}
+	}
 }
-@include g.pc {
-  .p-header {
-    background-color: g.$bgc-beige;
 
-    // text-align: center;
-    &__heading {
-      &--lg {
-        font-family: g.$Robot;
-        color: g.$font-gray;
-        font-size: 8vw;
-      }
-    }
-  }
+@include g.pc {
+	.p-header {
+		background-color: g.$bgc-beige;
+
+		// text-align: center;
+		&__heading {
+			&--lg {
+				font-family: g.$Robot;
+				color: g.$font-gray;
+				font-size: 8vw;
+			}
+		}
+	}
 }

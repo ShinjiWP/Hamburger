@@ -13,22 +13,7 @@
     grid-area: image;
   }
 
-  /*headerのグリッド配置*/
-  // .p-grid--header{
-  //   display: grid;
-  //   grid-template:
-  //   "menu"auto
-  //   "header" auto
-  //   "search" auto
-  //   /auto;
-  // }
-  // .p-header__heading--lg{
-  //   grid-area: header;
-  // }
-  // .p-search{
-  //   grid-area: search;
-  // }
-
+ 
   /*articleのグリッド配置*/
 
   .p-grid--article {
@@ -55,7 +40,57 @@
     grid-template: 
     "access" auto
     /auto;
+  }
+  .p-access__map {
+    grid-area: access;
+  }
+  .p-bg-display--access {
+    grid-area: access;
+  }
+  .p-access__inner {
+    grid-area: access;
+  }
+}
+@include g.tab {
+  /*mainvisualのグリッド配置*/
+  .p-grid--mainvisual {
+    display: grid;
+    grid-template: "image" auto/auto;
+  }
+  .p-mainvisual--photo {
+    grid-area: image;
+  }
+  .p-mainvisual--text {
+    grid-area: image;
+  }
 
+ 
+  /*articleのグリッド配置*/
+
+  .p-grid--article {
+    display: grid;
+    grid-template: "article" auto/auto;
+    padding: 5% 5% 0% 5%;
+  }
+  .p-content__image {
+    grid-area: article;
+    // display: block;
+  }
+  .p-content__header {
+    grid-area: article;
+    // display: block;
+  }
+  .p-content__box {
+    grid-area: article;
+    // display: block;
+  }
+
+  /*accessのグリッド配置*/
+  .p-grid--access {
+    display: grid;
+    grid-template: 
+    "access" auto
+    /auto;
   }
   .p-access__map {
     grid-area: access;

@@ -1,12 +1,22 @@
 @use "../global" as g;
 @include g.sp {
-  .p-mainvisual--text{
-    padding:  5%;
-    display: flex;
-    align-items: center;
-  }
+	.p-mainvisual--text {
+		padding: 5%;
+		display: flex;
+		align-items: center;
+	}
 }
 @include g.tab {
+	.p-mainvisual--text {
+		padding: 5%;
+		display: flex;
+		align-items: center;
+	}
 }
 @include g.pc {
+	.p-mainvisual--text {
+		padding: 5%;
+		display: flex;
+		align-items: center;
+	}
 } ;

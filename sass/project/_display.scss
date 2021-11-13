@@ -12,41 +12,38 @@
     background-color: rgba(112, 112, 112, 0.5);    
     height: 50%;
   }
-}
-
-@include g.sp {
   .p-mainvisual__photo {
     &--sp {
       width: 100%;
     }
-
+  
     &--pc {
       display: none;
     }
   }
 }
+
+
 
 @include g.tab {
-  .p-header {
-    background-color: g.$bgc-beige;
-  }
-  .p-mainvisual__photo {
-    &--sp {
-      display: none;
-    }
-    &--pc {
-      display: block;
-      object-fit: cover;
-      width: 100%;
-      // height: 30%;
-      object-fit: cover;
-    }
-  }
-  .p-bg-display {
+   .p-bg-display--sidebar {
     background-color: rgba(112, 112, 112, 0.9);
     display: flex;
     justify-content: flex-end;
     height: 100%;
+  }
+  .p-bg-display--access {
+    background-color: rgba(112, 112, 112, 0.5);    
+    height: 50%;
+  }
+  .p-mainvisual__photo {
+    &--sp {
+      width: 100%;
+    }
+  
+    &--pc {
+      display: none;
+    }
   }
 }
 

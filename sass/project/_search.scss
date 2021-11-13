@@ -34,3 +34,37 @@
     }
   }
 }
+@include g.tab {
+  .p-search {
+    margin: auto;
+    width: fit-content;
+    position: relative;
+    &::before {
+      display: block;
+      font-family: "Font Awesome 5 Free";
+      content: "\f002";
+      font-weight: 700;
+      color: g.$font-gray;
+      font-size: 5vw;
+      // width: 15%;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      margin-top:-2.5vw ;
+    }
+    &__form {
+      &__input {
+        width: 65vw;
+        height: 100%;
+        border-radius: 10px;
+        font-size: 5vw;
+        vertical-align: bottom;
+      }
+      &__btn {
+        width: 18vw;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
