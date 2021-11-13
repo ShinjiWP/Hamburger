@@ -5,8 +5,27 @@
 		display: flex;
 		align-items: center;
 	}
+	.p-mainvisual__photo {
+		&--sp {
+			width: 100%;
+		}
+
+		&--pc {
+			display: none;
+		}
+	}
 }
 @include g.tab {
+	.p-mainvisual__photo--sp {
+		display: none;
+	}
+	.p-mainvisual__photo--pc {
+		width: 100%;
+		// height: 300px;
+		// object-fit: cover;
+		// object-position: bottom;
+	}
+
 	.p-mainvisual--text {
 		padding: 5%;
 		display: flex;

@@ -367,7 +367,7 @@ dl, dd {
   margin: 0;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   .c-grid {
     display: grid;
     grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
@@ -403,9 +403,8 @@ dl, dd {
 }
 @media screen and (min-width: 600px) {
   .c-grid {
-    min-height: 100vh;
     display: grid;
-    grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
+    grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
   }
   .c-grid--header {
     grid-area: header;
@@ -419,6 +418,9 @@ dl, dd {
   .c-grid--contents {
     grid-area: main;
     background-color: #d4f1f8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .c-grid--sidebar {
     grid-area: sidebar;
@@ -472,7 +474,7 @@ dl, dd {
     background-color: #96806B;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   /*mainvisualのグリッド配置*/
   .p-grid--mainvisual {
     display: grid;
@@ -576,7 +578,7 @@ dl, dd {
     grid-area: access;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   .p-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -628,7 +630,7 @@ dl, dd {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    padding: 3%;
+    padding: 3% 3% 0 3%;
   }
   .p-header__heading--lg {
     width: 100%;
@@ -644,7 +646,7 @@ dl, dd {
     font-size: 8vw;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   .p-search {
     margin: auto;
     width: -webkit-fit-content;
@@ -669,12 +671,14 @@ dl, dd {
     height: 100%;
     border-radius: 10px;
     font-size: 5vw;
+    border: 3px solid #707070;
     vertical-align: bottom;
   }
   .p-search__form__btn {
     width: 18vw;
     height: 100%;
     border-radius: 10px;
+    border: 3px solid #707070;
   }
 }
 @media screen and (min-width: 600px) {
@@ -691,26 +695,29 @@ dl, dd {
     content: "";
     font-weight: 700;
     color: #707070;
-    font-size: 5vw;
+    font-size: 3vw;
     position: absolute;
     left: 10px;
     top: 50%;
-    margin-top: -2.5vw;
+    margin-top: -1.5vw;
   }
   .p-search__form__input {
     width: 65vw;
-    height: 100%;
+    height: 6vw;
+    max-height: 100px;
     border-radius: 10px;
     font-size: 5vw;
+    border: 3px solid #707070;
     vertical-align: bottom;
   }
   .p-search__form__btn {
     width: 18vw;
-    height: 100%;
+    height: 6vw;
     border-radius: 10px;
+    border: 3px solid #707070;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   .p-mainvisual--text {
     padding: 5%;
     display: -webkit-box;
@@ -720,8 +727,23 @@ dl, dd {
         -ms-flex-align: center;
             align-items: center;
   }
+
+  .p-mainvisual__photo--sp {
+    width: 100%;
+  }
+  .p-mainvisual__photo--pc {
+    display: none;
+  }
 }
 @media screen and (min-width: 600px) {
+  .p-mainvisual__photo--sp {
+    display: none;
+  }
+
+  .p-mainvisual__photo--pc {
+    width: 100%;
+  }
+
   .p-mainvisual--text {
     padding: 5%;
     display: -webkit-box;
@@ -743,7 +765,7 @@ dl, dd {
             align-items: center;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   .p-content__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -782,11 +804,12 @@ dl, dd {
     margin: 5% 0;
   }
   .p-content__inner__text {
-    height: 11vh;
+    height: 90px;
     width: 100%;
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 1.43;
     /*どうやって文章をうまく隠すか要検討*/
   }
 }
@@ -837,7 +860,7 @@ dl, dd {
     /*どうやって文章をうまく隠すか要検討*/
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   .p-sidebar {
     width: 86%;
     background-color: #F2EDE9;
@@ -881,7 +904,7 @@ dl, dd {
   }
 }
 /*補助的な背景を定義する*/
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   .p-bg-display--sidebar {
     background-color: rgba(112, 112, 112, 0.9);
     display: -webkit-box;
@@ -896,13 +919,6 @@ dl, dd {
   .p-bg-display--access {
     background-color: rgba(112, 112, 112, 0.5);
     height: 50%;
-  }
-
-  .p-mainvisual__photo--sp {
-    width: 100%;
-  }
-  .p-mainvisual__photo--pc {
-    display: none;
   }
 }
 @media screen and (min-width: 600px) {
@@ -920,13 +936,6 @@ dl, dd {
   .p-bg-display--access {
     background-color: rgba(112, 112, 112, 0.5);
     height: 50%;
-  }
-
-  .p-mainvisual__photo--sp {
-    width: 100%;
-  }
-  .p-mainvisual__photo--pc {
-    display: none;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -944,7 +953,7 @@ dl, dd {
     width: 100%;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   .p-access__map {
     width: 100%;
   }
@@ -1004,7 +1013,7 @@ dl, dd {
     overflow: hidden;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   .p-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1067,7 +1076,7 @@ dl, dd {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599.9px) {
   .u-font--btn {
     font-family: "Roboto", sans-serif;
     color: #707070;
@@ -1129,24 +1138,24 @@ dl, dd {
   .u-font--btn {
     font-family: "Roboto", sans-serif;
     color: #707070;
-    font-size: 4vw;
+    font-size: min(3vw, 25px);
     font-weight: 700;
   }
   .u-font--header {
     font-family: "Roboto", sans-serif;
     color: #707070;
-    font-size: 10vw;
+    font-size: min(8vw, 60px);
   }
   .u-font--search {
     font-family: "Roboto", sans-serif;
     color: #707070;
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .u-font--mainvisual {
     font-family: "Roboto", sans-serif;
     color: #fff;
-    font-size: 9vw;
+    font-size: 5vw;
   }
   .u-font--content {
     font-family: "Roboto", sans-serif;

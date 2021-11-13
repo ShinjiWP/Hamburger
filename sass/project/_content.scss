@@ -33,11 +33,12 @@
         margin: 5% 0;
       }
       &__text {
-        height: 11vh;
+        height: 90px;
         width: 100%;
         display: inline-block;
         overflow: hidden;
         text-overflow: ellipsis;
+        line-height: 1.43;
         /*どうやって文章をうまく隠すか要検討*/
       }
     }
