@@ -1,56 +1,61 @@
 @use "../global" as g;
 
 @include g.sp {
-  .p-sidebar {
-    width: 86%;
-    background-color: g.$light-beige;
-    height: 100%;
-    padding: 20% 15%;
-    &__menu{
-      padding: 10% 5%;
-      &__list{
-        margin: 10% 0;
-      }
-    }
-    &__heading {
-      &--md {
-        font-family: g.$Robot;
-        color: g.$font-gray;        
-        visibility: hidden;
-      }
-      &--sm{
-        
-      }
-    }
-  }
+	.p-sidebar {
+		width: 86%;
+		background-color: g.$light-beige;
+		height: 100%;
+		padding: 20% 15%;
+		&__menu {
+			padding: 10% 5%;
+			&__list {
+				margin: 10% 0;
+			}
+		}
+		&__heading {
+			&--md {
+				font-family: g.$Robot;
+				color: g.$font-gray;
+				visibility: hidden;
+			}
+		}
+	}
 }
 
 @include g.tab {
-  .p-sidebar {
-    width: 43%;
-    background-color: g.$light-beige;
-    height: 100%;
-    &__heading {
-      &--md {
-        font-family: g.$Robot;
-        color: g.$font-gray;
-        font-size: 4vw;
-      }
-    }
-  }
+	.p-sidebar {
+		width: 43%;
+		background-color: g.$light-beige;
+		height: 100%;
+		padding: 10% 5%;
+		
+		&__menu {
+			padding: 5% 2.5%;
+			&__list {
+				margin: 5% 0;
+			}
+		}
+		&__heading {
+			&--md {
+				font-family: g.$Robot;
+				color: g.$font-gray;
+				visibility: hidden;
+			}
+		}
+	}
 }
 
 @include g.pc {
-  .p-sidebar {
-    width: 100%;
-    background-color: g.$light-beige;
-    height: 100%;
-    &__heading {
-      &--md {
-        font-family: g.$Robot;
-        color: g.$font-gray;
-        font-size: 2vw;
-      }
-    }
-  }
+	.p-sidebar {
+		width: 100%;
+		background-color: g.$light-beige;
+		height: 100%;
+		&__heading {
+			&--md {
+				font-family: g.$Robot;
+				color: g.$font-gray;
+				font-size: 2vw;
+			}
+		}
+	}
 }

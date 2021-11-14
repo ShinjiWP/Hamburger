@@ -518,6 +518,10 @@ dl, dd {
     grid-area: access;
   }
 
+  .p-access__map--tab {
+    grid-area: access;
+  }
+
   .p-bg-display--access {
     grid-area: access;
   }
@@ -567,6 +571,10 @@ dl, dd {
   }
 
   .p-access__map--sp {
+    grid-area: access;
+  }
+
+  .p-access__map--tab {
     grid-area: access;
   }
 
@@ -883,11 +891,18 @@ dl, dd {
     width: 43%;
     background-color: #F2EDE9;
     height: 100%;
+    padding: 10% 5%;
+  }
+  .p-sidebar__menu {
+    padding: 5% 2.5%;
+  }
+  .p-sidebar__menu__list {
+    margin: 5% 0;
   }
   .p-sidebar__heading--md {
     font-family: "Roboto", sans-serif;
     color: #707070;
-    font-size: 4vw;
+    visibility: hidden;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -934,7 +949,7 @@ dl, dd {
 
   .p-bg-display--access {
     background-color: rgba(112, 112, 112, 0.5);
-    height: 50%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -955,6 +970,10 @@ dl, dd {
 @media screen and (max-width: 599.9px) {
   .p-access__map--sp {
     width: 100%;
+  }
+
+  .p-access__map--tab {
+    display: none;
   }
 
   .p-access__inner {
@@ -983,7 +1002,11 @@ dl, dd {
   }
 }
 @media screen and (min-width: 600px) {
-  .p-access__map {
+  .p-access__map--sp {
+    display: none;
+  }
+
+  .p-access__map--tab {
     width: 100%;
   }
 
