@@ -164,15 +164,15 @@
 		&--mainvisual {
 			font-family: g.$Robot;
 			color: #fff;
-			font-size: 5vw;
+			font-size: 2.5vw;
 		}
 		&--content {
 			font-family: g.$Robot;
-			font-size: 5vw;
+			font-size: 2.5vw;
 			color: #fff;
 
 			&-ttl {
-				font-size: 2.5vw;
+				font-size: 1.25vw;
 				font-weight: 700;
 			}
 			&-text {
@@ -181,22 +181,22 @@
 		&--side {
 			&--ttl {
 				color: g.$font-gray;
-				font-size: 2.5vw;
+				font-size: 1.25vw;
 			}
 			&--list {
 				color: g.$font-gray;
-				font-size: 2vw;
+				font-size: 1vw;
 			}
 		}
 
 		&--access-ttl {
 			font-family: g.$Robot;
-			font-size: 3.5vw;
+			font-size: 1.75vw;
 			color: #fff;
 		}
 		&--access-text {
 			color: #fff;
-			font-size: 2vw;
+			font-size: 1vw;
 		}
 
 		&--footer {

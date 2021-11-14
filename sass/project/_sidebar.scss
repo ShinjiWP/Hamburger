@@ -101,16 +101,52 @@
 	}
 }
 
-@include g.pc {
+@include g.tab {
 	.p-sidebar {
-		width: 100%;
+		width: 43%;
 		background-color: g.$light-beige;
 		height: 100%;
+		padding: 10% 5%;
+    position: relative;
+
+		&__x {
+			display: block;
+			position: absolute;
+			width: 45px;
+			height: 45px;
+      top: 20px;
+      right: 20px;
+
+		}
+
+		&__x::before,
+		&__x::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 5px;
+			height: 30px;
+			background: #333;
+		}
+		&__x::before {
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+		&__x::after {
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+
+		&__menu {
+			padding: 5% 2.5%;
+			&__list {
+				margin: 5% 0;
+			}
+		}
 		&__heading {
 			&--md {
 				font-family: g.$Robot;
 				color: g.$font-gray;
-				font-size: 2vw;
+				visibility: hidden;
 			}
 		}
 	}
