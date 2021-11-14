@@ -1,132 +1,135 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="RaiseTechハンバーガーサイトの模写になります。" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HamburgerSite</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="icon" type="img.ico" href="../img/favicon.ico" />
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-    <script src="./jquery-3.6.0.min.js"></script>
-    <script src="自分で作ったjQueryを読み込む"></script>
-  </head>
-  <body>
-    <div class="c-grid">
-      <header class="c-grid--header">
-        <div class="p-grid-header p-header">
-          <!--ここにサイドメニューを表示する疑似要素を持ってくる予定-->
-          <div class="p-header__box u-font--btn">Menu</div>
-          <h1 class="p-header__heading--lg u-font--header">
-            Hamburger
-           </h1>
-           <!--p-searchの疑似要素に虫眼鏡を配置する-->
-          <form class="p-search p-search__form">
-            <input type="search" name="search" class="p-search__form__input c-input"/>
-            <button type="submit" class="p-search__form__btn c-btn u-font--search">検索</button>
-          </form>
-          <!-- </div> -->
-        </div>
-      </header>
-      <figure class="c-grid--mainvisual">
-        <div class="p-grid--mainvisual">
-          <div class="p-mainvisual--photo">
-            <img class="p-mainvisual__photo--sp" src="/image/png/top-image-1.png" alt="ダミーサイト" />
-            <img class="p-mainvisual__photo--pc" src="/image/png/top-image-2@2x.png" alt="ダミーサイト" />
-          </div>
-          <div class="p-mainvisual--text">
-            <h2 class="p-mainvisual__heading--md u-font--mainvisual">ダミーサイト</h2>
-          </div>
-        </div>
-      </figure>
-      <main class="c-grid--contents">
-        <article class="p-grid--article">
-          <img class="p-content__image" src="/image/png/main-visual-1_sp.png" alt="" />
-          <h2 class="p-content__header u-font--content">Take Out</h2>
-          <div class="p-content__box">
-            <dl class="p-content__inner">
-              <dt class="p-content__inner__ttl u-font--content-ttl">Take OUT</dt>
-              <dd class="p-content__inner__text u-font--content-text">
-                当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl>
-            <dl class="p-content__inner">
-              <dt class="p-content__inner__ttl u-font--content-ttl">Take OUT</dt>
-              <dd class="p-content__inner__text u-font--content-text">
-               当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl>
-          </div>
-        </article>
-        <article class="p-grid--article">
-          <img class="p-content__image" src="/image/png/main-visual-2_sp.png" alt="" />
-          <h2 class="p-content__header u-font--content">Eat In</h2>
-          <div class="p-content__box">
-            <dl class="p-content__inner">
-              <dt class="p-content__inner__ttl u-font--content-ttl">Take OUT</dt>
-              <dd class="p-content__inner__text u-font--content-text">
-                当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl>
-            <dl class="p-content__inner">
-              <dt class="p-content__inner__ttl u-font--content-ttl">Take OUT</dt>
-              <dd class="p-content__inner__text u-font--content-text">
-                当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl>
-          </div>
-        </article>
-      </main>
-      <div class="c-grid--sidebar">
-        <div class="p-bg-display--sidebar">
-          <aside class="l-sidebar p-sidebar">
-            <h2 class="p-sidebar__heading--md u-font--side--header">Menu</h2>
-            <h3 class="p-sidebar__heading--sm u-font--side--ttl">バーガー</h3>
-            <ul class="p-sidebar__menu">
-              <li class="p-sidebar__menu__list u-font--side--list">ハンバーガー</li>
-              <li class="p-sidebar__menu__list u-font--side--list">チーズバーガー</li>
-              <li class="p-sidebar__menu__list u-font--side--list">テリヤキバーガー</li>
-              <li class="p-sidebar__menu__list u-font--side--list">アボカドバーガー</li>
-              <li class="p-sidebar__menu__list u-font--side--list">フィッシュバーガー</li>
-              <li class="p-sidebar__menu__list u-font--side--list">ベーコンバーガー</li>
-              <li class="p-sidebar__menu__list u-font--side--list">チキンバーガー</li>
-            </ul>
-            <h3 class="p-sidebar__heading--sm u-font--side--ttl">サイド</h3>
-            <ul class="p-sidebar__menu">
-              <li class="p-sidebar__menu__list u-font--side--list">ポテト</li>
-              <li class="p-sidebar__menu__list u-font--side--list">サラダ</li>
-              <li class="p-sidebar__menu__list u-font--side--list">ナゲット</li>
-              <li class="p-sidebar__menu__list u-font--side--list">コーン</li>
-            </ul>
-            <h3 class="p-sidebar__heading--sm u-font--side--ttl">ドリンク</h3>
-            <ul class="p-sidebar__menu">
-              <li class="p-sidebar__menu__list u-font--side--list">コーラ</li>
-              <li class="p-sidebar__menu__list u-font--side--list">ファンタ</li>
-              <li class="p-sidebar__menu__list u-font--side--list">オレンジ</li>
-              <li class="p-sidebar__menu__list u-font--side--list">アップル</li>
-              <li class="p-sidebar__menu__list u-font--side--list">紅茶（Ice ＆Hot）</li>
-              <li class="p-sidebar__menu__list u-font--side--list">コーヒー（Ice ＆Hot）</li>
-            </ul>
-          </aside>
-        </div>
-      </div>
-      <section class="c-grid--access">
-        <div class="p-grid--access">
-          <img class="p-access__map" src="/image/png/map.png" alt="アクセスマップ">
-          <div class="p-bg-display--access"></div>
-          <dl class="p-access__inner">
-            <dt class="p-access__inner__ttl u-font--access-ttl">見出しが入ります</dt>
-            <dd class="p-access__inner__text u-font--access-text">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
-          </dl>
-        </div>
-      </section>
-      <footer class="c-grid--footer p-footer">
-        <div class="p-footer__box">
-          <h3 class="p-footer__box__info u-font--footer">ショップ情報 ｜ ヒストリー</h3>
-          <small class="p-footer__box__cr u-font--cr">&copy; RaiseTech</small>
-        </div>
-      </footer>
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="RaiseTechハンバーガーサイトの模写になります。" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HamburgerSite</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link rel="icon" type="img.ico" href="../img/favicon.ico" />
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+		<script src="./jquery-3.6.0.min.js"></script>
+		<script src="自分で作ったjQueryを読み込む"></script>
+	</head>
+	<body>
+		<div class="c-grid">
+			<header class="c-grid--header">
+				<div class="p-grid-header p-header">
+					<!--ここにサイドメニューを表示する疑似要素を持ってくる予定-->
+					<div class="p-header__box u-font--btn">Menu</div>
+					<h1 class="p-header__heading--lg u-font--header">Hamburger</h1>
+					<!--p-searchの疑似要素に虫眼鏡を配置する-->
+					<form class="p-search p-search__form">
+						<input type="search" name="search" class="p-search__form__input c-input" />
+						<button type="submit" class="p-search__form__btn c-btn u-font--search">検索</button>
+					</form>
+					<!-- </div> -->
+				</div>
+			</header>
+			<figure class="c-grid--mainvisual">
+				<div class="p-grid--mainvisual">
+					<div class="p-mainvisual--photo">
+						<img class="p-mainvisual__photo--sp" src="/image/png/top-image-1.png" alt="ダミーサイト" />
+						<img class="p-mainvisual__photo--pc" src="/image/png/top-image-2@2x.png" alt="ダミーサイト" />
+					</div>
+					<div class="p-mainvisual--text">
+						<h2 class="p-mainvisual__heading--md u-font--mainvisual">ダミーサイト</h2>
+					</div>
+				</div>
+			</figure>
+			<main class="c-grid--contents">
+				<article class="p-grid--article">
+					<img class="p-content__image" src="/image/png/main-visual-1_sp.png" alt="" />
+					<h2 class="p-content__header u-font--content">Take Out</h2>
+					<div class="p-content__box">
+						<dl class="p-content__inner">
+							<dt class="p-content__inner__ttl u-font--content-ttl">Take OUT</dt>
+							<dd class="p-content__inner__text u-font--content-text">
+								当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています
+							</dd>
+						</dl>
+						<dl class="p-content__inner">
+							<dt class="p-content__inner__ttl u-font--content-ttl">Take OUT</dt>
+							<dd class="p-content__inner__text u-font--content-text">
+								当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています
+							</dd>
+						</dl>
+					</div>
+				</article>
+				<article class="p-grid--article">
+					<img class="p-content__image" src="/image/png/main-visual-2_sp.png" alt="" />
+					<h2 class="p-content__header u-font--content">Eat In</h2>
+					<div class="p-content__box">
+						<dl class="p-content__inner">
+							<dt class="p-content__inner__ttl u-font--content-ttl">Take OUT</dt>
+							<dd class="p-content__inner__text u-font--content-text">
+								当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています
+							</dd>
+						</dl>
+						<dl class="p-content__inner">
+							<dt class="p-content__inner__ttl u-font--content-ttl">Take OUT</dt>
+							<dd class="p-content__inner__text u-font--content-text">
+								当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています
+							</dd>
+						</dl>
+					</div>
+				</article>
+			</main>
+			<div class="c-grid--sidebar">
+				<div class="p-bg-display--sidebar">
+					<aside class="l-sidebar p-sidebar">
+						<h2 class="p-sidebar__heading--md u-font--side--header">Menu</h2>
+						<h3 class="p-sidebar__heading--sm u-font--side--ttl">バーガー</h3>
+						<ul class="p-sidebar__menu">
+							<li class="p-sidebar__menu__list u-font--side--list">ハンバーガー</li>
+							<li class="p-sidebar__menu__list u-font--side--list">チーズバーガー</li>
+							<li class="p-sidebar__menu__list u-font--side--list">テリヤキバーガー</li>
+							<li class="p-sidebar__menu__list u-font--side--list">アボカドバーガー</li>
+							<li class="p-sidebar__menu__list u-font--side--list">フィッシュバーガー</li>
+							<li class="p-sidebar__menu__list u-font--side--list">ベーコンバーガー</li>
+							<li class="p-sidebar__menu__list u-font--side--list">チキンバーガー</li>
+						</ul>
+						<h3 class="p-sidebar__heading--sm u-font--side--ttl">サイド</h3>
+						<ul class="p-sidebar__menu">
+							<li class="p-sidebar__menu__list u-font--side--list">ポテト</li>
+							<li class="p-sidebar__menu__list u-font--side--list">サラダ</li>
+							<li class="p-sidebar__menu__list u-font--side--list">ナゲット</li>
+							<li class="p-sidebar__menu__list u-font--side--list">コーン</li>
+						</ul>
+						<h3 class="p-sidebar__heading--sm u-font--side--ttl">ドリンク</h3>
+						<ul class="p-sidebar__menu">
+							<li class="p-sidebar__menu__list u-font--side--list">コーラ</li>
+							<li class="p-sidebar__menu__list u-font--side--list">ファンタ</li>
+							<li class="p-sidebar__menu__list u-font--side--list">オレンジ</li>
+							<li class="p-sidebar__menu__list u-font--side--list">アップル</li>
+							<li class="p-sidebar__menu__list u-font--side--list">紅茶（Ice ＆Hot）</li>
+							<li class="p-sidebar__menu__list u-font--side--list">コーヒー（Ice ＆Hot）</li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+			<section class="c-grid--access">
+				<div class="p-grid--access">
+					<img class="p-access__map--sp" src="/image/png/map.png" alt="アクセスマップ" />
+					<div class="p-bg-display--access"></div>
+					<dl class="p-access__inner">
+						<dt class="p-access__inner__ttl u-font--access-ttl">見出しが入ります</dt>
+						<dd class="p-access__inner__text u-font--access-text">
+							テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<footer class="c-grid--footer p-footer">
+				<div class="p-footer__box">
+					<h3 class="p-footer__box__info u-font--footer">ショップ情報 ｜ ヒストリー</h3>
+					<small class="p-footer__box__cr u-font--cr">&copy; RaiseTech</small>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>

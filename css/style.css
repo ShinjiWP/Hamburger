@@ -514,7 +514,7 @@ dl, dd {
     grid-template: "access" auto/auto;
   }
 
-  .p-access__map {
+  .p-access__map--sp {
     grid-area: access;
   }
 
@@ -545,7 +545,7 @@ dl, dd {
   .p-grid--article {
     display: grid;
     grid-template: "article" auto/auto;
-    padding: 5% 5% 0% 5%;
+    padding: 2.5% 2.5% 0% 2.5%;
   }
 
   .p-content__image {
@@ -566,7 +566,7 @@ dl, dd {
     grid-template: "access" auto/auto;
   }
 
-  .p-access__map {
+  .p-access__map--sp {
     grid-area: access;
   }
 
@@ -703,8 +703,7 @@ dl, dd {
   }
   .p-search__form__input {
     width: 65vw;
-    height: 6vw;
-    max-height: 100px;
+    height: min(6vw, 50px);
     border-radius: 10px;
     font-size: 5vw;
     border: 3px solid #707070;
@@ -712,7 +711,7 @@ dl, dd {
   }
   .p-search__form__btn {
     width: 18vw;
-    height: 6vw;
+    height: min(6vw, 50px);
     border-radius: 10px;
     border: 3px solid #707070;
   }
@@ -836,8 +835,8 @@ dl, dd {
   .p-content__header::before {
     display: inline-block;
     content: "";
-    width: 9vw;
-    height: 0.7vh;
+    width: 4.5vw;
+    height: 0.35vh;
     background: #fff;
     position: absolute;
     left: 5%;
@@ -954,7 +953,7 @@ dl, dd {
   }
 }
 @media screen and (max-width: 599.9px) {
-  .p-access__map {
+  .p-access__map--sp {
     width: 100%;
   }
 
@@ -1159,36 +1158,36 @@ dl, dd {
   }
   .u-font--content {
     font-family: "Roboto", sans-serif;
-    font-size: 10vw;
+    font-size: 5vw;
     color: #fff;
   }
   .u-font--content-ttl {
-    font-size: 5vw;
+    font-size: 2.5vw;
     font-weight: 700;
   }
   .u-font--side--ttl {
     color: #707070;
-    font-size: 5vw;
+    font-size: 2.5vw;
   }
   .u-font--side--list {
     color: #707070;
-    font-size: 4vw;
+    font-size: 2vw;
   }
   .u-font--access-ttl {
     font-family: "Roboto", sans-serif;
-    font-size: 7vw;
+    font-size: 3.5vw;
     color: #fff;
   }
   .u-font--access-text {
     color: #fff;
-    font-size: 4vw;
+    font-size: 2vw;
   }
   .u-font--footer {
-    font-size: 4vw;
+    font-size: 2vw;
     color: #fff;
   }
   .u-font--cr {
-    font-size: 2vw;
+    font-size: 1vw;
     color: #fff;
   }
 }

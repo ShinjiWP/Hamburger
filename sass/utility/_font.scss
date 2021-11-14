@@ -98,11 +98,11 @@
     }
     &--content {
       font-family: g.$Robot;
-      font-size: 10vw;
+      font-size: 5vw;
       color: #fff;
 
       &-ttl {
-        font-size: 5vw;
+        font-size: 2.5vw;
         font-weight: 700;
       }
       &-text {
@@ -111,30 +111,30 @@
     &--side {
       &--ttl {
         color: g.$font-gray;
-        font-size: 5vw;
+        font-size: 2.5vw;
       }
       &--list {
         color: g.$font-gray;
-        font-size: 4vw;
+        font-size: 2vw;
       }
     }
 
     &--access-ttl {
       font-family: g.$Robot;
-      font-size: 7vw;
+      font-size: 3.5vw;
       color: #fff;
     }
     &--access-text {
       color: #fff;
-      font-size: 4vw;
+      font-size: 2vw;
     }
 
     &--footer {
-      font-size: 4vw;
+      font-size: 2vw;
       color: #fff;
     }
     &--cr {
-      font-size: 2vw;
+      font-size: 1vw;
       color: #fff;
     }
   }

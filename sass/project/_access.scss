@@ -1,7 +1,10 @@
 @use "../global" as g;
 @include g.sp {
-	.p-access__map {
+	.p-access__map--sp {
 		width: 100%;
+		// &--tab {
+		// 	display: none;
+		// }
 	}
 	.p-access__inner {
 		padding: 8%;

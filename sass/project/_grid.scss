@@ -41,7 +41,7 @@
     "access" auto
     /auto;
   }
-  .p-access__map {
+  .p-access__map--sp {
     grid-area: access;
   }
   .p-bg-display--access {
@@ -70,7 +70,7 @@
   .p-grid--article {
     display: grid;
     grid-template: "article" auto/auto;
-    padding: 5% 5% 0% 5%;
+    padding: 2.5% 2.5% 0% 2.5%;
   }
   .p-content__image {
     grid-area: article;
@@ -92,7 +92,7 @@
     "access" auto
     /auto;
   }
-  .p-access__map {
+  .p-access__map--sp {
     grid-area: access;
   }
   .p-bg-display--access {
