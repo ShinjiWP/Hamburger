@@ -470,6 +470,47 @@ dl, dd {
     background-color: #96806B;
   }
 }
+.c-input {
+  width: 65vw;
+  border-radius: 10px;
+  font-size: 5vw;
+  border: 3px solid #707070;
+  vertical-align: bottom;
+}
+@media screen and (min-width: 600px) {
+  .c-input {
+    height: min(6vw, 45px);
+  }
+}
+@media screen and (min-width: 1080px) {
+  .c-input {
+    width: 20vw;
+    height: min(4vw, 40px);
+    border-radius: 5px;
+    font-size: 2.5vw;
+  }
+}
+
+.c-btn {
+  width: 18vw;
+  height: 100%;
+  border-radius: 10px;
+  border: 3px solid #707070;
+}
+@media screen and (min-width: 600px) {
+  .c-btn {
+    height: min(6vw, 45px);
+  }
+}
+@media screen and (min-width: 1080px) {
+  .c-btn {
+    width: 9vw;
+    height: min(4vw, 40px);
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+}
+
 @media screen and (max-width: 599.9px) {
   /*mainvisualのグリッド配置*/
   .p-grid--mainvisual {
@@ -668,94 +709,34 @@ dl, dd {
     margin-left: 20px;
   }
 }
-@media screen and (max-width: 599.9px) {
-  .p-search {
-    margin: auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    position: relative;
-  }
-  .p-search::before {
-    display: block;
-    font-family: "Font Awesome 5 Free";
-    content: "";
-    font-weight: 700;
-    color: #707070;
-    font-size: 5vw;
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    margin-top: -2.5vw;
-  }
-  .p-search__form__input {
-    width: 65vw;
-    height: 100%;
-    border-radius: 10px;
-    font-size: 5vw;
-    border: 3px solid #707070;
-    vertical-align: bottom;
-  }
-  .p-search__form__btn {
-    width: 18vw;
-    height: 100%;
-    border-radius: 10px;
-    border: 3px solid #707070;
-  }
+.p-search {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.p-search::before {
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 700;
+  color: #707070;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  font-size: 5vw;
+  margin-top: -2.5vw;
 }
 @media screen and (min-width: 600px) {
-  .p-search {
-    margin: auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    position: relative;
-  }
   .p-search::before {
-    display: block;
-    font-family: "Font Awesome 5 Free";
-    content: "";
-    font-weight: 700;
-    color: #707070;
     font-size: 3vw;
-    position: absolute;
-    left: 10px;
-    top: 50%;
     margin-top: -1.5vw;
-  }
-  .p-search__form__input {
-    width: 65vw;
-    height: min(6vw, 45px);
-    border-radius: 10px;
-    font-size: 5vw;
-    border: 3px solid #707070;
-    vertical-align: bottom;
-  }
-  .p-search__form__btn {
-    width: 18vw;
-    height: min(6vw, 45px);
-    border-radius: 10px;
-    border: 3px solid #707070;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-search {
-    margin: auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    position: relative;
-  }
   .p-search::before {
-    display: block;
-    font-family: "Font Awesome 5 Free";
-    content: "";
-    font-weight: 700;
-    color: #707070;
     font-size: 1vw;
-    position: absolute;
-    left: 10px;
-    top: 50%;
     margin-top: -0.5vw;
   }
   .p-search__form {
@@ -763,22 +744,8 @@ dl, dd {
     display: -ms-flexbox;
     display: flex;
   }
-  .p-search__form__input {
-    width: 20vw;
-    height: min(4vw, 40px);
-    border-radius: 5px;
-    font-size: 2.5vw;
-    border: 3px solid #707070;
-    vertical-align: bottom;
-  }
-  .p-search__form__btn {
-    width: 9vw;
-    height: min(4vw, 40px);
-    border-radius: 5px;
-    border: 3px solid #707070;
-    margin: 0 10px;
-  }
 }
+
 @media screen and (max-width: 599.9px) {
   .p-mainvisual--text {
     padding: 5%;

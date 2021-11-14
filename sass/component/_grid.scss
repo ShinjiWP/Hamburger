@@ -44,6 +44,7 @@
 
 @include g.tab {
 	.c-grid {
+		// overflow-x: hidden;
 		display: grid;
 		grid-template:
 			"header sidebar" 217px
