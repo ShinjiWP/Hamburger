@@ -41,25 +41,25 @@
 		width: 100%;
 	}
 	.p-access__inner {
-		padding: 8%;
+		padding: 4%;
 		// height: 100%;
 		&__ttl {
-			padding: 5% 0;
+			padding: 0;
 			position: relative;
 			margin-bottom: 20px;
 			&::before {
 				display: inline-block;
 				content: "";
-				width: 18vw;
+				width: 9vw;
 				height: 0.2vh;
 				background: #fff;
 				position: absolute;
 				left: 0;
-				bottom: 0;
+				bottom: -15px;
 			}
 		}
 		&__text {
-			height: 55vw;
+			height: 32vw;
 			width: 100%;
 			// margin-top: 50px;
 			line-height: 2.35;

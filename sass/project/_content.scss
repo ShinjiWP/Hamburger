@@ -38,7 +38,7 @@
         display: inline-block;
         overflow: hidden;
         text-overflow: ellipsis;
-        line-height: 1.43;
+        line-height: 1.4;
         /*どうやって文章をうまく隠すか要検討*/
       }
     }
@@ -83,6 +83,8 @@
         display: inline-block;
         overflow: hidden;
         text-overflow: ellipsis;
+        line-height: 1.3;
+
         /*どうやって文章をうまく隠すか要検討*/
       }
     }
