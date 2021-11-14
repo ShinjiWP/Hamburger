@@ -44,15 +44,23 @@
 
 @include g.pc {
 	.p-header {
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		// padding: 5% 5%;
+		height: 100%;
 		background-color: g.$bgc-beige;
+		justify-content: center;
+		align-items: flex-end;
 
-		// text-align: center;
-		&__heading {
-			&--lg {
-				font-family: g.$Robot;
-				color: g.$font-gray;
-				font-size: 8vw;
-			}
+		&__box {
+      display: none;
+		}
+
+		&__heading--lg {
+      margin: auto;
+      text-align: left;
+      margin-left: 20px;
 		}
 	}
 }

@@ -378,11 +378,9 @@ dl, dd {
   .c-grid--mainvisual {
     grid-area: figure;
     margin: 0;
-    background-color: #f3fafb;
   }
   .c-grid--contents {
     grid-area: main;
-    background-color: #d4f1f8;
   }
   .c-grid--sidebar {
     grid-area: sidebar;
@@ -413,11 +411,9 @@ dl, dd {
   .c-grid--mainvisual {
     grid-area: figure;
     margin: 0;
-    background-color: #f3fafb;
   }
   .c-grid--contents {
     grid-area: main;
-    background-color: #d4f1f8;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -446,7 +442,7 @@ dl, dd {
     min-height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template: "header  sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   footer" 150px/80% 20%;
+    grid-template: "header  sidebar" 7% "figure   sidebar" 18% "main    sidebar" 1fr "access  sidebar" 22% "footer   footer" 5%/80% 20%;
   }
   .c-grid--header {
     grid-area: header;
@@ -646,12 +642,30 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: center;
+    height: 100%;
     background-color: #DED8D3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .p-header__box {
+    display: none;
   }
   .p-header__heading--lg {
-    font-family: "Roboto", sans-serif;
-    color: #707070;
-    font-size: 8vw;
+    margin: auto;
+    text-align: left;
+    margin-left: 20px;
   }
 }
 @media screen and (max-width: 599.9px) {
@@ -722,6 +736,47 @@ dl, dd {
     height: min(6vw, 45px);
     border-radius: 10px;
     border: 3px solid #707070;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-search {
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+  }
+  .p-search::before {
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    content: "";
+    font-weight: 700;
+    color: #707070;
+    font-size: 1vw;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -0.5vw;
+  }
+  .p-search__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .p-search__form__input {
+    width: 20vw;
+    height: min(4vw, 40px);
+    border-radius: 5px;
+    font-size: 2.5vw;
+    border: 3px solid #707070;
+    vertical-align: bottom;
+  }
+  .p-search__form__btn {
+    width: 9vw;
+    height: min(4vw, 40px);
+    border-radius: 5px;
+    border: 3px solid #707070;
+    margin: 0 10px;
   }
 }
 @media screen and (max-width: 599.9px) {
@@ -1224,7 +1279,7 @@ dl, dd {
     font-family: "Roboto", sans-serif;
     color: #707070;
     font-weight: 700;
-    font-size: 3vw;
+    font-size: min(3vw, 23px);
   }
   .u-font--mainvisual {
     font-family: "Roboto", sans-serif;
@@ -1267,15 +1322,61 @@ dl, dd {
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-sidebar {
-    width: 100%;
-    background-color: #F2EDE9;
-    height: 100%;
-  }
-  .p-sidebar__heading--md {
+  .u-font--btn {
     font-family: "Roboto", sans-serif;
     color: #707070;
+    font-size: min(3vw, 25px);
+    font-weight: 700;
+  }
+  .u-font--header {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-size: min(8vw, 60px);
+  }
+  .u-font--search {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-weight: 700;
+    font-size: min(3vw, 23px);
+  }
+  .u-font--mainvisual {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 5vw;
+  }
+  .u-font--content {
+    font-family: "Roboto", sans-serif;
+    font-size: 5vw;
+    color: #fff;
+  }
+  .u-font--content-ttl {
+    font-size: 2.5vw;
+    font-weight: 700;
+  }
+  .u-font--side--ttl {
+    color: #707070;
+    font-size: 2.5vw;
+  }
+  .u-font--side--list {
+    color: #707070;
     font-size: 2vw;
+  }
+  .u-font--access-ttl {
+    font-family: "Roboto", sans-serif;
+    font-size: 3.5vw;
+    color: #fff;
+  }
+  .u-font--access-text {
+    color: #fff;
+    font-size: 2vw;
+  }
+  .u-font--footer {
+    font-size: 2vw;
+    color: #fff;
+  }
+  .u-font--cr {
+    font-size: 1vw;
+    color: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */

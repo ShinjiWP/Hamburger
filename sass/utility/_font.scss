@@ -1,160 +1,211 @@
 @use "../global" as g;
 
 @include g.sp {
-  .u-font {
-    &--btn {
-      font-family: g.$Robot;
-      color: g.$font-gray;
-      font-size: 4vw;
-      font-weight: 700;
-    }
+	.u-font {
+		&--btn {
+			font-family: g.$Robot;
+			color: g.$font-gray;
+			font-size: 4vw;
+			font-weight: 700;
+		}
 
-    &--header {
-      font-family: g.$Robot;
-      color: g.$font-gray;
-      font-size: 10vw;
-    }
-    &--search {
-      font-family: g.$Robot;
-      color: g.$font-gray;
-      font-weight: 700;
-      font-size: 4vw;
-    }
+		&--header {
+			font-family: g.$Robot;
+			color: g.$font-gray;
+			font-size: 10vw;
+		}
+		&--search {
+			font-family: g.$Robot;
+			color: g.$font-gray;
+			font-weight: 700;
+			font-size: 4vw;
+		}
 
-    &--mainvisual {
-      font-family: g.$Robot;
-      color: #fff;
-      font-size: 9vw;
-    }
-    &--content {
-      font-family: g.$Robot;
-      font-size: 10vw;
-      color: #fff;
+		&--mainvisual {
+			font-family: g.$Robot;
+			color: #fff;
+			font-size: 9vw;
+		}
+		&--content {
+			font-family: g.$Robot;
+			font-size: 10vw;
+			color: #fff;
 
-      &-ttl {
-        font-size: 5vw;
-        font-weight: 700;
-      }
-      &-text {
-      }
-    }
-    &--side {
-      &--ttl {
-        color: g.$font-gray;
-        font-size: 5vw;
-      }
-      &--list {
-        color: g.$font-gray;
-        font-size: 4vw;
-      }
-    }
+			&-ttl {
+				font-size: 5vw;
+				font-weight: 700;
+			}
+			&-text {
+			}
+		}
+		&--side {
+			&--ttl {
+				color: g.$font-gray;
+				font-size: 5vw;
+			}
+			&--list {
+				color: g.$font-gray;
+				font-size: 4vw;
+			}
+		}
 
-    &--access-ttl {
-      font-family: g.$Robot;
-      font-size: 7vw;
-      color: #fff;
-    }
-    &--access-text {
-      color: #fff;
-      font-size: 4vw;
-    }
+		&--access-ttl {
+			font-family: g.$Robot;
+			font-size: 7vw;
+			color: #fff;
+		}
+		&--access-text {
+			color: #fff;
+			font-size: 4vw;
+		}
 
-    &--footer {
-      font-size: 4vw;
-      color: #fff;
-    }
-    &--cr {
-      font-size: 2vw;
-      color: #fff;
-    }
-  }
+		&--footer {
+			font-size: 4vw;
+			color: #fff;
+		}
+		&--cr {
+			font-size: 2vw;
+			color: #fff;
+		}
+	}
 }
 
 @include g.tab {
-  .u-font {
-    &--btn {
-      font-family: g.$Robot;
-      color: g.$font-gray;
-      font-size: min(3vw,25px);
-      font-weight: 700;
-    }
+	.u-font {
+		&--btn {
+			font-family: g.$Robot;
+			color: g.$font-gray;
+			font-size: min(3vw, 25px);
+			font-weight: 700;
+		}
 
-    &--header {
-      font-family: g.$Robot;
-      color: g.$font-gray;
-      font-size: min(8vw,60px);
-    }
-    &--search {
-      font-family: g.$Robot;
-      color: g.$font-gray;
-      font-weight: 700;
-      font-size: 3vw;
-    }
+		&--header {
+			font-family: g.$Robot;
+			color: g.$font-gray;
+			font-size: min(8vw, 60px);
+		}
+		&--search {
+			font-family: g.$Robot;
+			color: g.$font-gray;
+			font-weight: 700;
+			font-size: min(3vw, 23px);
+		}
 
-    &--mainvisual {
-      font-family: g.$Robot;
-      color: #fff;
-      font-size: 5vw;
-    }
-    &--content {
-      font-family: g.$Robot;
-      font-size: 5vw;
-      color: #fff;
+		&--mainvisual {
+			font-family: g.$Robot;
+			color: #fff;
+			font-size: 5vw;
+		}
+		&--content {
+			font-family: g.$Robot;
+			font-size: 5vw;
+			color: #fff;
 
-      &-ttl {
-        font-size: 2.5vw;
-        font-weight: 700;
-      }
-      &-text {
-      }
-    }
-    &--side {
-      &--ttl {
-        color: g.$font-gray;
-        font-size: 2.5vw;
-      }
-      &--list {
-        color: g.$font-gray;
-        font-size: 2vw;
-      }
-    }
+			&-ttl {
+				font-size: 2.5vw;
+				font-weight: 700;
+			}
+			&-text {
+			}
+		}
+		&--side {
+			&--ttl {
+				color: g.$font-gray;
+				font-size: 2.5vw;
+			}
+			&--list {
+				color: g.$font-gray;
+				font-size: 2vw;
+			}
+		}
 
-    &--access-ttl {
-      font-family: g.$Robot;
-      font-size: 3.5vw;
-      color: #fff;
-    }
-    &--access-text {
-      color: #fff;
-      font-size: 2vw;
-    }
+		&--access-ttl {
+			font-family: g.$Robot;
+			font-size: 3.5vw;
+			color: #fff;
+		}
+		&--access-text {
+			color: #fff;
+			font-size: 2vw;
+		}
 
-    &--footer {
-      font-size: 2vw;
-      color: #fff;
-    }
-    &--cr {
-      font-size: 1vw;
-      color: #fff;
-    }
-  }
+		&--footer {
+			font-size: 2vw;
+			color: #fff;
+		}
+		&--cr {
+			font-size: 1vw;
+			color: #fff;
+		}
+	}
 }
 
-
-
-
-
 @include g.pc {
-  .p-sidebar {
-    width: 100%;
-    background-color: g.$light-beige;
-    height: 100%;
-    &__heading {
-      &--md {
-        font-family: g.$Robot;
-        color: g.$font-gray;
-        font-size: 2vw;
-      }
-    }
-  }
+	.u-font {
+		&--btn {
+			font-family: g.$Robot;
+			color: g.$font-gray;
+			font-size: min(3vw, 25px);
+			font-weight: 700;
+		}
+
+		&--header {
+			font-family: g.$Robot;
+			color: g.$font-gray;
+			font-size: min(8vw, 60px);
+		}
+		&--search {
+			font-family: g.$Robot;
+			color: g.$font-gray;
+			font-weight: 700;
+			font-size: min(3vw, 23px);
+		}
+
+		&--mainvisual {
+			font-family: g.$Robot;
+			color: #fff;
+			font-size: 5vw;
+		}
+		&--content {
+			font-family: g.$Robot;
+			font-size: 5vw;
+			color: #fff;
+
+			&-ttl {
+				font-size: 2.5vw;
+				font-weight: 700;
+			}
+			&-text {
+			}
+		}
+		&--side {
+			&--ttl {
+				color: g.$font-gray;
+				font-size: 2.5vw;
+			}
+			&--list {
+				color: g.$font-gray;
+				font-size: 2vw;
+			}
+		}
+
+		&--access-ttl {
+			font-family: g.$Robot;
+			font-size: 3.5vw;
+			color: #fff;
+		}
+		&--access-text {
+			color: #fff;
+			font-size: 2vw;
+		}
+
+		&--footer {
+			font-size: 2vw;
+			color: #fff;
+		}
+		&--cr {
+			font-size: 1vw;
+			color: #fff;
+		}
+	}
 }
