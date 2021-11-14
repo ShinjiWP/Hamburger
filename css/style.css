@@ -605,6 +605,29 @@ dl, dd {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+  .p-header__x {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  .p-header__x::before, .p-header__x::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 30px;
+    background: #333;
+  }
+  .p-header__x::before {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .p-header__x::after {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
+  }
   .p-header__box {
     width: -webkit-fit-content;
     width: -moz-fit-content;
