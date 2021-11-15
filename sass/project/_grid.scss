@@ -43,9 +43,9 @@
 	.p-access__map--sp {
 		grid-area: access;
 	}
-  .p-access__map--tab{
-    grid-area: access;
-  }
+	.p-access__map--tab {
+		grid-area: access;
+	}
 	.p-bg-display--access {
 		grid-area: access;
 	}
@@ -53,7 +53,6 @@
 		grid-area: access;
 	}
 }
-
 
 @include g.tab {
 	/*mainvisualのグリッド配置*/
@@ -91,16 +90,14 @@
 	/*accessのグリッド配置*/
 	.p-grid--access {
 		display: grid;
-		grid-template:
-			"access" auto
-			/ auto;
+		grid-template: "access" auto/auto;
 	}
 	.p-access__map--sp {
 		grid-area: access;
 	}
-  .p-access__map--tab{
-    grid-area: access;
-  }
+	.p-access__map--tab {
+		grid-area: access;
+	}
 	.p-bg-display--access {
 		grid-area: access;
 	}

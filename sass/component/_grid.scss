@@ -1,102 +1,62 @@
 @use "../global" as g;
 
-@include g.sp {
-	.c-grid {
-		// overflow-x: hidden;
-		display: grid;
-		grid-template:
-			"header sidebar" 217px
-			"figure   sidebar" auto
-			"main    sidebar" auto
-			"-------  sidebar" 20px
-			"access  sidebar" auto
-			"footer   sidebar" 150px
-			/100% 100%;
-		&--header {
-			grid-area: header;
-		}
-		&--mainvisual {
-			grid-area: figure;
-			margin: 0;
-			// background-color: g.$gray;
-		}
-		&--contents {
-			grid-area: main;
-			// background-color: g.$skyblue;
-		}
-		&--sidebar {
-			grid-area: sidebar;
-			width: 100%; /*この辺は仮の設定*/
-			height: 100%;
-			min-width: 300px;
-			transform: translate(0%, 0);
-		}
-
-		&--access {
-			grid-area: access;
-		}
-		&--footer {
-			grid-area: footer;
-			background-color: g.$brown;
-		}
+.c-grid {
+	// overflow-x: hidden;
+	display: grid;
+	grid-template:
+		"header sidebar" 217px
+		"figure   sidebar" auto
+		"main    sidebar" auto
+		"-------  sidebar" 20px
+		"access  sidebar" auto
+		"footer   sidebar" 150px
+		/100% 100%;
+	&--header {
+		grid-area: header;
 	}
-}
+	&--mainvisual {
+		grid-area: figure;
+		margin: 0;
+		// background-color: g.$gray;
+	}
+	&--contents {
+		grid-area: main;
+		// background-color: g.$skyblue;
+	}
+	&--sidebar {
+		grid-area: sidebar;
+		width: 100%; /*この辺は仮の設定*/
+		height: 100%;
+		transform: translate(0%, 0);
+	}
 
-@include g.tab {
-	.c-grid {
-		// overflow-x: hidden;
-		display: grid;
-		grid-template:
-			"header sidebar" 217px
-			"figure   sidebar" auto
-			"main    sidebar" auto
-			"-------  sidebar" 20px
-			"access  sidebar" auto
-			"footer   sidebar" 150px
-			/100% 100%;
-		&--header {
-			grid-area: header;
-			background-color: g.$red;
-		}
-		&--mainvisual {
-			grid-area: figure;
-			margin: 0;
-			// background-color: g.$gray;
-		}
-		&--contents {
-			grid-area: main;
-			// background-color: g.$skyblue;
-      display: flex;
-		}
-		&--sidebar {
-			grid-area: sidebar;
-			background-color: g.$blue;
-			width: 100%; /*この辺は仮の設定*/
-			height: 100%;
-			min-width: 300px;
-			transform: translate(0%, 0);
-		}
-		&--access {
-			grid-area: access;
-		}
-		&--footer {
-			grid-area: footer;
-			background-color: g.$brown;
+	&--access {
+		grid-area: access;
+	}
+	&--footer {
+		grid-area: footer;
+		background-color: g.$brown;
+	}
+	@include g.tab {
+		.c-grid {
+			&--contents {
+				display: flex;
+			}
 		}
 	}
 }
 
 @include g.pc {
 	.c-grid {
-		position: static;
-		min-height: 100vh;
-		margin: 0 auto;
+		// position: static;
+		// min-height: 100vh;
+		// margin: 0 auto;
 		display: grid;
 		grid-template:
 			"header  sidebar" 7%
 			"figure   sidebar" 18%
-			"main    sidebar" 1fr
-			"access  sidebar" 22%
+			"main    sidebar" auto
+			"access  sidebar" auto
 			"footer   footer" 5%
 			/80% 20%;
 		&--header {
@@ -115,7 +75,7 @@
 		&--sidebar {
 			grid-area: sidebar;
 			background-color: g.$blue;
-			position: static;
+			// position: static;
 		}
 		&--access {
 			grid-area: access;
