@@ -1,9 +1,13 @@
 @use "../global" as g;
 
+.c-text {
+	font-size: 1.25vw;
+}
+
 .c-text--large {
 	font-family: g.$Robot;
 	font-size: 10vw;
-	color:g.$font-white;
+	color: g.$font-white;
 	@include g.tab {
 		font-size: 5vw;
 	}
@@ -11,12 +15,26 @@
 		font-size: 2.5vw;
 	}
 }
+.c-text--ttl {
+	font-size: 5vw;
+	font-weight: 700;
 
-/*コンテンツテキスト*/
-.c-text--content {
 	@include g.tab {
+		font-size: 2.5vw;
 	}
 	@include g.pc {
+		font-size: 1.5vw;
+	}
+}
+/*コンテンツテキスト*/
+.c-text--content {
+	font-size: 3vw;
+	@include g.tab {
+		font-size: 1.6vw;
+	}
+	@include g.pc {
+		font-size: 1.2vw;
+
 	}
 }
 

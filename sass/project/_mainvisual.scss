@@ -38,4 +38,10 @@
 		display: flex;
 		align-items: center;
 	}
+  	.p-mainvisual__photo {
+		&--sp {
+			display: none;
+		}
+		
+	}
 } ;

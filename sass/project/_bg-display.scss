@@ -19,6 +19,7 @@
 		background-color: rgba(112, 112, 112, 0.9);
 		display: flex;
 		justify-content: flex-end;
+		height: 100%;
 	}
 	.p-bg-display--access {
 		background-color: rgba(112, 112, 112, 0.5);
@@ -27,17 +28,6 @@
 }
 
 @include g.pc {
-	.p-header {
-		background-color: g.$bgc-beige;
-	}
-	.p-mainvisual__photo {
-		&--sp {
-			display: none;
-		}
-		&--pc {
-			display: block;
-			object-fit: cover;
-			width: 100%;
-		}
-	}
+	
+
 }

@@ -374,6 +374,7 @@ dl, dd {
 }
 
 .c-grid {
+  overflow-x: hidden;
   display: grid;
   grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
 }
@@ -481,6 +482,10 @@ dl, dd {
   }
 }
 
+.c-text {
+  font-size: 1.25vw;
+}
+
 .c-text--large {
   font-family: "Roboto", sans-serif;
   font-size: 10vw;
@@ -497,7 +502,36 @@ dl, dd {
   }
 }
 
+.c-text--ttl {
+  font-size: 5vw;
+  font-weight: 700;
+}
+@media screen and (min-width: 600px) {
+  .c-text--ttl {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .c-text--ttl {
+    font-size: 1.5vw;
+  }
+}
+
 /*コンテンツテキスト*/
+.c-text--content {
+  font-size: 3vw;
+}
+@media screen and (min-width: 600px) {
+  .c-text--content {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .c-text--content {
+    font-size: 1.2vw;
+  }
+}
+
 /*サイドバーテキスト*/
 .c-text--small {
   color: #707070;
@@ -795,6 +829,10 @@ dl, dd {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .p-mainvisual__photo--sp {
+    display: none;
   }
 }
 @media screen and (max-width: 599.9px) {
@@ -1103,26 +1141,12 @@ dl, dd {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    height: 100%;
   }
 
   .p-bg-display--access {
     background-color: rgba(112, 112, 112, 0.5);
     height: 100%;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .p-header {
-    background-color: #DED8D3;
-  }
-
-  .p-mainvisual__photo--sp {
-    display: none;
-  }
-  .p-mainvisual__photo--pc {
-    display: block;
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
   }
 }
 @media screen and (max-width: 599.9px) {
@@ -1313,10 +1337,6 @@ dl, dd {
     color: #fff;
     font-size: 9vw;
   }
-  .u-font--content-ttl {
-    font-size: 5vw;
-    font-weight: 700;
-  }
   .u-font--side--ttl {
     color: #707070;
     font-size: 5vw;
@@ -1361,10 +1381,6 @@ dl, dd {
     font-family: "Roboto", sans-serif;
     color: #fff;
     font-size: 5vw;
-  }
-  .u-font--content-ttl {
-    font-size: 2.5vw;
-    font-weight: 700;
   }
   .u-font--side--ttl {
     color: #707070;
@@ -1411,10 +1427,6 @@ dl, dd {
     color: #fff;
     font-size: 2.5vw;
   }
-  .u-font--content-ttl {
-    font-size: 1.25vw;
-    font-weight: 700;
-  }
   .u-font--side--ttl {
     color: #707070;
     font-size: 1.25vw;
@@ -1436,5 +1448,12 @@ dl, dd {
     font-size: 1vw;
     color: #fff;
   }
+}
+.p-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(112, 112, 112, 0.9);
+  position: absolute;
+  z-index: 100;
 }
 /*# sourceMappingURL=style.css.map */
