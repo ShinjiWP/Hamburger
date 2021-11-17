@@ -389,7 +389,7 @@ dl, dd {
 }
 .c-grid--sidebar {
   grid-area: sidebar;
-  width: 86%;
+  width: 100%;
   /*この辺は仮の設定*/
   height: 100%;
 }
@@ -402,7 +402,7 @@ dl, dd {
 }
 @media screen and (min-width: 600px) {
   .c-grid .c-grid {
-    grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 43%;
+    grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
   }
   .c-grid .c-grid--contents {
     display: -webkit-box;
@@ -411,7 +411,7 @@ dl, dd {
   }
   .c-grid .c-grid--sidebar {
     grid-area: sidebar;
-    width: 43%;
+    width: 100%;
     /*この辺は仮の設定*/
     height: 100%;
   }
@@ -989,7 +989,7 @@ dl, dd {
 }
 @media screen and (max-width: 599.9px) {
   .p-sidebar {
-    width: 100%;
+    width: 86%;
     background-color: #F2EDE9;
     height: 100%;
     padding: 20% 15%;
@@ -1038,7 +1038,7 @@ dl, dd {
 }
 @media screen and (min-width: 600px) {
   .p-sidebar {
-    width: 100%;
+    width: 43%;
     background-color: #F2EDE9;
     height: 100%;
     padding: 10% 5%;
@@ -1466,9 +1466,8 @@ dl, dd {
   display: none;
   width: 100%;
   height: 100%;
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
   background-color: rgba(112, 112, 112, 0.9);
-  position: absolute;
+  position: relative;
+  left: -100%;
 }
 /*# sourceMappingURL=style.css.map */

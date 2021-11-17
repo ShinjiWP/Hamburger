@@ -25,7 +25,7 @@
 	}
 	&--sidebar {
 		grid-area: sidebar;
-		width: 86%; /*この辺は仮の設定*/
+		width: 100%; /*この辺は仮の設定*/
 		height: 100%;
 		// transform: translate(0%, 0);
 		// transition: 2s;
@@ -47,13 +47,13 @@
 				"-------  sidebar" 20px
 				"access  sidebar" auto
 				"footer   sidebar" 150px
-				/100% 43%;
+				/100% 100%;
 			&--contents {
 				display: flex;
 			}
 			&--sidebar {
 				grid-area: sidebar;
-				width: 43%; /*この辺は仮の設定*/
+				width: 100%; /*この辺は仮の設定*/
 				height: 100%;
 				// transform: translate(0%, 0);
 				// transition: 2s;
