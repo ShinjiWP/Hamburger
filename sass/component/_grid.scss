@@ -28,7 +28,7 @@
 		width: 100%; /*この辺は仮の設定*/
 		height: 100%;
 		transform: translate(0%, 0);
-    transition: 2s;
+		transition: 2s;
 	}
 
 	&--access {
@@ -47,13 +47,12 @@
 	}
 }
 
-
-
 @include g.pc {
 	.c-grid {
 		// position: static;
 		// min-height: 100vh;
 		// margin: 0 auto;
+		overflow-x:visible ;
 		display: grid;
 		grid-template:
 			"header  sidebar" 7%

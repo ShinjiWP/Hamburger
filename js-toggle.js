@@ -1,7 +1,11 @@
 $(function () {
 	$(".p-header__box").on("click", function () {
-        // $(".c-shadow").toggleClass("p-shadow");
-        $(".c-grid--sidebar").css({ "transform": "translate(-100%, 0)", "transition": "2s" });
+		$(".c-shadow").fadeIn(500);
+		// $("body").css("position", "fixed");
+		$(".c-grid--sidebar").css({ transform: "translate(-86%, 0)", transition: "1s" });
+	});
+	$(".p-sidebar__x").on("click", function () {
+		$(".c-shadow").fadeOut(500);
+		$(".c-grid--sidebar").css({ transform: "translate(0%, 0)", transition: "1s" });
 	});
 });
-		
