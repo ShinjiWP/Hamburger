@@ -2,20 +2,21 @@
 
 @include g.sp {
 	.p-sidebar {
-		width: 86%;
+		width: 100%;
 		background-color: g.$light-beige;
 		height: 100%;
 		padding: 20% 15%;
-    position: relative;
-    z-index: 100;
-    
+		position: relative;
+		z-index: 100;
+		left: 100%;
+
 		&__x {
 			display: block;
 			position: absolute;
 			width: 45px;
 			height: 45px;
-      top: 20px;
-      right: 20px;
+			top: 20px;
+			right: 20px;
 		}
 
 		&__x::before,
@@ -36,9 +37,9 @@
 			transform: translate(-50%, -50%) rotate(-45deg);
 		}
 		&__menu {
-      position: relative;
+			position: relative;
 			padding: 10% 5%;
-      z-index: 100;
+			z-index: 100;
 			&__list {
 				margin: 10% 0;
 			}
@@ -55,20 +56,20 @@
 
 @include g.tab {
 	.p-sidebar {
-		width: 43%;
+		width: 100%;
 		background-color: g.$light-beige;
 		height: 100%;
 		padding: 10% 5%;
-    position: relative;
+		position: relative;
+		left: 100%;
 
 		&__x {
 			display: block;
 			position: absolute;
 			width: 45px;
 			height: 45px;
-      top: 20px;
-      right: 20px;
-
+			top: 20px;
+			right: 20px;
 		}
 
 		&__x::before,
@@ -104,22 +105,21 @@
 	}
 }
 
-@include g.tab {
+@include g.pc {
 	.p-sidebar {
 		width: 43%;
 		background-color: g.$light-beige;
 		height: 100%;
 		padding: 10% 5%;
-    position: relative;
+		position: relative;
 
 		&__x {
 			display: block;
 			position: absolute;
 			width: 45px;
 			height: 45px;
-      top: 20px;
-      right: 20px;
-
+			top: 20px;
+			right: 20px;
 		}
 
 		&__x::before,

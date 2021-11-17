@@ -10,7 +10,7 @@
 		"-------  sidebar" 20px
 		"access  sidebar" auto
 		"footer   sidebar" 150px
-		/100% 100%;
+		/100% 86%;
 	&--header {
 		grid-area: header;
 	}
@@ -25,10 +25,10 @@
 	}
 	&--sidebar {
 		grid-area: sidebar;
-		width: 100%; /*この辺は仮の設定*/
+		width: 86%; /*この辺は仮の設定*/
 		height: 100%;
-		transform: translate(0%, 0);
-		transition: 2s;
+		// transform: translate(0%, 0);
+		// transition: 2s;
 	}
 
 	&--access {
@@ -40,8 +40,23 @@
 	}
 	@include g.tab {
 		.c-grid {
+			grid-template:
+				"header sidebar" 217px
+				"figure   sidebar" auto
+				"main    sidebar" auto
+				"-------  sidebar" 20px
+				"access  sidebar" auto
+				"footer   sidebar" 150px
+				/100% 43%;
 			&--contents {
 				display: flex;
+			}
+			&--sidebar {
+				grid-area: sidebar;
+				width: 43%; /*この辺は仮の設定*/
+				height: 100%;
+				// transform: translate(0%, 0);
+				// transition: 2s;
 			}
 		}
 	}
@@ -52,7 +67,7 @@
 		// position: static;
 		// min-height: 100vh;
 		// margin: 0 auto;
-		overflow-x:visible ;
+		overflow-x: visible;
 		display: grid;
 		grid-template:
 			"header  sidebar" 7%

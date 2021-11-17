@@ -372,7 +372,7 @@ dl, dd {
 .c-grid {
   overflow-x: hidden;
   display: grid;
-  grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
+  grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 86%;
 }
 .c-grid--header {
   grid-area: header;
@@ -386,13 +386,9 @@ dl, dd {
 }
 .c-grid--sidebar {
   grid-area: sidebar;
-  width: 100%;
+  width: 86%;
   /*この辺は仮の設定*/
   height: 100%;
-  -webkit-transform: translate(0%, 0);
-          transform: translate(0%, 0);
-  -webkit-transition: 2s;
-  transition: 2s;
 }
 .c-grid--access {
   grid-area: access;
@@ -402,10 +398,19 @@ dl, dd {
   background-color: #96806B;
 }
 @media screen and (min-width: 600px) {
+  .c-grid .c-grid {
+    grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 43%;
+  }
   .c-grid .c-grid--contents {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .c-grid .c-grid--sidebar {
+    grid-area: sidebar;
+    width: 43%;
+    /*この辺は仮の設定*/
+    height: 100%;
   }
 }
 
@@ -980,12 +985,13 @@ dl, dd {
 }
 @media screen and (max-width: 599.9px) {
   .p-sidebar {
-    width: 86%;
+    width: 100%;
     background-color: #F2EDE9;
     height: 100%;
     padding: 20% 15%;
     position: relative;
     z-index: 100;
+    left: 100%;
   }
   .p-sidebar__x {
     display: block;
@@ -1028,11 +1034,12 @@ dl, dd {
 }
 @media screen and (min-width: 600px) {
   .p-sidebar {
-    width: 43%;
+    width: 100%;
     background-color: #F2EDE9;
     height: 100%;
     padding: 10% 5%;
     position: relative;
+    left: 100%;
   }
   .p-sidebar__x {
     display: block;
@@ -1071,7 +1078,7 @@ dl, dd {
     visibility: hidden;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1080px) {
   .p-sidebar {
     width: 43%;
     background-color: #F2EDE9;
@@ -1455,8 +1462,8 @@ dl, dd {
   display: none;
   width: 100%;
   height: 100%;
-  -webkit-transform: translate(-86%, 0);
-          transform: translate(-86%, 0);
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
   background-color: rgba(112, 112, 112, 0.9);
   position: absolute;
 }
