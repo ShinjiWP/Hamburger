@@ -1460,6 +1460,12 @@ dl, dd {
   background-color: rgba(112, 112, 112, 0.9);
   position: absolute;
 }
+@media screen and (min-width: 600px) {
+  .c-shadow {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+}
 
 .p-shadow {
   display: none;
