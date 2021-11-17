@@ -23,15 +23,27 @@
 // 	});
 // });
 
+// $(function () {
+// 	$(".p-header__box").on("click", function () {
+// 		$(".c-shadow").fadeIn(600);
+// 		// $("body").css("position", "fixed");
+//         $(".p-sidebar").css({ "left": "-100%" ,"transition":"0.6s"});
+// 	});
+
+// 	$(".p-sidebar__x").on("click", function () {
+// 		$(".c-shadow").fadeOut(500);
+// 		$(".p-sidebar").css("left", "100%");
+// 	});
+// });
 $(function () {
 	$(".p-header__box").on("click", function () {
 		$(".c-shadow").fadeIn(600);
 		// $("body").css("position", "fixed");
-        $(".p-sidebar").css({ "left": "-100%" ,"transition":"0.6s"});
+		$(".p-sidebar").css({" left": "100%", "transition": "0.6s" });
 	});
 
 	$(".p-sidebar__x").on("click", function () {
 		$(".c-shadow").fadeOut(500);
-		$(".p-sidebar").css("left", "100%");
+		$(".p-sidebar").css("right", "100%");
 	});
 });
