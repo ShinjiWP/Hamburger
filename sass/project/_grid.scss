@@ -106,3 +106,17 @@
 	}
 }
 
+/*testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest*/
+
+.p-grid--sidebar {
+	display: grid;
+	grid-template: "sidebar" auto/auto;
+  position: relative;
+}
+
+.c-shadow {
+	grid-area: sidebar;
+}
+.p-sidebar {
+	grid-area: sidebar;
+}

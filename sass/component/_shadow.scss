@@ -10,8 +10,8 @@
 	left: -100%;
   z-index: 10;
 	@include g.pc {
-    display: block;
-    left: 0;
+    display: none;
+    // left: 0;
 
 	}
 }

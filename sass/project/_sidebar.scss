@@ -7,8 +7,14 @@
 		height: 100%;
 		padding: 20% 15%;
 		position: relative;
-		z-index: 100;
-		left: 100%;
+    /*test*/
+    /*test*/
+    position: absolute;
+    right: 0%;
+    /*test*/
+		// left: 100%;
+    /*test*/
+		z-index: 200;
 
 		&__x {
 			display: block;
@@ -61,7 +67,14 @@
 		height: 100%;
 		padding: 10% 5%;
 		position: relative;
-		left: 100%;
+    /*test*/
+    /*test*/
+    position: absolute;
+    right: 0%;
+    /*test*/
+		// left: 100%;
+    /*test*/
+    z-index: 200;
 
 		&__x {
 			display: block;
@@ -111,7 +124,7 @@
 		background-color: g.$light-beige;
 		height: 100%;
 		padding: 10% 5%;
-		position: static;
+		// position: static;
     // left: 0;
 
 		&__x {

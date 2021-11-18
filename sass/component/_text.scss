@@ -2,52 +2,69 @@
 
 .c-text {
 	font-size: 1.25vw;
-}
 
-.c-text--large {
-	font-family: g.$Robot;
-	font-size: 10vw;
-	color: g.$font-white;
-	@include g.tab {
+	&--large {
+		font-family: g.$Robot;
+		font-size: 10vw;
+		color: g.$font-white;
+		@include g.tab {
+			font-size: 5vw;
+		}
+		@include g.pc {
+			font-size: 2.5vw;
+		}
+	}
+	&--ttl {
 		font-size: 5vw;
-	}
-	@include g.pc {
-		font-size: 2.5vw;
-	}
-}
-.c-text--ttl {
-	font-size: 5vw;
-	font-weight: 700;
+		font-weight: 700;
 
-	@include g.tab {
-		font-size: 2.5vw;
+		@include g.tab {
+			font-size: 2.5vw;
+		}
+		@include g.pc {
+			font-size: 1.5vw;
+		}
 	}
-	@include g.pc {
-		font-size: 1.5vw;
+	/*コンテンツテキスト*/
+	&--content {
+		font-size: 3vw;
+		@include g.tab {
+			font-size: 1.6vw;
+		}
+		@include g.pc {
+			font-size: 1.2vw;
+		}
 	}
-}
-/*コンテンツテキスト*/
-.c-text--content {
-	font-size: 3vw;
-	@include g.tab {
-		font-size: 1.6vw;
-	}
-	@include g.pc {
-		font-size: 1.2vw;
 
+	/*サイドバーテキスト*/
+	&--small {
+		color: g.$font-gray;
+		font-size: 4vw;
+
+		@include g.tab {
+			font-size: 2vw;
+		}
+
+		@include g.pc {
+			font-size: 1vw;
+		}
 	}
-}
 
-/*サイドバーテキスト*/
-.c-text--small {
-	color: g.$font-gray;
-	font-size: 4vw;
+	&--footer {
+		font-size: 4vw;
+		color: #fff;
 
-	@include g.tab {
+		@include g.tab {
+			font-size: 2vw;
+		}
+	}
+
+	&--copyright {
 		font-size: 2vw;
-	}
+		color: #fff;
 
-	@include g.pc {
-		font-size: 1vw;
+		@include g.tab {
+			font-size: 1vw;
+		}
 	}
 }

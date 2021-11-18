@@ -492,8 +492,9 @@ dl, dd {
 
 .c-text {
   font-size: 1.25vw;
+  /*コンテンツテキスト*/
+  /*サイドバーテキスト*/
 }
-
 .c-text--large {
   font-family: "Roboto", sans-serif;
   font-size: 10vw;
@@ -509,7 +510,6 @@ dl, dd {
     font-size: 2.5vw;
   }
 }
-
 .c-text--ttl {
   font-size: 5vw;
   font-weight: 700;
@@ -524,8 +524,6 @@ dl, dd {
     font-size: 1.5vw;
   }
 }
-
-/*コンテンツテキスト*/
 .c-text--content {
   font-size: 3vw;
 }
@@ -539,8 +537,6 @@ dl, dd {
     font-size: 1.2vw;
   }
 }
-
-/*サイドバーテキスト*/
 .c-text--small {
   color: #707070;
   font-size: 4vw;
@@ -552,6 +548,24 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .c-text--small {
+    font-size: 1vw;
+  }
+}
+.c-text--footer {
+  font-size: 4vw;
+  color: #fff;
+}
+@media screen and (min-width: 600px) {
+  .c-text--footer {
+    font-size: 2vw;
+  }
+}
+.c-text--copyright {
+  font-size: 2vw;
+  color: #fff;
+}
+@media screen and (min-width: 600px) {
+  .c-text--copyright {
     font-size: 1vw;
   }
 }
@@ -567,8 +581,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .c-shadow {
-    display: block;
-    left: 0;
+    display: none;
   }
 }
 
@@ -684,6 +697,21 @@ dl, dd {
     grid-area: access;
   }
 }
+/*testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest*/
+.p-grid--sidebar {
+  display: grid;
+  grid-template: "sidebar" auto/auto;
+  position: relative;
+}
+
+.c-shadow {
+  grid-area: sidebar;
+}
+
+.p-sidebar {
+  grid-area: sidebar;
+}
+
 @media screen and (max-width: 599.9px) {
   .p-header {
     display: -webkit-box;
@@ -1011,8 +1039,13 @@ dl, dd {
     height: 100%;
     padding: 20% 15%;
     position: relative;
-    z-index: 100;
-    left: 100%;
+    /*test*/
+    /*test*/
+    position: absolute;
+    right: 0%;
+    /*test*/
+    /*test*/
+    z-index: 200;
   }
   .p-sidebar__x {
     display: block;
@@ -1060,7 +1093,13 @@ dl, dd {
     height: 100%;
     padding: 10% 5%;
     position: relative;
-    left: 100%;
+    /*test*/
+    /*test*/
+    position: absolute;
+    right: 0%;
+    /*test*/
+    /*test*/
+    z-index: 200;
   }
   .p-sidebar__x {
     display: block;
@@ -1105,8 +1144,6 @@ dl, dd {
     background-color: #F2EDE9;
     height: 100%;
     padding: 10% 5%;
-    position: relative;
-    left: 0;
   }
   .p-sidebar__x {
     display: none;
@@ -1266,69 +1303,26 @@ dl, dd {
     overflow: hidden;
   }
 }
-@media screen and (max-width: 599.9px) {
-  .p-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .p-footer__box__info {
-    margin-bottom: 20px;
-  }
+.p-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
-@media screen and (min-width: 600px) {
-  .p-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .p-footer__box__info {
-    margin-bottom: 20px;
-  }
+.p-footer__info {
+  margin-bottom: 20px;
 }
-@media screen and (min-width: 1080px) {
-  .p-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .p-footer__box__info {
-    margin-bottom: 20px;
-  }
-}
+
 @media screen and (max-width: 599.9px) {
   .u-font--btn {
     font-family: "Roboto", sans-serif;
@@ -1364,14 +1358,6 @@ dl, dd {
   .u-font--access-text {
     color: #fff;
     font-size: 4vw;
-  }
-  .u-font--footer {
-    font-size: 4vw;
-    color: #fff;
-  }
-  .u-font--cr {
-    font-size: 2vw;
-    color: #fff;
   }
 }
 @media screen and (min-width: 600px) {

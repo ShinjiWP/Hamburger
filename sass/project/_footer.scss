@@ -1,40 +1,12 @@
 @use "../global" as g;
 
-@include g.sp {
-	.p-footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		&__box__info {
-			margin-bottom: 20px;
-		}
-	}
-}
-@include g.tab {
-	.p-footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		&__box__info {
-			margin-bottom: 20px;
-		}
-	}
-}
-
-
-@include g.pc {
-	.p-footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		&__box__info {
-			margin-bottom: 20px;
-		}
+.p-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	&__info {
+		margin-bottom: 20px;
 	}
 }
