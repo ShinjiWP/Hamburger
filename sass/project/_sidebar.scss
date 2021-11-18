@@ -111,8 +111,8 @@
 		background-color: g.$light-beige;
 		height: 100%;
 		padding: 10% 5%;
-		position: relative;
-    left: 0;
+		position: static;
+    // left: 0;
 
 		&__x {
 			display: none;

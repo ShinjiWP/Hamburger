@@ -59,7 +59,7 @@ function handle(mm) {
 			$(".c-shadow").fadeIn(500);
 			$(".p-sidebar").css({ left: "14%", transition: "0.5s" });
 		});
-	} else {
+	} else  {
 		// それ以外の処理
 		$(".p-header__box").on("click", function () {
 			$(".c-shadow").fadeIn(500);

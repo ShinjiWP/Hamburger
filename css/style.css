@@ -374,7 +374,6 @@ dl, dd {
 }
 
 .c-grid {
-  overflow-x: hidden;
   display: grid;
   grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
 }
@@ -440,6 +439,7 @@ dl, dd {
   .c-grid--sidebar {
     grid-area: sidebar;
     background-color: #2498b3;
+    position: static;
   }
   .c-grid--access {
     grid-area: access;

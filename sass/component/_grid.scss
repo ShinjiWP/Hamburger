@@ -1,7 +1,7 @@
 @use "../global" as g;
 
 .c-grid {
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	display: grid;
 	grid-template:
 		"header sidebar" 217px
@@ -92,7 +92,7 @@
 		&--sidebar {
 			grid-area: sidebar;
 			background-color: g.$blue;
-			// position: static;
+			position: static;
 		}
 		&--access {
 			grid-area: access;
