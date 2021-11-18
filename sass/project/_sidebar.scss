@@ -107,38 +107,19 @@
 
 @include g.pc {
 	.p-sidebar {
-		width: 43%;
+		width: 100%;
 		background-color: g.$light-beige;
 		height: 100%;
 		padding: 10% 5%;
 		position: relative;
+    left: 0;
 
 		&__x {
-			display: block;
-			position: absolute;
-			width: 45px;
-			height: 45px;
-			top: 20px;
-			right: 20px;
+			display: none;
+		
 		}
 
-		&__x::before,
-		&__x::after {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 5px;
-			height: 30px;
-			background: #333;
-		}
-		&__x::before {
-			transform: translate(-50%, -50%) rotate(45deg);
-		}
-		&__x::after {
-			transform: translate(-50%, -50%) rotate(-45deg);
-		}
-
+	
 		&__menu {
 			padding: 5% 2.5%;
 			&__list {
@@ -149,7 +130,7 @@
 			&--md {
 				font-family: g.$Robot;
 				color: g.$font-gray;
-				visibility: hidden;
+				visibility: visible;
 			}
 		}
 	}
