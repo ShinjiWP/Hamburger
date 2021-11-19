@@ -1,51 +1,79 @@
 @use "../global" as g;
-@include g.sp {
-	.p-access__map--sp {
-		width: 100%;
-	}
-	.p-access__map--tab {
+
+@include g.tab {
+}
+@include g.pc {
+}
+
+.p-access__map--sp {
+  display: block;
+	width: 100%;
+
+	@include g.tab {
 		display: none;
 	}
-	.p-access__map--pc {
+	@include g.pc {
 		display: none;
-	}
-	.p-access__inner {
-		padding: 8%;
-		// height: 100%;
-		&__ttl {
-			padding: 5% 0;
-			position: relative;
-			margin-bottom: 20px;
-			&::before {
-				display: inline-block;
-				content: "";
-				width: 18vw;
-				height: 0.2vh;
-				background: #fff;
-				position: absolute;
-				left: 0;
-				bottom: 0;
-			}
-		}
-		&__text {
-			height: 55vw;
-			width: 100%;
-			// margin-top: 50px;
-			line-height: 2.35;
-			overflow: hidden;
-		}
 	}
 }
-@include g.tab {
-	.p-access__map--sp {
-		display: none;
-	}
-	.p-access__map--tab {
+.p-access__map--tab {
+	display: none;
+
+	@include g.tab {
+    display: block;
 		width: 100%;
 	}
-	.p-access__map--pc {
+	@include g.pc {
 		display: none;
 	}
+}
+.p-access__map--pc {
+	display: none;
+	@include g.tab {
+    display: none;
+	}
+	@include g.pc {
+    display: block;
+    width: 100%;
+	}
+}
+.p-access__inner {
+	padding: 8%;
+	// height: 100%;
+	&__ttl {
+		padding: 5% 0;
+		position: relative;
+		margin-bottom: 20px;
+		&::before {
+			display: inline-block;
+			content: "";
+			width: 18vw;
+			height: 0.2vh;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+		}
+	}
+	&__text {
+		height: 55vw;
+		width: 100%;
+		// margin-top: 50px;
+		line-height: 2.35;
+		overflow: hidden;
+	}
+}
+
+@include g.tab {
+	// .p-access__map--sp {
+	// 	display: none;
+	// }
+	// .p-access__map--tab {
+	// 	width: 100%;
+	// }
+	// .p-access__map--pc {
+	// 	display: none;
+	// }
 
 	.p-access__inner {
 		padding: 4%;
@@ -76,18 +104,18 @@
 	}
 }
 @include g.pc {
-	.p-access__map--sp {
-		display: none;
-	}
-	.p-access__map--tab {
-		width: none;
-	}
-	.p-access__map--tab {
-		display: 100%;
-	}
+	// .p-access__map--sp {
+	// 	display: none;
+	// }
+	// .p-access__map--tab {
+	// 	width: none;
+	// }
+	// .p-access__map--tab {
+	// 	display: 100%;
+	// }
 	.p-access__inner {
 		padding: 4%;
-    width: 50%;
+		width: 100%;
 		// height: 100%;
 		&__ttl {
 			padding: 0;
@@ -105,7 +133,8 @@
 			}
 		}
 		&__text {
-			height: 28vw;
+			height: 24vw;
+      min-height:270px ;
 			width: 100%;
 			// margin-top: 50px;
 			line-height: 2.35;

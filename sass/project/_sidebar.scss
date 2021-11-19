@@ -1,148 +1,85 @@
 @use "../global" as g;
 
-@include g.sp {
-	.p-sidebar {
-		width: 86%;
-		background-color: g.$light-beige;
-		height: 100%;
-		padding: 20% 15%;
-		position: relative;
-    /*test*/
-    /*test*/
-    position: absolute;
-    right: 0%;
-    /*test*/
-		// left: 100%;
-    /*test*/
-		z-index: 200;
 
-		&__x {
-			display: block;
-			position: absolute;
-			width: 45px;
-			height: 45px;
-			top: 20px;
-			right: 20px;
-		}
+.p-sidebar {
+	width: 86%;
+	background-color: g.$light-beige;
+	height: 100%;
+	padding: 20% 15%;
+	position: absolute;
+	right: 0%;
+	z-index: 200;
 
-		&__x::before,
-		&__x::after {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 5px;
-			height: 30px;
-			background: #333;
-		}
-
-		&__x::before {
-			transform: translate(-50%, -50%) rotate(45deg);
-		}
-		&__x::after {
-			transform: translate(-50%, -50%) rotate(-45deg);
-		}
-		&__menu {
-			position: relative;
-			padding: 10% 5%;
-			z-index: 100;
-			&__list {
-				margin: 10% 0;
-			}
-		}
-		&__heading {
-			&--md {
-				font-family: g.$Robot;
-				color: g.$font-gray;
-				visibility: hidden;
-			}
-		}
-	}
-}
-
-@include g.tab {
-	.p-sidebar {
+	@include g.tab {
 		width: 43%;
-		background-color: g.$light-beige;
-		height: 100%;
 		padding: 10% 5%;
+	}
+	@include g.pc {
+		width: 100%;
+		padding: 10% 5%;
+	}
+
+	&__x {
+		display: block;
+		position: absolute;
+		width: 45px;
+		height: 45px;
+		top: 20px;
+		right: 20px;
+
+		@include g.pc {
+			display: none;
+		}
+	}
+
+	&__x::before,
+	&__x::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 5px;
+		height: 30px;
+		background: #333;
+	}
+
+	&__x::before {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+	&__x::after {
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+  
+	&__menu {
 		position: relative;
-    /*test*/
-    /*test*/
-    position: absolute;
-    right: 0%;
-    /*test*/
-		// left: 100%;
-    /*test*/
-    z-index: 200;
-
-		&__x {
-			display: block;
-			position: absolute;
-			width: 45px;
-			height: 45px;
-			top: 20px;
-			right: 20px;
-		}
-
-		&__x::before,
-		&__x::after {
-			content: "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 5px;
-			height: 30px;
-			background: #333;
-		}
-		&__x::before {
-			transform: translate(-50%, -50%) rotate(45deg);
-		}
-		&__x::after {
-			transform: translate(-50%, -50%) rotate(-45deg);
-		}
-
-		&__menu {
+		padding: 10% 5%;
+		z-index: 100;
+		@include g.tab {
 			padding: 5% 2.5%;
-			&__list {
+		}
+		@include g.pc {
+			padding: 5% 2.5%;
+		}
+
+		&__list {
+			margin: 10% 0;
+
+			@include g.tab {
 				margin: 5% 0;
 			}
-		}
-		&__heading {
-			&--md {
-				font-family: g.$Robot;
-				color: g.$font-gray;
-				visibility: hidden;
+			@include g.pc {
+				margin: 5% 0;
 			}
 		}
 	}
-}
 
-@include g.pc {
-	.p-sidebar {
-		width: 100%;
-		background-color: g.$light-beige;
-		height: 100%;
-		padding: 10% 5%;
-		// position: static;
-    // left: 0;
+	&__heading {
+		&--md {
+			font-family: g.$Robot;
+			color: g.$font-gray;
+			visibility: hidden;
 
-		&__x {
-			display: none;
-		
-		}
-
-	
-		&__menu {
-			padding: 5% 2.5%;
-			&__list {
-				margin: 5% 0;
-			}
-		}
-		&__heading {
-			&--md {
-				font-family: g.$Robot;
-				color: g.$font-gray;
+			@include g.pc {
 				visibility: visible;
 			}
 		}

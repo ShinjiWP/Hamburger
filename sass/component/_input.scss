@@ -5,7 +5,7 @@
 	// height: 100%;
 	border-radius: 10px;
 	font-size: 5vw;
-	border: 3px solid g.$font-gray;
+	border: 2px solid g.$font-gray;
 	vertical-align: bottom;
 
 	@include g.tab {
@@ -14,7 +14,7 @@
 
 	@include g.pc {
 		width: 20vw;
-		height: min(4vw, 40px);
+		height: min(3vw, 35px);
 		border-radius: 5px;
 		font-size: 2.5vw;
 	}

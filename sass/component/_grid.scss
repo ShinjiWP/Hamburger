@@ -1,7 +1,7 @@
 @use "../global" as g;
 
 .c-grid {
-	// overflow-x: hidden;
+	overflow-x: hidden;
 	display: grid;
 	grid-template:
 		"header sidebar" 217px
@@ -64,16 +64,13 @@
 
 @include g.pc {
 	.c-grid {
-		// position: static;
-		// min-height: 100vh;
-		// margin: 0 auto;
 		overflow-x: visible;
 		display: grid;
 		grid-template:
 			"header  sidebar" 7%
 			"figure   sidebar" 18%
 			"main    sidebar" auto
-      "-------  sidebar" 20px
+			"-------  sidebar" 20px
 			"access  sidebar" auto
 			"footer   footer" 5%
 			/80% 20%;

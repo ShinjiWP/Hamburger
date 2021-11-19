@@ -351,9 +351,7 @@ template {
 }
 
 /*以下追加*/
-*,
-*::before,
-*::after {
+*,*::before,*::after {
   box-sizing: border-box;
 }
 
