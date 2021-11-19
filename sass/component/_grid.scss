@@ -73,6 +73,7 @@
 			"header  sidebar" 7%
 			"figure   sidebar" 18%
 			"main    sidebar" auto
+      "-------  sidebar" 20px
 			"access  sidebar" auto
 			"footer   footer" 5%
 			/80% 20%;
@@ -91,8 +92,7 @@
 		}
 		&--sidebar {
 			grid-area: sidebar;
-			background-color: g.$blue;
-			position: static;
+			background-color: g.$light-beige;
 		}
 		&--access {
 			grid-area: access;

@@ -70,7 +70,7 @@ mediaQuery.addListener(handle);
 // 		$(".c-shadow").fadeOut(500);
 // 		$(".p-sidebar").css({ left: "100%", transition: "0.5s" });
 //     });
-    
+
 // }
 function handle(mm) {
 	if (mm.matches) {
@@ -81,8 +81,8 @@ function handle(mm) {
 		});
 	} else {
 		// それ以外の処理
-			$(".c-shadow").fadeOut(00);
-			$(".p-sidebar").css({ right: "0%", transition: "0s" });
+		$(".c-shadow").fadeOut(00);
+		$(".p-sidebar").css({ right: "0%" });
 	}
 	$(".p-sidebar__x").on("click", function () {
 		$(".c-shadow").fadeOut(500);
