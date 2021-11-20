@@ -17,13 +17,13 @@
 .p-grid--article {
 	display: grid;
 	grid-template: "article" auto/auto;
-	padding: 5% 5% 0% 5%;
+	// padding: 5% 5% 0% 5%;
 
 	@include g.tab {
-		padding: 2.5% 2.5% 0% 2.5%;
+		// padding: 2.5% 2.5% 0% 2.5%;
 	}
 	@include g.pc {
-		padding: 8% 5% 0% 5%;
+		// padding: 8% 5% 0% 5%;
 	}
 }
 .p-content__image {

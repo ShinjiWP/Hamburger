@@ -7,65 +7,12 @@
 		"header sidebar" 217px
 		"figure   sidebar" auto
 		"main    sidebar" auto
-		"-------  sidebar" 20px
 		"access  sidebar" auto
 		"footer   sidebar" 150px
 		/100% 100%;
-	&--header {
-		grid-area: header;
-	}
-	&--mainvisual {
-		grid-area: figure;
-		margin: 0;
-		// background-color: g.$gray;
-	}
-	&--contents {
-		grid-area: main;
-		// background-color: g.$skyblue;
-	}
-	&--sidebar {
-		grid-area: sidebar;
-		width: 100%; /*この辺は仮の設定*/
-		height: 100%;
-		// transform: translate(0%, 0);
-		// transition: 2s;
-	}
 
-	&--access {
-		grid-area: access;
-	}
-	&--footer {
-		grid-area: footer;
-		background-color: g.$brown;
-	}
-	@include g.tab {
-		.c-grid {
-			grid-template:
-				"header sidebar" 217px
-				"figure   sidebar" auto
-				"main    sidebar" auto
-				"-------  sidebar" 20px
-				"access  sidebar" auto
-				"footer   sidebar" 150px
-				/100% 100%;
-			&--contents {
-				display: flex;
-			}
-			&--sidebar {
-				grid-area: sidebar;
-				width: 100%; /*この辺は仮の設定*/
-				height: 100%;
-				// transform: translate(0%, 0);
-				// transition: 2s;
-			}
-		}
-	}
-}
-
-@include g.pc {
-	.c-grid {
+	@include g.pc {
 		overflow-x: visible;
-		display: grid;
 		grid-template:
 			"header  sidebar" 7%
 			"figure   sidebar" 18%
@@ -73,29 +20,44 @@
 			"access  sidebar" auto
 			"footer   footer" 5%
 			/80% 20%;
-		&--header {
-			grid-area: header;
-			background-color: g.$red;
+	}
+
+	&--header {
+		grid-area: header;
+	}
+
+	&--mainvisual {
+		grid-area: figure;
+		margin: 0;
+	}
+
+	&--contents {
+		grid-area: main;
+		padding: 8%;
+
+		@include g.tab {
+			display: flex;
+			padding: 8% 6%;
 		}
-		&--mainvisual {
-			grid-area: figure;
-			margin: 0;
-			background-color: g.$gray;
+
+		@include g.pc {
+			padding: 10% 6%;
 		}
-		&--contents {
-			grid-area: main;
-      margin-bottom: 8%;
-		}
-		&--sidebar {
-			grid-area: sidebar;
-			background-color: g.$light-beige;
-		}
-		&--access {
-			grid-area: access;
-		}
-		&--footer {
-			grid-area: footer;
-			background-color: g.$brown;
-		}
+	}
+
+	&--sidebar {
+		grid-area: sidebar;
+		width: 100%; /*この辺は仮の設定*/
+		height: 100%;
+		background-color: g.$light-beige;
+	}
+
+	&--access {
+		grid-area: access;
+	}
+
+	&--footer {
+		grid-area: footer;
+		background-color: g.$brown;
 	}
 }

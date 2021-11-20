@@ -374,7 +374,13 @@ dl, dd {
 .c-grid {
   overflow-x: hidden;
   display: grid;
-  grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
+  grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
+}
+@media screen and (min-width: 1080px) {
+  .c-grid {
+    overflow-x: visible;
+    grid-template: "header  sidebar" 7% "figure   sidebar" 18% "main    sidebar" auto "access  sidebar" auto "footer   footer" 5%/80% 20%;
+  }
 }
 .c-grid--header {
   grid-area: header;
@@ -385,12 +391,27 @@ dl, dd {
 }
 .c-grid--contents {
   grid-area: main;
+  padding: 8%;
+}
+@media screen and (min-width: 600px) {
+  .c-grid--contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8% 6%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .c-grid--contents {
+    padding: 10% 6%;
+  }
 }
 .c-grid--sidebar {
   grid-area: sidebar;
   width: 100%;
   /*この辺は仮の設定*/
   height: 100%;
+  background-color: #F2EDE9;
 }
 .c-grid--access {
   grid-area: access;
@@ -399,54 +420,7 @@ dl, dd {
   grid-area: footer;
   background-color: #96806B;
 }
-@media screen and (min-width: 600px) {
-  .c-grid .c-grid {
-    grid-template: "header sidebar" 217px "figure   sidebar" auto "main    sidebar" auto "-------  sidebar" 20px "access  sidebar" auto "footer   sidebar" 150px/100% 100%;
-  }
-  .c-grid .c-grid--contents {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .c-grid .c-grid--sidebar {
-    grid-area: sidebar;
-    width: 100%;
-    /*この辺は仮の設定*/
-    height: 100%;
-  }
-}
 
-@media screen and (min-width: 1080px) {
-  .c-grid {
-    overflow-x: visible;
-    display: grid;
-    grid-template: "header  sidebar" 7% "figure   sidebar" 18% "main    sidebar" auto "access  sidebar" auto "footer   footer" 5%/80% 20%;
-  }
-  .c-grid--header {
-    grid-area: header;
-    background-color: #f16b6b;
-  }
-  .c-grid--mainvisual {
-    grid-area: figure;
-    margin: 0;
-    background-color: #f3fafb;
-  }
-  .c-grid--contents {
-    grid-area: main;
-    margin-bottom: 8%;
-  }
-  .c-grid--sidebar {
-    grid-area: sidebar;
-    background-color: #F2EDE9;
-  }
-  .c-grid--access {
-    grid-area: access;
-  }
-  .c-grid--footer {
-    grid-area: footer;
-    background-color: #96806B;
-  }
-}
 .c-input {
   width: 65vw;
   border-radius: 10px;
@@ -577,19 +551,7 @@ dl, dd {
 .p-grid--article {
   display: grid;
   grid-template: "article" auto/auto;
-  padding: 5% 5% 0% 5%;
 }
-@media screen and (min-width: 600px) {
-  .p-grid--article {
-    padding: 2.5% 2.5% 0% 2.5%;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .p-grid--article {
-    padding: 8% 5% 0% 5%;
-  }
-}
-
 .p-content__image {
   grid-area: article;
 }
@@ -694,7 +656,7 @@ dl, dd {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    padding: 4%;
+    padding: 2vw;
   }
   .p-header__heading--lg {
     width: 100%;
@@ -784,6 +746,7 @@ dl, dd {
 
   .p-mainvisual__photo--sp {
     width: 100%;
+    vertical-align: bottom;
   }
   .p-mainvisual__photo--pc {
     display: none;
@@ -796,6 +759,7 @@ dl, dd {
 
   .p-mainvisual__photo--pc {
     width: 100%;
+    vertical-align: bottom;
   }
 
   .p-mainvisual--text {
@@ -1153,6 +1117,16 @@ dl, dd {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 599.9px) {
+  .u-space--content {
+    margin-bottom: 8%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .u-space--content {
+    margin-right: 6%;
+  }
+}
 @media screen and (max-width: 599.9px) {
   .u-font--btn {
     font-family: "Roboto", sans-serif;
