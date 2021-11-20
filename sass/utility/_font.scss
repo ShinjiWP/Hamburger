@@ -131,6 +131,9 @@
 		}
 
 		&--side {
+      &--header{
+        font-size:18px ;
+      }
 			&--ttl {
 				color: g.$font-gray;
 				font-size: 1.25vw;

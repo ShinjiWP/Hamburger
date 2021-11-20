@@ -16,7 +16,7 @@
 	}
 	@include g.pc {
 		width: 100%;
-		padding: 10% 5%;
+		padding: 10%;
 	}
 
 	&__x {
@@ -68,7 +68,7 @@
 				margin: 5% 0;
 			}
 			@include g.pc {
-				margin: 5% 0;
+				margin: 12% 2%;
 			}
 		}
 	}
@@ -81,6 +81,7 @@
 
 			@include g.pc {
 				visibility: visible;
+        margin: 15% 0 25% 0;
 			}
 		}
 	}
