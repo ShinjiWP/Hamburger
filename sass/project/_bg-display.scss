@@ -1,22 +1,22 @@
 /*補助的な背景を定義する*/
 @use "../global" as g;
 
-.p-bg-display--sidebar {
-	background-color: rgba(112, 112, 112, 0.9);
-	display: flex;
-	justify-content: flex-end;
-	height: 100%;
-}
-
-.p-bg-display--access {
-	background-color: rgba(112, 112, 112, 0.9);
-	height: 50%;
-	@include g.tab {
+.p-bg-display {
+	&--sidebar {
+		background-color: rgba(112, 112, 112, 0.9);
+		display: flex;
+		justify-content: flex-end;
 		height: 100%;
 	}
-	@include g.pc {
-		width: 60%;
+
+	&--access {
+		background-color: rgba(112, 112, 112, 0.9);
+		height: 50%;
+		@include g.tab {
+			height: 100%;
+		}
+		@include g.pc {
+			width: 60%;
+		}
 	}
 }
-
-

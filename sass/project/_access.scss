@@ -1,97 +1,100 @@
 @use "../global" as g;
 
-.p-access__map--sp {
-	display: block;
-	width: 100%;
-
-	@include g.tab {
-		display: none;
-	}
-	@include g.pc {
-		display: none;
-	}
-}
-
-.p-access__map--tab {
-	display: none;
-
-	@include g.tab {
+.p-access {
+	&__map--sp {
 		display: block;
 		width: 100%;
-	}
-
-	@include g.pc {
-		display: none;
-	}
-}
-
-.p-access__map--pc {
-	display: none;
-	@include g.tab {
-		display: none;
-	}
-
-	@include g.pc {
-		display: block;
-		width: 100%;
-	}
-}
-
-.p-access__inner {
-	padding: 7%;
-
-	@include g.tab {
-		padding: 4%;
-	}
-
-	@include g.pc {
-		padding: 10%;
-		width: 100%;
-	}
-
-	&__ttl {
-		padding: 5% 0;
-		position: relative;
-		margin-bottom: 20px;
-		z-index: 0;
 
 		@include g.tab {
-			padding: 0;
+			display: none;
+		}
+		@include g.pc {
+			display: none;
+		}
+	}
+
+	&__map--tab {
+		display: none;
+
+		@include g.tab {
+			display: block;
+			width: 100%;
 		}
 
 		@include g.pc {
-			margin-bottom: 28px;
+			display: none;
+		}
+	}
+
+	&__map--pc {
+		display: none;
+		@include g.tab {
+			display: none;
 		}
 
-		&::before {
-			display: inline-block;
-			content: "";
-			width: 18vw;
-			height: 0.2vh;
-			background: #fff;
-			position: absolute;
-			left: 0;
-			bottom: 0;
+		@include g.pc {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&__inner {
+		padding: 7%;
+
+		@include g.tab {
+			padding: 4%;
+		}
+
+		@include g.pc {
+			padding: 10%;
+			width: 100%;
+		}
+
+		&__ttl {
+			padding: 5% 0;
+			position: relative;
+			margin-bottom: 20px;
+			z-index: 0;
 
 			@include g.tab {
-				width: 9vw;
-				bottom: -15px;
+				padding: 0;
+			}
+
+			@include g.pc {
+				margin-bottom: 28px;
+			}
+
+			&::before {
+				display: inline-block;
+				content: "";
+				width: 18vw;
+				height: 0.2vh;
+				background: #fff;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+
+				@include g.tab {
+					width: 9vw;
+					bottom: -15px;
+				}
 			}
 		}
-	}
-	&__text {
-		height: 55vw;
-		width: 100%;
-		line-height: 2.35;
-		overflow: hidden;
 
-		@include g.tab {
-			height: 32vw;
-		}
+		&__text {
+			height: 55vw;
+			width: 100%;
+			line-height: 2.35;
+			overflow: hidden;
 
-		@include g.pc {
-			height: 19vw;
-			min-height: 150px;
+			@include g.tab {
+				height: 32vw;
+			}
+
+			@include g.pc {
+				height: 19vw;
+				min-height: 150px;
+			}
 		}
 	}
 }

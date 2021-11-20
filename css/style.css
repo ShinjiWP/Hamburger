@@ -4,10 +4,6 @@
 /*フォント用カラー変数*/
 /*font-family*/
 /*font-size list*/
-* {
-  outline: 1px solid red;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -552,6 +548,7 @@ dl, dd {
   display: grid;
   grid-template: "article" auto/auto;
 }
+
 .p-content__image {
   grid-area: article;
 }
@@ -972,7 +969,6 @@ dl, dd {
           justify-content: flex-end;
   height: 100%;
 }
-
 .p-bg-display--access {
   background-color: rgba(112, 112, 112, 0.9);
   height: 50%;
@@ -1002,7 +998,6 @@ dl, dd {
     display: none;
   }
 }
-
 .p-access__map--tab {
   display: none;
 }
@@ -1017,7 +1012,6 @@ dl, dd {
     display: none;
   }
 }
-
 .p-access__map--pc {
   display: none;
 }
@@ -1032,7 +1026,6 @@ dl, dd {
     width: 100%;
   }
 }
-
 .p-access__inner {
   padding: 7%;
 }
