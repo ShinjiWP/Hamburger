@@ -70,7 +70,6 @@
 			"header  sidebar" 7%
 			"figure   sidebar" 18%
 			"main    sidebar" auto
-			"-------  sidebar" 20px
 			"access  sidebar" auto
 			"footer   footer" 5%
 			/80% 20%;
@@ -86,6 +85,7 @@
 		&--contents {
 			grid-area: main;
 			background-color: g.$skyblue;
+      margin-bottom: 8%;
 		}
 		&--sidebar {
 			grid-area: sidebar;

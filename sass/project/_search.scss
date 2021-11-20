@@ -1,6 +1,8 @@
 @use "../global" as g;
 
 .p-search {
+  display: flex;
+  height: 35px;
 	margin: auto;
 	width: fit-content;
 	position: relative;
@@ -23,13 +25,14 @@
 		}
 	}
   @include g.pc {
+    display: flex;
+    height: 30px;
+    font-size: 16px;
     &::before {
       font-size: 1vw;
       margin-top: -0.5vw;
     }
-    &__form {
-      display: flex;
-    }
+    
   }
 }
 

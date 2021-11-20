@@ -41,17 +41,20 @@
 		background-color: rgba(255, 255, 255, 0.5);
 		margin: 0 3% 3% 3%;
 		padding: 5%;
-		height: 190px;
+		height: 220px;
 		@include g.tab {
-			height: 165px;
+			padding: 4% 5%;
 		}
 		@include g.pc {
 		}
 
 		&__ttl {
 			margin: 5% 0;
-			@include g.pc {
-        margin: 3% 0 5% 0;
+			@include g.tab {
+				
+			}
+			pc {
+				margin: 3% 0 5% 0;
 			}
 		}
 		&__text {

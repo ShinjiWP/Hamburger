@@ -7,12 +7,10 @@
 	border: 2px solid g.$font-gray;
 
 	@include g.tab {
-		height: min(6vw, 45px);
 	}
 
 	@include g.pc {
 		width: 9vw;
-		height: min(3vw, 35px);
 		border-radius: 5px;
 		margin: 0 10px;
 	}

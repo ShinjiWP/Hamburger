@@ -2,20 +2,13 @@
 
 .c-input {
 	width: 65vw;
-	// height: 100%;
 	border-radius: 10px;
-	font-size: 5vw;
+	font-size: 25px;
 	border: 2px solid g.$font-gray;
-	vertical-align: bottom;
 
-	@include g.tab {
-		height: min(6vw, 45px);
-	}
 
 	@include g.pc {
 		width: 20vw;
-		height: min(3vw, 35px);
 		border-radius: 5px;
-		font-size: 2.5vw;
 	}
 }
