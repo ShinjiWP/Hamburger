@@ -51,20 +51,12 @@
 	}
 
 	&--footer {
-		font-size: 4vw;
+		font-size: 20px;
 		color: #fff;
-
-		@include g.tab {
-			font-size: 2vw;
-		}
 	}
 
 	&--copyright {
-		font-size: 2vw;
+		font-size: 14px;
 		color: #fff;
-
-		@include g.tab {
-			font-size: 1vw;
-		}
 	}
 }
