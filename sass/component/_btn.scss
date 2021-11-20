@@ -5,6 +5,7 @@
 	height: 100%;
 	border-radius: 10px;
 	border: 2px solid g.$font-gray;
+  margin: 0 10px;
 
 	@include g.tab {
 	}
@@ -12,6 +13,5 @@
 	@include g.pc {
 		width: 9vw;
 		border-radius: 5px;
-		margin: 0 10px;
 	}
 }

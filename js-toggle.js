@@ -84,7 +84,7 @@ function handle(mm) {
 		$(".c-shadow").fadeOut(00);
 		$(".p-sidebar").css({ right: "0%" });
 	}
-	$(".p-sidebar__x").on("click", function () {
+	$(".p-sidebar__esc").on("click", function () {
 		$(".c-shadow").fadeOut(500);
 		$(".p-sidebar").css({ right: "0%", transition: "0.5s" });
 	});
