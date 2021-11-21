@@ -3,7 +3,20 @@
 /*バックグラウンド用カラー変数*/
 /*フォント用カラー変数*/
 /*font-family*/
-/*font-size list*/
+/*フォントサイズ一覧*/
+/*とりあえずはヘッダー内のフォントサイズを変数に置き換える*/
+/*
+header内フォントサイズ一覧
+*/
+/*スマートフォン用*/
+/*タブレット用*/
+/*パソコン用*/
+/*
+mainvisual内フォントサイズ一覧
+*/
+/*スマートフォン用*/
+/*タブレット用*/
+/*パソコン用*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -405,7 +418,6 @@ dl, dd {
 .c-grid--sidebar {
   grid-area: sidebar;
   width: 100%;
-  /*この辺は仮の設定*/
   height: 100%;
   background-color: #F2EDE9;
 }
@@ -1184,16 +1196,6 @@ dl, dd {
 }
 
 @media screen and (max-width: 599.9px) {
-  .u-space--content {
-    margin-bottom: 8%;
-  }
-}
-@media screen and (min-width: 600px) {
-  .u-space--content {
-    margin-right: 6%;
-  }
-}
-@media screen and (max-width: 599.9px) {
   .u-font--access-ttl {
     font-family: "Roboto", sans-serif;
     font-size: 7vw;
@@ -1213,6 +1215,16 @@ dl, dd {
     font-size: 1.75vw;
     color: #fff;
     font-weight: 700;
+  }
+}
+@media screen and (max-width: 599.9px) {
+  .u-space--content {
+    margin-bottom: 8%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .u-space--content {
+    margin-right: 6%;
   }
 }
 /*# sourceMappingURL=style.css.map */

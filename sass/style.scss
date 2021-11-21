@@ -2,6 +2,9 @@
 @use "foundation";
 @use "layout";
 @use "component";
-@use "javascript";
 @use "project";
-@use "utility";
+// @use "utility";
+
+@use "./utility/bg-color";
+@use "./utility/font";
+@use "./utility/space";
