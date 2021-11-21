@@ -2,13 +2,20 @@
 
 .c-text {
 	font-size: 1.25vw;
-  
-  &--btn {
-    font-family: g.$Robot;
-    color: g.$font-gray;
-    font-size: 4vw;
-    font-weight: 700;
-  }
+
+	&--btn {
+		font-family: g.$Robot;
+		color: g.$font-gray;
+		font-size: 4vw;
+		font-weight: 700;
+
+		@include g.tab {
+			font-size: min(3vw, 25px);
+		}
+		@include g.pc {
+			font-size: 0;
+		}
+	}
 
 	&--huge {
 		font-family: g.$Robot;
@@ -21,7 +28,6 @@
 			font-size: min(3vw, 60px);
 		}
 	}
-
 
 	&--large {
 		font-family: g.$Robot;
@@ -64,8 +70,33 @@
 	}
 
 	/*サイドバーテキスト*/
-	&--small {
+	&--side {
 		color: g.$font-gray;
+		font-size: 5vw;
+
+		@include g.tab {
+			font-size: 2.5vw;
+		}
+
+		@include g.pc {
+			font-size: 1.25vw;
+		}
+	}
+	&--item {
+		color: g.$font-gray;
+		font-size: 4vw;
+
+		@include g.tab {
+			font-size: 2vw;
+		}
+
+		@include g.pc {
+			font-size: 1vw;
+		}
+	}
+
+	&--access {
+		color: #fff;
 		font-size: 4vw;
 
 		@include g.tab {

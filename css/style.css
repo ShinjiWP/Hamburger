@@ -454,6 +454,16 @@ dl, dd {
   font-size: 4vw;
   font-weight: 700;
 }
+@media screen and (min-width: 600px) {
+  .c-text--btn {
+    font-size: min(3vw, 25px);
+  }
+}
+@media screen and (min-width: 1080px) {
+  .c-text--btn {
+    font-size: 0;
+  }
+}
 .c-text--huge {
   font-family: "Roboto", sans-serif;
   color: #707070;
@@ -516,17 +526,45 @@ dl, dd {
     font-size: 16px;
   }
 }
-.c-text--small {
+.c-text--side {
+  color: #707070;
+  font-size: 5vw;
+}
+@media screen and (min-width: 600px) {
+  .c-text--side {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .c-text--side {
+    font-size: 1.25vw;
+  }
+}
+.c-text--item {
   color: #707070;
   font-size: 4vw;
 }
 @media screen and (min-width: 600px) {
-  .c-text--small {
+  .c-text--item {
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .c-text--small {
+  .c-text--item {
+    font-size: 1vw;
+  }
+}
+.c-text--access {
+  color: #fff;
+  font-size: 4vw;
+}
+@media screen and (min-width: 600px) {
+  .c-text--access {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .c-text--access {
     font-size: 1vw;
   }
 }
@@ -878,7 +916,6 @@ dl, dd {
   width: 100%;
   display: inline-block;
   overflow: hidden;
-  text-overflow: ellipsis;
   line-height: 1.4;
 }
 @media screen and (min-width: 600px) {
@@ -980,6 +1017,7 @@ dl, dd {
   .p-sidebar__heading--md {
     visibility: visible;
     margin: 15% 0 30% 0;
+    font-size: 23px;
   }
 }
 
@@ -1061,7 +1099,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-access__inner {
-    padding: 10%;
+    padding: 10% 10% 0 10%;
     width: 100%;
   }
 }
@@ -1070,6 +1108,8 @@ dl, dd {
   position: relative;
   margin-bottom: 20px;
   z-index: 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 @media screen and (min-width: 600px) {
   .p-access__inner__ttl {
@@ -1078,7 +1118,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-access__inner__ttl {
-    margin-bottom: 28px;
+    margin-bottom: 60px;
   }
 }
 .p-access__inner__ttl::before {
@@ -1095,6 +1135,12 @@ dl, dd {
   .p-access__inner__ttl::before {
     width: 9vw;
     bottom: -15px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-access__inner__ttl::before {
+    width: 3vw;
+    bottom: -35px;
   }
 }
 .p-access__inner__text {
@@ -1146,95 +1192,25 @@ dl, dd {
   }
 }
 @media screen and (max-width: 599.9px) {
-  .u-font--mainvisual {
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-    font-size: 9vw;
-  }
-  .u-font--side--ttl {
-    color: #707070;
-    font-size: 5vw;
-  }
   .u-font--access-ttl {
     font-family: "Roboto", sans-serif;
     font-size: 7vw;
     color: #fff;
   }
-  .u-font--access-text {
-    color: #fff;
-    font-size: 4vw;
-  }
 }
 @media screen and (min-width: 600px) {
-  .u-font--btn {
-    font-family: "Roboto", sans-serif;
-    color: #707070;
-    font-size: min(3vw, 25px);
-    font-weight: 700;
-  }
-  .u-font--mainvisual {
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-    font-size: 5vw;
-  }
-  .u-font--side--ttl {
-    color: #707070;
-    font-size: 2.5vw;
-  }
   .u-font--access-ttl {
     font-family: "Roboto", sans-serif;
     font-size: 3.5vw;
     color: #fff;
   }
-  .u-font--access-text {
-    color: #fff;
-    font-size: 2vw;
-  }
-  .u-font--footer {
-    font-size: 2vw;
-    color: #fff;
-  }
-  .u-font--cr {
-    font-size: 1vw;
-    color: #fff;
-  }
 }
 @media screen and (min-width: 1080px) {
-  .u-font--btn {
-    font-family: "Roboto", sans-serif;
-    color: #707070;
-    font-size: min(3vw, 25px);
-    font-weight: 700;
-  }
-  .u-font--mainvisual {
-    font-family: "Roboto", sans-serif;
-    color: #fff;
-    font-size: 2vw;
-  }
-  .u-font--side--header {
-    font-size: 23px;
-  }
-  .u-font--side--ttl {
-    color: #707070;
-    font-size: 1.25vw;
-  }
   .u-font--access-ttl {
     font-family: "Roboto", sans-serif;
     font-size: 1.75vw;
     color: #fff;
     font-weight: 700;
-  }
-  .u-font--access-text {
-    color: #fff;
-    font-size: 1vw;
-  }
-  .u-font--footer {
-    font-size: 28px;
-    color: #fff;
-  }
-  .u-font--cr {
-    font-size: 1vw;
-    color: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */

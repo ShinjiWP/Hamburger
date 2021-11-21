@@ -46,7 +46,7 @@
 		}
 
 		@include g.pc {
-			padding: 10%;
+			padding: 10% 10% 0 10%;
 			width: 100%;
 		}
 
@@ -55,13 +55,16 @@
 			position: relative;
 			margin-bottom: 20px;
 			z-index: 0;
+			color:#fff;
+			font-family: g.$Robot;
+
 
 			@include g.tab {
 				padding: 0;
 			}
 
 			@include g.pc {
-				margin-bottom: 28px;
+				margin-bottom: 60px;
 			}
 
 			&::before {
@@ -77,6 +80,11 @@
 				@include g.tab {
 					width: 9vw;
 					bottom: -15px;
+				}
+
+				@include g.pc {
+					width: 3vw;
+					bottom: -35px;
 				}
 			}
 		}

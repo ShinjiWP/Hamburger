@@ -2,71 +2,19 @@
 
 @include g.sp {
 	.u-font {
-		
-
-		&--mainvisual {
-			font-family: g.$Robot;
-			color: #fff;
-			font-size: 9vw;
-		}
-
-		&--side {
-			&--ttl {
-				color: g.$font-gray;
-				font-size: 5vw;
-			}
-		}
-
 		&--access-ttl {
 			font-family: g.$Robot;
 			font-size: 7vw;
 			color: #fff;
-		}
-		&--access-text {
-			color: #fff;
-			font-size: 4vw;
 		}
 	}
 }
 
 @include g.tab {
 	.u-font {
-		&--btn {
-			font-family: g.$Robot;
-			color: g.$font-gray;
-			font-size: min(3vw, 25px);
-			font-weight: 700;
-		}
-
-		&--mainvisual {
-			font-family: g.$Robot;
-			color: #fff;
-			font-size: 5vw;
-		}
-
-		&--side {
-			&--ttl {
-				color: g.$font-gray;
-				font-size: 2.5vw;
-			}
-		}
-
 		&--access-ttl {
 			font-family: g.$Robot;
 			font-size: 3.5vw;
-			color: #fff;
-		}
-		&--access-text {
-			color: #fff;
-			font-size: 2vw;
-		}
-
-		&--footer {
-			font-size: 2vw;
-			color: #fff;
-		}
-		&--cr {
-			font-size: 1vw;
 			color: #fff;
 		}
 	}
@@ -74,47 +22,11 @@
 
 @include g.pc {
 	.u-font {
-		&--btn {
-			font-family: g.$Robot;
-			color: g.$font-gray;
-			font-size: min(3vw, 25px);
-			font-weight: 700;
-		}
-
-		&--mainvisual {
-			font-family: g.$Robot;
-			color: #fff;
-			font-size: 2vw;
-		}
-
-		&--side {
-			&--header {
-				font-size: 23px;
-			}
-			&--ttl {
-				color: g.$font-gray;
-				font-size: 1.25vw;
-			}
-		}
-
 		&--access-ttl {
 			font-family: g.$Robot;
 			font-size: 1.75vw;
 			color: #fff;
 			font-weight: 700;
-		}
-		&--access-text {
-			color: #fff;
-			font-size: 1vw;
-		}
-
-		&--footer {
-			font-size: 28px;
-			color: #fff;
-		}
-		&--cr {
-			font-size: 1vw;
-			color: #fff;
 		}
 	}
 }

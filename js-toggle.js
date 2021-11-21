@@ -1,3 +1,30 @@
+
+const mediaQuery = window.matchMedia("(max-width: 1079px)");
+
+// ページが読み込まれた時に実行
+handle(mediaQuery);
+
+// ウィンドウサイズを変更しても実行（ブレイクポイントの監視）
+mediaQuery.addListener(handle);
+
+function handle(mm) {
+    if (mm.matches) {
+        // ウィンドウサイズ768px以下のときの処理
+        $(".js-sidebar").on("click", function () {
+            $(".c-shadow").fadeIn(500);
+            $(".p-sidebar").css({ right: "100%", transition: "0.5s" });
+        });
+    } else {
+        // それ以外の処理
+        $(".c-shadow").fadeOut(00);
+        $(".p-sidebar").css({ right: "0%" });
+    }
+    $(".p-sidebar__esc").on("click", function () {
+        $(".c-shadow").fadeOut(500);
+        $(".p-sidebar").css({ right: "0%", transition: "0.5s" });
+    });
+}
+
 // $(function () {
 // 	if (window.matchMedia("(max-width:599.9px)").matches) {
 // 		$(".p-header__box").on("click", function () {
@@ -44,13 +71,6 @@
 // 	});
 // });
 
-const mediaQuery = window.matchMedia("(max-width: 1079px)");
-
-// ページが読み込まれた時に実行
-handle(mediaQuery);
-
-// ウィンドウサイズを変更しても実行（ブレイクポイントの監視）
-mediaQuery.addListener(handle);
 
 // function handle(mm) {
 // 	if (mm.matches) {
@@ -72,20 +92,3 @@ mediaQuery.addListener(handle);
 //     });
 
 // }
-function handle(mm) {
-	if (mm.matches) {
-		// ウィンドウサイズ768px以下のときの処理
-		$(".js-sidebar").on("click", function () {
-			$(".c-shadow").fadeIn(500);
-			$(".p-sidebar").css({ right: "100%", transition: "0.5s" });
-		});
-	} else {
-		// それ以外の処理
-		$(".c-shadow").fadeOut(00);
-		$(".p-sidebar").css({ right: "0%" });
-	}
-	$(".p-sidebar__esc").on("click", function () {
-		$(".c-shadow").fadeOut(500);
-		$(".p-sidebar").css({ right: "0%", transition: "0.5s" });
-	});
-}
