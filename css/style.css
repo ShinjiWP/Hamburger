@@ -421,11 +421,13 @@ dl, dd {
   width: 50vw;
   border-radius: 10px;
   border: 2px solid #707070;
+  padding-left: 28px;
 }
 @media screen and (min-width: 1080px) {
   .c-input {
     width: 20vw;
     border-radius: 5px;
+    padding-left: 22px;
   }
 }
 
@@ -770,8 +772,8 @@ dl, dd {
   position: absolute;
   left: 10px;
   top: 50%;
-  font-size: 4vw;
-  margin-top: -2vw;
+  font-size: 3vw;
+  margin-top: -1.5vw;
 }
 @media screen and (min-width: 600px) {
   .p-search::before {
