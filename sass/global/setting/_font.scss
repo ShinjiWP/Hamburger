@@ -15,17 +15,18 @@ $base-font-size:1.25vw;
 /*
 header内フォントサイズ一覧
 */
+$header-ttl:clamp(16px,(1rem + 5vw),50px);
 
 /*スマートフォン用*/
 $sp-header-ttl:10vw;
 $sp-header-slide-btn:4vw;
 
 /*タブレット用*/
-$tab-header-ttl:min(5vw, 60px);
+$tab-header-ttl:min(6vw, 50px);
 $tab-header-slide-btn:min(3vw, 25px);
 
 /*パソコン用*/
-$pc-header-ttl:min(3vw, 60px);
+$pc-header-ttl:min(3vw, 40px);
 $pc-header-slide-btn: 0;
 
 
@@ -41,7 +42,7 @@ $sp-mainvisual-ttl:8vw;
 $tab-mainvisual-ttl:4vw;
 
 /*パソコン用*/
-$pc-mainvisual-ttl:1.5vw;
+$pc-mainvisual-ttl:2vw;
 
 /*
 content内フォントサイズ一覧
@@ -49,11 +50,17 @@ content内フォントサイズ一覧
 
 /*スマートフォン用*/
 $sp-content-heading:7vw;
+$sp-content-ttl:5vw;
+$sp-content-text:3vw;
 
 /*タブレット用*/
 $tab-content-heading:4vw;
+$tab-content-ttl:2.5vw;
+$tab-content-text:1.6vw;
 
 /*パソコン用*/
-$pc-content-heading:2vw;
+$pc-content-heading:3vw;
+$pc-content-ttl:1.5vw;
+$pc-content-text:16px;
 
 

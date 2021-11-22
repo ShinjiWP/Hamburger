@@ -15,7 +15,7 @@
 
 	&__btn {
 		width: fit-content;
-		padding: 3%;
+		padding:2vw;
 		font-family: g.$Robot;
 		color: g.$font-gray;
 		font-size: g.$sp-header-slide-btn;
@@ -33,13 +33,13 @@
 		width: 100%;
 		font-family: g.$Robot;
 		color: g.$font-gray;
-		font-size: g.$sp-header-ttl;
+		font-size: g.$header-ttl;
 
 		@include g.tab {
-			font-size: g.$tab-header-ttl;
+			// font-size: g.$tab-header-ttl;
 		}
 		@include g.pc {
-			font-size: g.$pc-header-ttl;
+			// font-size: g.$pc-header-ttl;
 			margin: auto;
 			text-align: left;
 			margin-left: 20px;

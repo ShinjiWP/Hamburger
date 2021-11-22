@@ -35,13 +35,12 @@
 				width: 4.5vw;
 			}
 			@include g.pc {
-				height: 4px;
+				height: 3px;
 			}
 		}
 	}
 
 	&__inner {
-	
 		padding: 5%;
 		height: 200px;
 		@include g.tab {
@@ -49,26 +48,38 @@
 		}
 		@include g.pc {
 			height: 11vw;
-			padding: 2%;
+			padding: 3%;
 		}
 
 		&__ttl {
 			margin: 5% 0;
+			font-size: g.$sp-content-ttl;
+			font-weight: 700;
+
+			@include g.tab {
+				font-size: g.$tab-content-ttl;
+			}
+
 			@include g.pc {
+				font-size: g.$pc-content-ttl;
 				margin: 0 0 3% 0;
 			}
 		}
+
 		&__text {
 			height: 85px;
 			width: 100%;
 			display: inline-block;
 			overflow: hidden;
 			line-height: 1.4;
+			font-size: g.$sp-content-text;
 			@include g.tab {
+				font-size: g.$tab-content-text;
 				height: 13vw;
 			}
 
 			@include g.pc {
+				font-size: g.$pc-content-text;
 				height: 6.5vw;
 			}
 		}

@@ -463,6 +463,7 @@ dl, dd {
   }
 }
 
+/*共通する部分のみ切り出すのだからメディアクエリを使用している所はプロジェクトへ移動する*/
 .c-image {
   width: 100%;
   vertical-align: bottom;
@@ -477,33 +478,6 @@ dl, dd {
   font-size: 1.25vw;
   /*コンテンツテキスト*/
   /*サイドバーテキスト*/
-}
-.c-text--ttl {
-  font-size: 5vw;
-  font-weight: 700;
-}
-@media screen and (min-width: 600px) {
-  .c-text--ttl {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .c-text--ttl {
-    font-size: 1.5vw;
-  }
-}
-.c-text--content {
-  font-size: 3vw;
-}
-@media screen and (min-width: 600px) {
-  .c-text--content {
-    font-size: 1.6vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .c-text--content {
-    font-size: 16px;
-  }
 }
 .c-text--side {
   color: #707070;
@@ -673,7 +647,7 @@ dl, dd {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 3%;
+  padding: 2vw;
   font-family: "Roboto", sans-serif;
   color: #707070;
   font-size: 4vw;
@@ -693,16 +667,10 @@ dl, dd {
   width: 100%;
   font-family: "Roboto", sans-serif;
   color: #707070;
-  font-size: 10vw;
-}
-@media screen and (min-width: 600px) {
-  .p-header__heading {
-    font-size: min(5vw, 60px);
-  }
+  font-size: clamp(16px,(1rem + 5vw),50px);
 }
 @media screen and (min-width: 1080px) {
   .p-header__heading {
-    font-size: min(3vw, 60px);
     margin: auto;
     text-align: left;
     margin-left: 20px;
@@ -793,7 +761,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-mainvisual--text {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 }
 
@@ -823,7 +791,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-content__heading {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }
 .p-content__heading::before {
@@ -843,7 +811,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-content__heading::before {
-    height: 4px;
+    height: 3px;
   }
 }
 .p-content__inner {
@@ -858,14 +826,22 @@ dl, dd {
 @media screen and (min-width: 1080px) {
   .p-content__inner {
     height: 11vw;
-    padding: 2%;
+    padding: 3%;
   }
 }
 .p-content__inner__ttl {
   margin: 5% 0;
+  font-size: 5vw;
+  font-weight: 700;
+}
+@media screen and (min-width: 600px) {
+  .p-content__inner__ttl {
+    font-size: 2.5vw;
+  }
 }
 @media screen and (min-width: 1080px) {
   .p-content__inner__ttl {
+    font-size: 1.5vw;
     margin: 0 0 3% 0;
   }
 }
@@ -875,14 +851,17 @@ dl, dd {
   display: inline-block;
   overflow: hidden;
   line-height: 1.4;
+  font-size: 3vw;
 }
 @media screen and (min-width: 600px) {
   .p-content__inner__text {
+    font-size: 1.6vw;
     height: 13vw;
   }
 }
 @media screen and (min-width: 1080px) {
   .p-content__inner__text {
+    font-size: 16px;
     height: 6.5vw;
   }
 }
