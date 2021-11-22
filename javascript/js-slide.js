@@ -10,7 +10,7 @@ mediaQuery.addListener(handle);
 function handle(mm) {
     if (mm.matches) {
         // ウィンドウサイズ768px以下のときの処理
-        $(".js-sidebar").on("click", function () {
+        $(".js-slidebar").on("click", function () {
             $(".c-shadow").fadeIn(500);
             $(".p-sidebar").css({ right: "100%", transition: "0.5s" });
         });

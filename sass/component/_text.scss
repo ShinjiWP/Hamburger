@@ -3,49 +3,17 @@
 .c-text {
 	font-size: 1.25vw;
 
-	&--btn {
-		font-family: g.$Robot;
-		color: g.$font-gray;
-		font-size: g.$sp-header-slide-btn;
-		font-weight: 700;
 
-		@include g.tab {
-			font-size: g.$tab-header-slide-btn;
-		}
-		@include g.pc {
-			font-size: g.$pc-header-slide-btn;
-		}
-	}
 
-	&--huge {
-		font-family: g.$Robot;
-		color: g.$font-gray;
-		font-size: g.$sp-header-ttl;
-		@include g.tab {
-			font-size: min(5vw, 60px);
-		}
-		@include g.pc {
-			font-size: min(3vw, 60px);
-		}
-	}
+	
 
-	&--large {
-		font-family: g.$Robot;
-		font-size: 10vw;
-		color: g.$font-white;
-		@include g.tab {
-			font-size: 5vw;
-		}
-		@include g.pc {
-			font-size: 2.5vw;
-		}
-	}
+	// &--large {
+	// 	font-family: g.$Robot;
+	// 	color: g.$font-white;
+	
+	// }
 
-	&--search {
-		font-family: g.$Robot;
-		color: g.$font-gray;
-		font-weight: 700;
-	}
+	
 
 	&--ttl {
 		font-size: 5vw;

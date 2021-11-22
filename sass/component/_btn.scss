@@ -7,11 +7,11 @@
 	border: 2px solid g.$font-gray;
   margin: 0 10px;
 
-	@include g.tab {
-	}
-
+	
 	@include g.pc {
 		width: 9vw;
 		border-radius: 5px;
 	}
 }
+
+/*共通する部分のみ切り出すのだからメディアクエリを使用している所はプロジェクトへ移動する*/

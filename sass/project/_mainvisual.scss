@@ -2,9 +2,6 @@
 
 .p-mainvisual__photo {
 	&--sp {
-		width: 100%;
-		vertical-align: bottom;
-
 		@include g.tab {
 			display: none;
 		}
@@ -15,14 +12,25 @@
 
 		@include g.tab {
 			display: block;
-			width: 100%;
-			vertical-align: bottom;
 		}
 	}
 }
 
-.p-mainvisual--text {
+.p-mainvisual--inner {
 	padding: 5%;
 	display: flex;
 	align-items: center;
+	font-family: g.$Robot;
+	color: g.$font-white;
+}
+
+.p-mainvisual--text {
+	font-size: g.$sp-mainvisual-ttl;
+
+	@include g.tab {
+		font-size: g.$tab-mainvisual-ttl;
+	}
+	@include g.pc {
+		font-size: g.$pc-mainvisual-ttl;
+	}
 }

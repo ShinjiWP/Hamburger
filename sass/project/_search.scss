@@ -6,6 +6,14 @@
 	margin: auto;
 	width: fit-content;
 	position: relative;
+
+	&__btn{
+		font-family: g.$Robot;
+		color: g.$font-gray;
+		font-weight: 700;
+	}
+	
+
 	&::before {
 		display: block;
 		font-family: "Font Awesome 5 Free";

@@ -6,12 +6,20 @@
 		flex-direction: column;
 		justify-content: flex-end;
 	}
-	&__image {
-		width: 100%;
-	}
-	&__header {
+
+	&__heading {
 		padding: 5%;
 		position: relative;
+		font-family: g.$Robot;
+		color: g.$font-white;
+		font-size: g.$sp-content-heading;
+
+		@include g.tab {
+			font-size: g.$tab-content-heading;
+		}
+		@include g.pc {
+			font-size: g.$pc-content-heading;
+		}
 
 		&::before {
 			display: inline-block;
@@ -31,10 +39,9 @@
 			}
 		}
 	}
-  
+
 	&__inner {
-		background-color: rgba(255, 255, 255, 0.5);
-		margin: 0 3% 3% 3%;
+	
 		padding: 5%;
 		height: 200px;
 		@include g.tab {
