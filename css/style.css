@@ -807,60 +807,36 @@ dl, dd {
   }
 }
 
-@media screen and (max-width: 599.9px) {
-  .p-mainvisual--text {
-    padding: 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .p-mainvisual__photo--sp {
-    width: 100%;
-    vertical-align: bottom;
-  }
-  .p-mainvisual__photo--pc {
-    display: none;
-  }
+.p-mainvisual__photo--sp {
+  width: 100%;
+  vertical-align: bottom;
 }
 @media screen and (min-width: 600px) {
   .p-mainvisual__photo--sp {
     display: none;
   }
-
+}
+.p-mainvisual__photo--pc {
+  display: none;
+}
+@media screen and (min-width: 600px) {
   .p-mainvisual__photo--pc {
+    display: block;
     width: 100%;
     vertical-align: bottom;
   }
-
-  .p-mainvisual--text {
-    padding: 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
-@media screen and (min-width: 1080px) {
-  .p-mainvisual--text {
-    padding: 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 
-  .p-mainvisual__photo--sp {
-    display: none;
-  }
+.p-mainvisual--text {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .p-content__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1196,6 +1172,16 @@ dl, dd {
 }
 
 @media screen and (max-width: 599.9px) {
+  .u-space--content {
+    margin-bottom: 8%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .u-space--content {
+    margin-right: 6%;
+  }
+}
+@media screen and (max-width: 599.9px) {
   .u-font--access-ttl {
     font-family: "Roboto", sans-serif;
     font-size: 7vw;
@@ -1215,16 +1201,6 @@ dl, dd {
     font-size: 1.75vw;
     color: #fff;
     font-weight: 700;
-  }
-}
-@media screen and (max-width: 599.9px) {
-  .u-space--content {
-    margin-bottom: 8%;
-  }
-}
-@media screen and (min-width: 600px) {
-  .u-space--content {
-    margin-right: 6%;
   }
 }
 /*# sourceMappingURL=style.css.map */

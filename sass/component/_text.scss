@@ -6,14 +6,14 @@
 	&--btn {
 		font-family: g.$Robot;
 		color: g.$font-gray;
-		font-size: 4vw;
+		font-size: g.$sp-header-slide-btn;
 		font-weight: 700;
 
 		@include g.tab {
-			font-size: min(3vw, 25px);
+			font-size: g.$tab-header-slide-btn;
 		}
 		@include g.pc {
-			font-size: 0;
+			font-size: g.$pc-header-slide-btn;
 		}
 	}
 

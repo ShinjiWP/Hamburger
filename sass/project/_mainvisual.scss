@@ -1,45 +1,28 @@
 @use "../global" as g;
-@include g.sp {
-	.p-mainvisual--text {
-		padding: 5%;
-		display: flex;
-		align-items: center;
+
+.p-mainvisual__photo {
+	&--sp {
+		width: 100%;
+		vertical-align: bottom;
+
+		@include g.tab {
+			display: none;
+		}
 	}
-	.p-mainvisual__photo {
-		&--sp {
+
+	&--pc {
+		display: none;
+
+		@include g.tab {
+			display: block;
 			width: 100%;
 			vertical-align: bottom;
 		}
-
-		&--pc {
-			display: none;
-		}
 	}
 }
-@include g.tab {
-	.p-mainvisual__photo--sp {
-		display: none;
-	}
-	.p-mainvisual__photo--pc {
-		width: 100%;
-		vertical-align: bottom;
-	}
 
-	.p-mainvisual--text {
-		padding: 5%;
-		display: flex;
-		align-items: center;
-	}
+.p-mainvisual--text {
+	padding: 5%;
+	display: flex;
+	align-items: center;
 }
-@include g.pc {
-	.p-mainvisual--text {
-		padding: 5%;
-		display: flex;
-		align-items: center;
-	}
-	.p-mainvisual__photo {
-		&--sp {
-			display: none;
-		}
-	}
-} ;
