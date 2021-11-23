@@ -7,12 +7,17 @@
 	width: fit-content;
 	position: relative;
 
-	&__btn{
-		font-family: g.$Robot;
+	&__btn {
+		font-family: g.$Roboto;
 		color: g.$font-gray;
 		font-weight: 700;
+		width: 18vw;
+		border-radius: 10px;
+		@include g.pc {
+			width: 9vw;
+			border-radius: 5px;
+		}
 	}
-	
 
 	&::before {
 		display: block;

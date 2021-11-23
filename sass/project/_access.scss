@@ -55,16 +55,18 @@
 			position: relative;
 			margin-bottom: 20px;
 			z-index: 0;
-			color:#fff;
-			font-family: g.$Robot;
-
+			color: #fff;
+			font-family: g.$Roboto;
+			font-size: g.$sp-access-ttl;
 
 			@include g.tab {
 				padding: 0;
+				font-size: g.$tab-access-ttl;
 			}
 
 			@include g.pc {
 				margin-bottom: 60px;
+				font-size: g.$pc-access-ttl;
 			}
 
 			&::before {
@@ -94,15 +96,30 @@
 			width: 100%;
 			line-height: 2.35;
 			overflow: hidden;
+			font-size: g.$sp-access-text;
+			font-family: g.$Roboto;
+			color: #fff;
 
 			@include g.tab {
 				height: 32vw;
+				font-size: g.$tab-access-text;
 			}
 
 			@include g.pc {
 				height: 19vw;
 				min-height: 150px;
+				font-size: g.$pc-access-text;
 			}
+		}
+	}
+
+	&__background {
+		height: 50%;
+		@include g.tab {
+			height: 100%;
+		}
+		@include g.pc {
+			width: 60%;
 		}
 	}
 }

@@ -48,12 +48,14 @@
 .p-access__map--pc {
 	grid-area: access;
 }
-.p-bg-display--access {
+.p-access__background {
 	grid-area: access;
 }
 .p-access__inner {
 	grid-area: access;
 }
+
+
 
 .p-grid--sidebar {
 	display: grid;

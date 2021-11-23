@@ -35,6 +35,13 @@ sidebar内フォントサイズ一覧
 /*スマートフォン用*/
 /*タブレット用*/
 /*パソコン用*/
+/*
+access内フォントサイズ一覧
+access内フォントサイズ一覧
+*/
+/*スマートフォン用*/
+/*タブレット用*/
+/*パソコン用*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -462,20 +469,11 @@ dl, dd {
 }
 
 .c-btn {
-  width: 18vw;
   height: 100%;
-  border-radius: 10px;
   border: 2px solid #707070;
   margin: 0 10px;
 }
-@media screen and (min-width: 1080px) {
-  .c-btn {
-    width: 9vw;
-    border-radius: 5px;
-  }
-}
 
-/*共通する部分のみ切り出すのだからメディアクエリを使用している所はプロジェクトへ移動する*/
 .c-image {
   width: 100%;
   vertical-align: bottom;
@@ -488,49 +486,6 @@ dl, dd {
 
 .c-text {
   font-size: 1.25vw;
-  /*サイドバーテキスト*/
-}
-.c-text--side {
-  color: #707070;
-  font-size: 5vw;
-}
-@media screen and (min-width: 600px) {
-  .c-text--side {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .c-text--side {
-    font-size: 1.25vw;
-  }
-}
-.c-text--item {
-  color: #707070;
-  font-size: 4vw;
-}
-@media screen and (min-width: 600px) {
-  .c-text--item {
-    font-size: 2vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .c-text--item {
-    font-size: 1vw;
-  }
-}
-.c-text--access {
-  color: #fff;
-  font-size: 4vw;
-}
-@media screen and (min-width: 600px) {
-  .c-text--access {
-    font-size: 2vw;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .c-text--access {
-    font-size: 1vw;
-  }
 }
 .c-text--footer {
   font-size: 20px;
@@ -542,18 +497,17 @@ dl, dd {
 }
 
 .c-shadow {
+  background-color: rgba(112, 112, 112, 0.9);
   display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(112, 112, 112, 0.9);
   position: relative;
   left: -100%;
   z-index: 10;
 }
-@media screen and (min-width: 1080px) {
-  .c-shadow {
-    display: none;
-  }
+
+.c-background {
+  background-color: rgba(112, 112, 112, 0.9);
 }
 
 /*mainvisualのグリッド配置*/
@@ -606,7 +560,7 @@ dl, dd {
   grid-area: access;
 }
 
-.p-bg-display--access {
+.p-access__background {
   grid-area: access;
 }
 
@@ -703,6 +657,14 @@ dl, dd {
   font-family: "Roboto", sans-serif;
   color: #707070;
   font-weight: 700;
+  width: 18vw;
+  border-radius: 10px;
+}
+@media screen and (min-width: 1080px) {
+  .p-search__btn {
+    width: 9vw;
+    border-radius: 5px;
+  }
 }
 .p-search::before {
   display: block;
@@ -943,17 +905,21 @@ dl, dd {
     padding: 5% 2.5%;
   }
 }
-.p-sidebar__menu__list {
+.p-sidebar__menu__item {
+  color: #707070;
   margin: 10% 0;
+  font-size: 4vw;
 }
 @media screen and (min-width: 600px) {
-  .p-sidebar__menu__list {
+  .p-sidebar__menu__item {
     margin: 5% 0;
+    font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-sidebar__menu__list {
+  .p-sidebar__menu__item {
     margin: 12% 2%;
+    font-size: 1vw;
   }
 }
 .p-sidebar__heading--main {
@@ -965,33 +931,26 @@ dl, dd {
   .p-sidebar__heading--main {
     visibility: visible;
     margin: 15% 0 30% 0;
-    font-size: 23px;
+    font-size: 2vw;
   }
 }
-
-/*補助的な背景を定義する*/
-.p-bg-display--sidebar {
-  background-color: rgba(112, 112, 112, 0.9);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  height: 100%;
-}
-.p-bg-display--access {
-  background-color: rgba(112, 112, 112, 0.9);
-  height: 50%;
+.p-sidebar__heading--secondary {
+  color: #707070;
+  font-size: 5vw;
 }
 @media screen and (min-width: 600px) {
-  .p-bg-display--access {
-    height: 100%;
+  .p-sidebar__heading--secondary {
+    font-size: 2.5vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-bg-display--access {
-    width: 60%;
+  .p-sidebar__heading--secondary {
+    font-size: 1.4vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-sidebar--shadow {
+    display: none;
   }
 }
 
@@ -1058,15 +1017,18 @@ dl, dd {
   z-index: 0;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  font-size: 7vw;
 }
 @media screen and (min-width: 600px) {
   .p-access__inner__ttl {
     padding: 0;
+    font-size: 3.5vw;
   }
 }
 @media screen and (min-width: 1080px) {
   .p-access__inner__ttl {
     margin-bottom: 60px;
+    font-size: 1.75vw;
   }
 }
 .p-access__inner__ttl::before {
@@ -1096,16 +1058,34 @@ dl, dd {
   width: 100%;
   line-height: 2.35;
   overflow: hidden;
+  font-size: 4vw;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
 }
 @media screen and (min-width: 600px) {
   .p-access__inner__text {
     height: 32vw;
+    font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
   .p-access__inner__text {
     height: 19vw;
     min-height: 150px;
+    font-size: 1vw;
+  }
+}
+.p-access__background {
+  height: 50%;
+}
+@media screen and (min-width: 600px) {
+  .p-access__background {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-access__background {
+    width: 60%;
   }
 }
 
@@ -1137,28 +1117,6 @@ dl, dd {
 @media screen and (min-width: 600px) {
   .u-space--content {
     margin-right: 6%;
-  }
-}
-@media screen and (max-width: 599.9px) {
-  .u-font--access-ttl {
-    font-family: "Roboto", sans-serif;
-    font-size: 7vw;
-    color: #fff;
-  }
-}
-@media screen and (min-width: 600px) {
-  .u-font--access-ttl {
-    font-family: "Roboto", sans-serif;
-    font-size: 3.5vw;
-    color: #fff;
-  }
-}
-@media screen and (min-width: 1080px) {
-  .u-font--access-ttl {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.75vw;
-    color: #fff;
-    font-weight: 700;
   }
 }
 /*# sourceMappingURL=style.css.map */

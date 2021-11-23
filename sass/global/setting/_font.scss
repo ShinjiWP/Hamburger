@@ -4,7 +4,7 @@
 /*font-family*/
 /*font-family*/
 
-$Robot: "Roboto", sans-serif;
+$Roboto: "Roboto", sans-serif;
 $NotoSansJp: "Noto Sans JP", sans-serif;
 
 /*フォントサイズ一覧*/
@@ -72,13 +72,35 @@ sidebar内フォントサイズ一覧
 */
 
 /*スマートフォン用*/
-$sp-sidebar-main: 8vw;
-$sp-sidebar-secondary: 8vw;
+$sp-sidebar-main: 0;
+$sp-sidebar-secondary: 5vw;
+$sp-sidebar-item:4vw;
 
 /*タブレット用*/
-$tab-sidebar-main: 8vw;
-$tab-sidebar-secondary: 8vw;
+$tab-sidebar-main: 0;
+$tab-sidebar-secondary: 2.5vw;
+$tab-sidebar-item:2vw;
 
 /*パソコン用*/
-$pc-sidebar-main: 8vw;
-$pc-sidebar-secondary: 8vw;
+$pc-sidebar-main: 2vw;
+$pc-sidebar-secondary: 1.4vw;
+$pc-sidebar-item:1vw;
+
+
+/*
+access内フォントサイズ一覧
+access内フォントサイズ一覧
+*/
+
+/*スマートフォン用*/
+$sp-access-ttl: 7vw;
+$sp-access-text: 4vw;
+
+/*タブレット用*/
+$tab-access-ttl: 3.5vw;
+$tab-access-text: 2vw;
+
+/*パソコン用*/
+$pc-access-ttl: 1.75vw;
+$pc-access-text: 1vw;
+

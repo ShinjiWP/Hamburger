@@ -3,46 +3,6 @@
 .c-text {
 	font-size: g.$base-font-size;
 
-
-	/*サイドバーテキスト*/
-	&--side {
-		color: g.$font-gray;
-		font-size: 5vw;
-
-		@include g.tab {
-			font-size: 2.5vw;
-		}
-
-		@include g.pc {
-			font-size: 1.25vw;
-		}
-	}
-	&--item {
-		color: g.$font-gray;
-		font-size: 4vw;
-
-		@include g.tab {
-			font-size: 2vw;
-		}
-
-		@include g.pc {
-			font-size: 1vw;
-		}
-	}
-
-	&--access {
-		color: #fff;
-		font-size: 4vw;
-
-		@include g.tab {
-			font-size: 2vw;
-		}
-
-		@include g.pc {
-			font-size: 1vw;
-		}
-	}
-
 	&--footer {
 		font-size: 20px;
 		color: #fff;

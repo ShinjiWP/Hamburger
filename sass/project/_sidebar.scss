@@ -1,6 +1,5 @@
 @use "../global" as g;
 
-
 .p-sidebar {
 	width: 86%;
 	background-color: g.$light-beige;
@@ -49,7 +48,7 @@
 	&__esc::after {
 		transform: translate(-50%, -50%) rotate(-45deg);
 	}
-  
+
 	&__menu {
 		position: relative;
 		padding: 10% 5%;
@@ -61,33 +60,50 @@
 			padding: 5% 2.5%;
 		}
 
-		&__list {
+		&__item {
+			color: g.$font-gray;
 			margin: 10% 0;
+			font-size: g.$sp-sidebar-item;
 
 			@include g.tab {
 				margin: 5% 0;
+				font-size: g.$tab-sidebar-item;
 			}
 			@include g.pc {
 				margin: 12% 2%;
+				font-size: g.$pc-sidebar-item;
 			}
 		}
 	}
 
 	&__heading {
 		&--main {
-			font-family: g.$Robot;
+			font-family: g.$Roboto;
 			color: g.$font-gray;
 			visibility: hidden;
 
 			@include g.pc {
 				visibility: visible;
-        margin: 15% 0 30% 0;
-				font-size: 23px;
-
+				margin: 15% 0 30% 0;
+				font-size: g.$pc-sidebar-main;
 			}
 		}
-		&--secondary{
-			font-size: ;
+		&--secondary {
+			color: g.$font-gray;
+			font-size: g.$sp-sidebar-secondary;
+
+			@include g.tab {
+				font-size: g.$tab-sidebar-secondary;
+			}
+			@include g.pc {
+				font-size: g.$pc-sidebar-secondary;
+			}
+		}
+	}
+
+	@include g.pc {
+		&--shadow {
+			display: none;
 		}
 	}
 }
