@@ -3,15 +3,19 @@
 /*バックグラウンド用カラー変数*/
 /*フォント用カラー変数*/
 /*font-family*/
+/*font-family*/
 /*フォントサイズ一覧*/
 /*とりあえずはヘッダー内のフォントサイズを変数に置き換える*/
 /*
 header内フォントサイズ一覧
+header内フォントサイズ一覧
 */
+/*clampを使用した変数。もう少し学習が必要*/
 /*スマートフォン用*/
 /*タブレット用*/
 /*パソコン用*/
 /*
+mainvisual内フォントサイズ一覧
 mainvisual内フォントサイズ一覧
 */
 /*スマートフォン用*/
@@ -19,6 +23,14 @@ mainvisual内フォントサイズ一覧
 /*パソコン用*/
 /*
 content内フォントサイズ一覧
+content内フォントサイズ一覧
+*/
+/*スマートフォン用*/
+/*タブレット用*/
+/*パソコン用*/
+/*
+sidebar内フォントサイズ一覧
+sidebar内フォントサイズ一覧
 */
 /*スマートフォン用*/
 /*タブレット用*/
@@ -476,7 +488,6 @@ dl, dd {
 
 .c-text {
   font-size: 1.25vw;
-  /*コンテンツテキスト*/
   /*サイドバーテキスト*/
 }
 .c-text--side {
@@ -667,7 +678,7 @@ dl, dd {
   width: 100%;
   font-family: "Roboto", sans-serif;
   color: #707070;
-  font-size: clamp(16px,(1rem + 5vw),50px);
+  font-size: clamp(16px, (1rem + 5vw), 50px);
 }
 @media screen and (min-width: 1080px) {
   .p-header__heading {
@@ -945,13 +956,13 @@ dl, dd {
     margin: 12% 2%;
   }
 }
-.p-sidebar__heading--md {
+.p-sidebar__heading--main {
   font-family: "Roboto", sans-serif;
   color: #707070;
   visibility: hidden;
 }
 @media screen and (min-width: 1080px) {
-  .p-sidebar__heading--md {
+  .p-sidebar__heading--main {
     visibility: visible;
     margin: 15% 0 30% 0;
     font-size: 23px;

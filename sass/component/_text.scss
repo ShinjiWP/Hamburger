@@ -1,23 +1,8 @@
 @use "../global" as g;
 
 .c-text {
-	font-size: 1.25vw;
+	font-size: g.$base-font-size;
 
-
-
-	
-
-	// &--large {
-	// 	font-family: g.$Robot;
-	// 	color: g.$font-white;
-	
-	// }
-
-	
-
-	
-	/*コンテンツテキスト*/
-	
 
 	/*サイドバーテキスト*/
 	&--side {

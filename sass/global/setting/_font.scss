@@ -2,65 +2,83 @@
 // outline: 1px solid red;}
 
 /*font-family*/
+/*font-family*/
 
-$Robot: 'Roboto', sans-serif;
-$NotoSansJp:'Noto Sans JP', sans-serif;
-
+$Robot: "Roboto", sans-serif;
+$NotoSansJp: "Noto Sans JP", sans-serif;
 
 /*フォントサイズ一覧*/
 /*とりあえずはヘッダー内のフォントサイズを変数に置き換える*/
 
-$base-font-size:1.25vw;
+$base-font-size: 1.25vw;
 
 /*
 header内フォントサイズ一覧
+header内フォントサイズ一覧
 */
-$header-ttl:clamp(16px,(1rem + 5vw),50px);
+/*clampを使用した変数。もう少し学習が必要*/
+$header-ttl: clamp(16px, (1rem + 5vw), 50px);
 
 /*スマートフォン用*/
-$sp-header-ttl:10vw;
-$sp-header-slide-btn:4vw;
+$sp-header-ttl: 10vw;
+$sp-header-slide-btn: 4vw;
 
 /*タブレット用*/
-$tab-header-ttl:min(6vw, 50px);
-$tab-header-slide-btn:min(3vw, 25px);
+$tab-header-ttl: min(6vw, 50px);
+$tab-header-slide-btn: min(3vw, 25px);
 
 /*パソコン用*/
-$pc-header-ttl:min(3vw, 40px);
+$pc-header-ttl: min(3vw, 40px);
 $pc-header-slide-btn: 0;
 
-
-
 /*
+mainvisual内フォントサイズ一覧
 mainvisual内フォントサイズ一覧
 */
 
 /*スマートフォン用*/
-$sp-mainvisual-ttl:8vw;
+$sp-mainvisual-ttl: 8vw;
 
 /*タブレット用*/
-$tab-mainvisual-ttl:4vw;
+$tab-mainvisual-ttl: 4vw;
 
 /*パソコン用*/
-$pc-mainvisual-ttl:2vw;
+$pc-mainvisual-ttl: 2vw;
 
 /*
+content内フォントサイズ一覧
 content内フォントサイズ一覧
 */
 
 /*スマートフォン用*/
-$sp-content-heading:7vw;
-$sp-content-ttl:5vw;
-$sp-content-text:3vw;
+$sp-content-heading: 7vw;
+$sp-content-ttl: 5vw;
+$sp-content-text: 3vw;
 
 /*タブレット用*/
-$tab-content-heading:4vw;
-$tab-content-ttl:2.5vw;
-$tab-content-text:1.6vw;
+$tab-content-heading: 4vw;
+$tab-content-ttl: 2.5vw;
+$tab-content-text: 1.6vw;
 
 /*パソコン用*/
-$pc-content-heading:3vw;
-$pc-content-ttl:1.5vw;
-$pc-content-text:16px;
+$pc-content-heading: 3vw;
+$pc-content-ttl: 1.5vw;
+$pc-content-text: 16px;
 
 
+/*
+sidebar内フォントサイズ一覧
+sidebar内フォントサイズ一覧
+*/
+
+/*スマートフォン用*/
+$sp-sidebar-main: 8vw;
+$sp-sidebar-secondary: 8vw;
+
+/*タブレット用*/
+$tab-sidebar-main: 8vw;
+$tab-sidebar-secondary: 8vw;
+
+/*パソコン用*/
+$pc-sidebar-main: 8vw;
+$pc-sidebar-secondary: 8vw;

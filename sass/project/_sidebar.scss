@@ -74,7 +74,7 @@
 	}
 
 	&__heading {
-		&--md {
+		&--main {
 			font-family: g.$Robot;
 			color: g.$font-gray;
 			visibility: hidden;
@@ -85,6 +85,9 @@
 				font-size: 23px;
 
 			}
+		}
+		&--secondary{
+			font-size: ;
 		}
 	}
 }
