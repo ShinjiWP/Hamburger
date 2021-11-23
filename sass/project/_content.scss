@@ -52,7 +52,7 @@
 		}
 
 		&__ttl {
-			margin: 5% 0;
+			margin-bottom: 3%;
 			font-size: g.$sp-content-ttl;
 			font-weight: 700;
 
@@ -62,7 +62,6 @@
 
 			@include g.pc {
 				font-size: g.$pc-content-ttl;
-				margin: 0 0 3% 0;
 			}
 		}
 
