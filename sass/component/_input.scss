@@ -3,12 +3,12 @@
 .c-input {
 	width: 50vw;
 	border-radius: 10px;
-	border: 2px solid g.$font-gray;
+	border: 1px solid g.$font-gray;
 	padding-left: 28px;
 
 	@include g.pc {
 		width: 20vw;
-		border-radius: 5px;
+		border-radius: 9px;
 		padding-left: 22px;
 	}
 }
