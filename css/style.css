@@ -789,7 +789,7 @@ dl, dd {
 }
 .p-content__inner {
   padding: 5%;
-  height: 200px;
+  height: 35vw;
 }
 @media screen and (min-width: 600px) {
   .p-content__inner {
@@ -819,7 +819,7 @@ dl, dd {
   }
 }
 .p-content__inner__text {
-  height: 85px;
+  height: 20vw;
   width: 100%;
   display: inline-block;
   overflow: hidden;
@@ -834,8 +834,8 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-content__inner__text {
-    font-size: 16px;
-    height: 6.5vw;
+    font-size: 1vw;
+    height: 7vw;
   }
 }
 

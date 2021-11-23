@@ -42,7 +42,7 @@
 
 	&__inner {
 		padding: 5%;
-		height: 200px;
+		height: 35vw;
 		@include g.tab {
 			height: 25vw;
 		}
@@ -67,7 +67,7 @@
 		}
 
 		&__text {
-			height: 85px;
+			height: 20vw;
 			width: 100%;
 			display: inline-block;
 			overflow: hidden;
@@ -80,7 +80,7 @@
 
 			@include g.pc {
 				font-size: g.$pc-content-text;
-				height: 6.5vw;
+				height: 7vw;
 			}
 		}
 	}
