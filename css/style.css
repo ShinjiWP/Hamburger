@@ -1103,6 +1103,7 @@ dl, dd {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background: url(../../image/png/footer.png);
 }
 .p-footer__info {
   margin-bottom: 20px;
