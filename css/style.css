@@ -701,8 +701,29 @@ dl, dd {
   margin-top: -10px;
 }
 
+.p-mainvisual__photo--sp {
+  display: block;
+}
 @media screen and (min-width: 600px) {
   .p-mainvisual__photo--sp {
+    display: none;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-mainvisual__photo--sp {
+    display: none;
+  }
+}
+.p-mainvisual__photo--tab {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .p-mainvisual__photo--tab {
+    display: block;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-mainvisual__photo--tab {
     display: none;
   }
 }
@@ -710,6 +731,11 @@ dl, dd {
   display: none;
 }
 @media screen and (min-width: 600px) {
+  .p-mainvisual__photo--pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 1080px) {
   .p-mainvisual__photo--pc {
     display: block;
   }

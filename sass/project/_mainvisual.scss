@@ -2,7 +2,23 @@
 
 .p-mainvisual__photo {
 	&--sp {
+		display: block;
+
 		@include g.tab {
+			display: none;
+		}
+		@include g.pc{
+			display: none;
+		}
+	}
+	
+	&--tab{
+		display: none;
+
+		@include g.tab{
+			display: block;
+		}
+		@include g.pc{
 			display: none;
 		}
 	}
@@ -11,6 +27,9 @@
 		display: none;
 
 		@include g.tab {
+			display: none;
+		}
+		@include g.pc{
 			display: block;
 		}
 	}
