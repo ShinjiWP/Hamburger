@@ -7,18 +7,18 @@
 		@include g.tab {
 			display: none;
 		}
-		@include g.pc{
+		@include g.pc {
 			display: none;
 		}
 	}
-	
-	&--tab{
+
+	&--tab {
 		display: none;
 
-		@include g.tab{
+		@include g.tab {
 			display: block;
 		}
-		@include g.pc{
+		@include g.pc {
 			display: none;
 		}
 	}
@@ -29,9 +29,21 @@
 		@include g.tab {
 			display: none;
 		}
-		@include g.pc{
+		@include g.pc {
 			display: block;
 		}
+	}
+}
+.p-mainvisual__archive {
+	&--sp {
+		@extend .p-mainvisual__front--sp;
+		object-fit: none
+	}
+	&--tab {
+		@extend .p-mainvisual__front--tab;
+	}
+	&--pc {
+		@extend .p-mainvisual__front--pc;
 	}
 }
 

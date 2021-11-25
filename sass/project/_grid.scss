@@ -8,6 +8,9 @@
 .p-mainvisual--front {
 	grid-area: image;
 }
+.p-mainvisual--archive {
+	grid-area: image;
+}
 .p-mainvisual--inner {
 	grid-area: image;
 }
@@ -54,8 +57,6 @@
 .p-access__inner {
 	grid-area: access;
 }
-
-
 
 .p-grid--sidebar {
 	display: grid;
