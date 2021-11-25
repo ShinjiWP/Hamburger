@@ -15,7 +15,7 @@
 		overflow-x: visible;
 		grid-template:
 			"header  sidebar" 7%
-			"figure   sidebar" 18%
+			"figure   sidebar" auto
 			"main    sidebar" auto
 			"access  sidebar" auto
 			"footer   footer" 150px

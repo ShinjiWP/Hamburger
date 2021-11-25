@@ -413,7 +413,7 @@ dl, dd {
 @media screen and (min-width: 1080px) {
   .c-grid {
     overflow-x: visible;
-    grid-template: "header  sidebar" 7% "figure   sidebar" 18% "main    sidebar" auto "access  sidebar" auto "footer   footer" 150px/80% 20%;
+    grid-template: "header  sidebar" 7% "figure   sidebar" auto "main    sidebar" auto "access  sidebar" auto "footer   footer" 150px/80% 20%;
   }
 }
 .c-grid--header {
