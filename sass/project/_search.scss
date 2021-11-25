@@ -6,7 +6,7 @@
 	margin: auto;
 	width: fit-content;
 	position: relative;
-	
+
 	@include g.tab {
 		&::before {
 			font-size: 2.5vw;
@@ -30,7 +30,8 @@
 		font-weight: 700;
 		width: 18vw;
 		border-radius: 10px;
-		background: linear-gradient(g.$bgc-btn-start,g.$bgc-btn-finish);
+		margin: 0 10px;
+		background: linear-gradient(g.$bgc-btn-start, g.$bgc-btn-finish);
 		@include g.pc {
 			width: 7vw;
 			border-radius: 9px;
@@ -50,5 +51,4 @@
 		font-size: 20px;
 		margin-top: -10px;
 	}
-
 }
