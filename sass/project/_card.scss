@@ -1,0 +1,10 @@
+@use "../global" as g;
+
+.p-card {
+	margin: 0;
+}
+
+@include g.tab {
+}
+@include g.pc {
+}

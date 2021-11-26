@@ -440,6 +440,23 @@ dl, dd {
     padding: 10% 6%;
   }
 }
+.c-grid--archive {
+  grid-area: main;
+  padding: 8%;
+}
+@media screen and (min-width: 600px) {
+  .c-grid--archive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8% 6%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .c-grid--archive {
+    padding: 10% 6%;
+  }
+}
 .c-grid--sidebar {
   grid-area: sidebar;
   width: 100%;
@@ -474,7 +491,7 @@ dl, dd {
 }
 
 .c-image {
-  width: 100%;
+  max-width: 100%;
   vertical-align: bottom;
 }
 
@@ -1144,6 +1161,10 @@ dl, dd {
 }
 .p-footer__info {
   margin-bottom: 20px;
+}
+
+.p-card {
+  margin: 0;
 }
 
 @media screen and (max-width: 599.9px) {
