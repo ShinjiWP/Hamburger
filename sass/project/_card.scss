@@ -1,16 +1,22 @@
 @use "../global" as g;
 
 .p-card {
-	margin: 0;
+	margin: 20px 0;
 	@include g.tab {
 		display: flex;
 	}
 	@include g.pc {
 	}
-	&__background{
+	&__box {
 		// width: 50%;
 	}
-	&__image{
-		width: 50%;
+	&__image {
+		width: 100%;
+		@include g.tab {
+			width: 50%;
+		}
+		@include g.pc {
+			width: 50%;
+		}
 	}
 }

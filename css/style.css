@@ -1159,7 +1159,7 @@ dl, dd {
 }
 
 .p-card {
-  margin: 0;
+  margin: 20px 0;
 }
 @media screen and (min-width: 600px) {
   .p-card {
@@ -1169,7 +1169,17 @@ dl, dd {
   }
 }
 .p-card__image {
-  width: 50%;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .p-card__image {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-card__image {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 599.9px) {
