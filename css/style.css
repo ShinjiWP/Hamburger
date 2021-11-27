@@ -446,9 +446,6 @@ dl, dd {
 }
 @media screen and (min-width: 600px) {
   .c-grid--archive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     padding: 8% 6%;
   }
 }
@@ -1163,6 +1160,16 @@ dl, dd {
 
 .p-card {
   margin: 0;
+}
+@media screen and (min-width: 600px) {
+  .p-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.p-card__image {
+  width: 50%;
 }
 
 @media screen and (max-width: 599.9px) {

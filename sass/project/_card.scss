@@ -2,9 +2,15 @@
 
 .p-card {
 	margin: 0;
-}
-
-@include g.tab {
-}
-@include g.pc {
+	@include g.tab {
+		display: flex;
+	}
+	@include g.pc {
+	}
+	&__background{
+		// width: 50%;
+	}
+	&__image{
+		width: 50%;
+	}
 }
