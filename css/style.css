@@ -503,14 +503,6 @@ dl, dd {
 .c-text {
   font-size: 1.25vw;
 }
-.c-text--footer {
-  font-size: 20px;
-  color: #fff;
-}
-.c-text--copyright {
-  font-size: 14px;
-  color: #fff;
-}
 
 .c-shadow {
   background-color: rgba(112, 112, 112, 0.9);
@@ -1161,6 +1153,12 @@ dl, dd {
 }
 .p-footer__info {
   margin-bottom: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.p-footer__cr {
+  font-size: 14px;
+  color: #fff;
 }
 
 .p-card {
