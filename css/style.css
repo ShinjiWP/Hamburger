@@ -483,7 +483,6 @@ dl, dd {
 }
 
 .c-btn {
-  height: 100%;
   border: 1px solid #707070;
 }
 
@@ -1179,6 +1178,37 @@ dl, dd {
 @media screen and (min-width: 1080px) {
   .p-card__image {
     width: 50%;
+  }
+}
+.p-archive__heading {
+  font-size: 6vw;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+  .p-archive__heading {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-archive__heading {
+    font-size: 2.5vw;
+  }
+}
+.p-archive__description {
+  height: 20vw;
+  font-size: 3vw;
+  overflow: hidden;
+}
+@media screen and (min-width: 600px) {
+  .p-archive__description {
+    height: 16vw;
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-archive__description {
+    height: 5vw;
+    font-size: 1vw;
   }
 }
 

@@ -7,16 +7,19 @@
 	}
 	@include g.pc {
 	}
-	&__box {
-		// width: 50%;
-	}
+
+  
+
 	&__image {
-		width: 100%;
+    width: 100%;
 		@include g.tab {
-			width: 50%;
+      width: 50%;
 		}
 		@include g.pc {
-			width: 50%;
+      width: 50%;
 		}
 	}
+  &__box {
+    // width: 50%;
+  }
 }

@@ -1,6 +1,29 @@
 @use "../global" as g;
 
-.p-archive{
+.p-archive {
+	&__heading {
+		font-size: 6vw;
+		margin-bottom: 30px;
+		@include g.tab {
+			font-size: 4vw;
+		}
+		@include g.pc {
+			font-size: 2.5vw;
+		}
+	}
+	&__description {
+		height: 20vw;
+		font-size: 3vw;
+		overflow: hidden;
+		@include g.tab {
+			height: 16vw;
+			font-size: 2vw;
+		}
+		@include g.pc {
+			height: 5vw;
+			font-size: 1vw;
+		}
+	}
 }
 @include g.tab {
 }
