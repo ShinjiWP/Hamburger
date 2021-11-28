@@ -5,12 +5,10 @@
 	display: grid;
 	grid-template: "image" auto/auto;
 }
-.p-mainvisual--front {
+.p-mainvisual--image {
 	grid-area: image;
 }
-.p-mainvisual--archive {
-	grid-area: image;
-}
+
 .p-mainvisual--inner {
 	grid-area: image;
 }

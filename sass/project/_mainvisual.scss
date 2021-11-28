@@ -1,67 +1,67 @@
 @use "../global" as g;
 
-.p-mainvisual__front {
-	&--sp {
-		display: block;
-
-		@include g.tab {
-			display: none;
-		}
-		@include g.pc {
-			display: none;
-		}
-	}
-
-	&--tab {
-		display: none;
-
-		@include g.tab {
+.p-mainvisual {
+	&--image {
+		&--sp {
 			display: block;
+
+			@include g.tab {
+				display: none;
+			}
+			@include g.pc {
+				display: none;
+			}
 		}
-		@include g.pc {
+
+		&--tab {
 			display: none;
+
+			@include g.tab {
+				display: block;
+			}
+			@include g.pc {
+				display: none;
+			}
+		}
+
+		&--pc {
+			display: none;
+
+			@include g.tab {
+				display: none;
+			}
+			@include g.pc {
+				display: block;
+			}
 		}
 	}
 
-	&--pc {
-		display: none;
+	&--inner {
+		padding: 5%;
+		display: flex;
+		align-items: center;
+		font-family: g.$Roboto;
+		color: g.$font-white;
+	}
+
+	&--ttl {
+		font-size: g.$sp-mainvisual-ttl;
 
 		@include g.tab {
-			display: none;
+			font-size: g.$tab-mainvisual-ttl;
 		}
 		@include g.pc {
-			display: block;
+			font-size: g.$pc-mainvisual-ttl;
 		}
 	}
-}
-.p-mainvisual__archive {
-	&--sp {
-		@extend .p-mainvisual__front--sp;
-		object-fit: none
-	}
-	&--tab {
-		@extend .p-mainvisual__front--tab;
-	}
-	&--pc {
-		@extend .p-mainvisual__front--pc;
-	}
-}
+	&--text{
+		font-size: g.$sp-mainvisual-text;
 
-.p-mainvisual--inner {
-	padding: 5%;
-	display: flex;
-	align-items: center;
-	font-family: g.$Roboto;
-	color: g.$font-white;
-}
-
-.p-mainvisual--text {
-	font-size: g.$sp-mainvisual-ttl;
-
-	@include g.tab {
-		font-size: g.$tab-mainvisual-ttl;
-	}
-	@include g.pc {
-		font-size: g.$pc-mainvisual-ttl;
+		@include g.tab {
+			font-size: g.$tab-mainvisual-text;
+		}
+		@include g.pc {
+			font-size: g.$pc-mainvisual-text;
+		}
 	}
 }

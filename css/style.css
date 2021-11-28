@@ -520,11 +520,7 @@ dl, dd {
   grid-template: "image" auto/auto;
 }
 
-.p-mainvisual--front {
-  grid-area: image;
-}
-
-.p-mainvisual--archive {
+.p-mainvisual--image {
   grid-area: image;
 }
 
@@ -710,49 +706,44 @@ dl, dd {
   margin-top: -10px;
 }
 
-.p-mainvisual__front--sp, .p-mainvisual__archive--sp {
+.p-mainvisual--image--sp {
   display: block;
 }
 @media screen and (min-width: 600px) {
-  .p-mainvisual__front--sp, .p-mainvisual__archive--sp {
+  .p-mainvisual--image--sp {
     display: none;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-mainvisual__front--sp, .p-mainvisual__archive--sp {
+  .p-mainvisual--image--sp {
     display: none;
   }
 }
-.p-mainvisual__front--tab, .p-mainvisual__archive--tab {
+.p-mainvisual--image--tab {
   display: none;
 }
 @media screen and (min-width: 600px) {
-  .p-mainvisual__front--tab, .p-mainvisual__archive--tab {
+  .p-mainvisual--image--tab {
     display: block;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-mainvisual__front--tab, .p-mainvisual__archive--tab {
+  .p-mainvisual--image--tab {
     display: none;
   }
 }
-.p-mainvisual__front--pc, .p-mainvisual__archive--pc {
+.p-mainvisual--image--pc {
   display: none;
 }
 @media screen and (min-width: 600px) {
-  .p-mainvisual__front--pc, .p-mainvisual__archive--pc {
+  .p-mainvisual--image--pc {
     display: none;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-mainvisual__front--pc, .p-mainvisual__archive--pc {
+  .p-mainvisual--image--pc {
     display: block;
   }
-}
-
-.p-mainvisual__archive--sp {
-  -o-object-fit: none;
-     object-fit: none;
 }
 .p-mainvisual--inner {
   padding: 5%;
@@ -765,7 +756,19 @@ dl, dd {
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
-
+.p-mainvisual--ttl {
+  font-size: 8vw;
+}
+@media screen and (min-width: 600px) {
+  .p-mainvisual--ttl {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-mainvisual--ttl {
+    font-size: 2vw;
+  }
+}
 .p-mainvisual--text {
   font-size: 8vw;
 }
@@ -780,6 +783,9 @@ dl, dd {
   }
 }
 
+.p-content__image {
+  width: 100%;
+}
 .p-content__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1210,6 +1216,18 @@ dl, dd {
     height: 5vw;
     font-size: 1vw;
   }
+}
+.p-archive--inner {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 599.9px) {

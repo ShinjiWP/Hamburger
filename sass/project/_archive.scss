@@ -24,6 +24,11 @@
 			font-size: 1vw;
 		}
 	}
+  &--inner{
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 @include g.tab {
 }
