@@ -9,36 +9,71 @@
 	}
 
 	&__image {
-		width: 100%;
-		@include g.tab {
-			width: 50%;
+		&--sp {
+			display: block;
+
+			@include g.tab {
+				display: none;
+			}
+			@include g.pc {
+				display: none;
+			}
 		}
-		@include g.pc {
-			width: 50%;
+
+		&--tab {
+			display: none;
+
+			@include g.tab {
+				display: block;
+				width: 50%;
+			}
+			@include g.pc {
+				display: none;
+			}
+		}
+
+		&--pc {
+			display: none;
+
+			@include g.tab {
+				display: none;
+			}
+			@include g.pc {
+				display: block;
+				width: 50%;
+			}
 		}
 	}
 	&__box {
 		padding: 10% 5%;
 		height: 75vw;
+    background-color: g.$bgc-card;
+    color:g.$font-white;
 		@include g.tab {
 		}
 		@include g.pc {
 		}
 
 		&__ttl {
+      font-weight: 700;
 			font-size: g.$sp-card-ttl;
+
 			@include g.tab {
 				font-size: g.$tab-card-ttl;
 			}
+
 			@include g.pc {
 				font-size: g.$pc-card-ttl;
 			}
 		}
 
 		&__subtitle {
+      font-weight: 700;
 			font-size: g.$sp-card-subtitle;
+
 			@include g.tab {
 				font-size: g.$tab-card-subtitle;
+        
 			}
 			@include g.pc {
 				font-size: g.$pc-card-subtitle;
