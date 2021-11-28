@@ -44,19 +44,26 @@
 			}
 		}
 	}
-	&__box {
-		padding: 10% 5%;
-		height: 75vw;
-    background-color: g.$bgc-card;
-    color:g.$font-white;
+
+	&__caption {
+		padding: 10% 5% 2%;
+		height: 80vw;
+		background-color: g.$bgc-card;
+		color: g.$font-white;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		@include g.tab {
 		}
 		@include g.pc {
 		}
+	}
 
+	&__box {
 		&__ttl {
-      font-weight: 700;
+			font-weight: 700;
 			font-size: g.$sp-card-ttl;
+			margin-bottom: 24px;
 
 			@include g.tab {
 				font-size: g.$tab-card-ttl;
@@ -68,16 +75,39 @@
 		}
 
 		&__subtitle {
-      font-weight: 700;
+			font-weight: 700;
 			font-size: g.$sp-card-subtitle;
+			margin-bottom: 10px;
 
 			@include g.tab {
 				font-size: g.$tab-card-subtitle;
-        
 			}
 			@include g.pc {
 				font-size: g.$pc-card-subtitle;
 			}
 		}
+		&__text {
+			height: 20vw;
+			overflow: hidden;
+			font-size: g.$sp-card-text;
+
+			@include g.tab {
+				font-size: g.$tab-card-text;
+			}
+			@include g.pc {
+				font-size: g.$pc-card-text;
+			}
+		}
+	}
+	&--btn {
+		margin: auto;
+		font-size: g.$sp-card-btn;
+	}
+	&__btn {
+		width: 34vw;
+		height: 43px;
+		border-radius: 25px;
+		font-weight: 700;
+		color: g.$font-gray;
 	}
 }
