@@ -20,17 +20,21 @@
 			font-size: 2vw;
 		}
 		@include g.pc {
-			height: 5vw;
+			height: 3.4vw;
 			font-size: 1vw;
 		}
 	}
   &--inner{
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
+    background-color: rgba(0,0,0,.5);
+    @include g.tab {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;    
+    }
+    @include g.pc {
+    }
   }
-}
-@include g.tab {
-}
-@include g.pc {
 }

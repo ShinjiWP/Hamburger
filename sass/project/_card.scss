@@ -8,18 +8,41 @@
 	@include g.pc {
 	}
 
-  
-
 	&__image {
-    width: 100%;
+		width: 100%;
 		@include g.tab {
-      width: 50%;
+			width: 50%;
 		}
 		@include g.pc {
-      width: 50%;
+			width: 50%;
 		}
 	}
-  &__box {
-    // width: 50%;
-  }
+	&__box {
+		padding: 10% 5%;
+		height: 75vw;
+		@include g.tab {
+		}
+		@include g.pc {
+		}
+
+		&__ttl {
+			font-size: g.$sp-card-ttl;
+			@include g.tab {
+				font-size: g.$tab-card-ttl;
+			}
+			@include g.pc {
+				font-size: g.$pc-card-ttl;
+			}
+		}
+
+		&__subtitle {
+			font-size: g.$sp-card-subtitle;
+			@include g.tab {
+				font-size: g.$tab-card-subtitle;
+			}
+			@include g.pc {
+				font-size: g.$pc-card-subtitle;
+			}
+		}
+	}
 }

@@ -1,8 +1,11 @@
 // *{
 // outline: 1px solid red;}
 
-/*font-family*/
-/*font-family*/
+/*
+font-family.font-family.font-family.font-family.font-family.font-family.font-family.
+font-family.font-family.font-family.font-family.font-family.font-family.font-family.
+*/
+
 
 $Roboto: "Roboto", sans-serif;
 $NotoSansJp: "Noto Sans JP", sans-serif;
@@ -10,11 +13,12 @@ $NotoSansJp: "Noto Sans JP", sans-serif;
 /*フォントサイズ一覧*/
 /*とりあえずはヘッダー内のフォントサイズを変数に置き換える*/
 
-$base-font-size: 1.25vw;
+$title-font-size: 8vw;
+$text-font-size: 1.25vw;
 
 /*
-header内フォントサイズ一覧
-header内フォントサイズ一覧
+header内フォントサイズ一覧header内フォントサイズ一覧header内フォントサイズ一覧
+header内フォントサイズ一覧header内フォントサイズ一覧header内フォントサイズ一覧
 */
 /*clampを使用した変数。もう少し学習が必要*/
 $header-ttl: clamp(16px, (1rem + 5vw), 50px);
@@ -32,25 +36,26 @@ $pc-header-ttl: min(3vw, 40px);
 $pc-header-slide-btn: 0;
 
 /*
-mainvisual内フォントサイズ一覧
-mainvisual内フォントサイズ一覧
+mainvisual内フォントサイズ一覧mainvisual内フォントサイズ一覧mainvisual内フォントサイズ一覧
+mainvisual内フォントサイズ一覧mainvisual内フォントサイズ一覧mainvisual内フォントサイズ一覧
 */
 
 /*スマートフォン用*/
 $sp-mainvisual-ttl: 8vw;
-$sp-mainvisual-text: 8vw;
+$sp-mainvisual-text: 3.5vw;
 
 /*タブレット用*/
-$tab-mainvisual-ttl: 4vw;
-$tab-mainvisual-text: 4vw;
+$tab-mainvisual-ttl: 7vw;
+$tab-mainvisual-text: 2vw;
 
 /*パソコン用*/
-$pc-mainvisual-ttl: 2vw;
-$pc-mainvisual-text: 2vw;
+$pc-mainvisual-ttl: 3vw;
+$pc-mainvisual-text: 1vw;
 
 /*
-content内フォントサイズ一覧
-content内フォントサイズ一覧
+content内フォントサイズ一覧content内フォントサイズ一覧content内フォントサイズ一覧
+content内フォントサイズ一覧content内フォントサイズ一覧content内フォントサイズ一覧
+
 */
 
 /*スマートフォン用*/
@@ -68,10 +73,30 @@ $pc-content-heading: 3vw;
 $pc-content-ttl: 1.5vw;
 $pc-content-text: 1vw;
 
+/*
+card内フォントサイズ一覧card内フォントサイズ一覧card内フォントサイズ一覧
+card内フォントサイズ一覧card内フォントサイズ一覧card内フォントサイズ一覧
+
+*/
+
+/*スマートフォン用*/
+$sp-card-ttl: 7vw;
+$sp-card-subtitle: 5vw;
+$sp-card-text: 3vw;
+
+/*タブレット用*/
+$tab-card-ttl: 4vw;
+$tab-card-subtitle: 2.5vw;
+$tab-card-text: 1.6vw;
+
+/*パソコン用*/
+$pc-card-ttl: 3vw;
+$pc-card-subtitle: 1.5vw;
+$pc-card-text: 1vw;
 
 /*
-sidebar内フォントサイズ一覧
-sidebar内フォントサイズ一覧
+sidebar内フォントサイズ一覧sidebar内フォントサイズ一覧sidebar内フォントサイズ一覧
+sidebar内フォントサイズ一覧sidebar内フォントサイズ一覧sidebar内フォントサイズ一覧
 */
 
 /*スマートフォン用*/
@@ -91,8 +116,8 @@ $pc-sidebar-item:1vw;
 
 
 /*
-access内フォントサイズ一覧
-access内フォントサイズ一覧
+access内フォントサイズ一覧access内フォントサイズ一覧access内フォントサイズ一覧
+access内フォントサイズ一覧access内フォントサイズ一覧access内フォントサイズ一覧
 */
 
 /*スマートフォン用*/
