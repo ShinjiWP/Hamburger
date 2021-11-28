@@ -59,7 +59,7 @@
 		}
 		@include g.pc {
 			padding: 4%;
-			height: 24.5vw;
+			height: 25.5vw;
 		}
 	}
 
@@ -101,7 +101,9 @@
 				font-size: g.$tab-card-text;
 			}
 			@include g.pc {
+        height: 7vw;
 				font-size: g.$pc-card-text;
+        line-height: 1.8;
 			}
 		}
 	}
@@ -128,6 +130,8 @@
 			height: 35px;
 		}
 		@include g.pc {
+      width:15vw;
+			height: 50px;
 		}
 	}
 }

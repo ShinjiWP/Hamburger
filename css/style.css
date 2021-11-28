@@ -32,9 +32,15 @@ content内フォントサイズ一覧content内フォントサイズ一覧conten
 /*タブレット用*/
 /*パソコン用*/
 /*
+archive-heading内フォントサイズ一覧archive-heading内フォントサイズ一覧archive-heading内フォントサイズ一覧
+archive-heading内フォントサイズ一覧archive-heading内フォントサイズ一覧archive-heading内フォントサイズ一覧
+*/
+/*スマートフォン用*/
+/*タブレット用*/
+/*パソコン用*/
+/*
 card内フォントサイズ一覧card内フォントサイズ一覧card内フォントサイズ一覧
 card内フォントサイズ一覧card内フォントサイズ一覧card内フォントサイズ一覧
-
 */
 /*スマートフォン用*/
 /*タブレット用*/
@@ -462,7 +468,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .c-grid--archive {
-    padding: 4%;
+    padding: 4% 6%;
   }
 }
 .c-grid--sidebar {
@@ -1265,7 +1271,7 @@ dl, dd {
 @media screen and (min-width: 1080px) {
   .p-card__caption {
     padding: 4%;
-    height: 24.5vw;
+    height: 25.5vw;
   }
 }
 .p-card__box__ttl {
@@ -1280,7 +1286,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-card__box__ttl {
-    font-size: 3vw;
+    font-size: 1.6vw;
   }
 }
 .p-card__box__subtitle {
@@ -1295,7 +1301,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-card__box__subtitle {
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
 }
 .p-card__box__text {
@@ -1312,7 +1318,9 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-card__box__text {
-    font-size: 1vw;
+    height: 7vw;
+    font-size: 0.5vw;
+    line-height: 1.8;
   }
 }
 .p-card--btn {
@@ -1326,7 +1334,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-card--btn {
-    font-size: 1vw;
+    font-size: 0.8vw;
   }
 }
 .p-card__btn {
@@ -1342,6 +1350,13 @@ dl, dd {
     height: 35px;
   }
 }
+@media screen and (min-width: 1080px) {
+  .p-card__btn {
+    width: 15vw;
+    height: 50px;
+  }
+}
+
 .p-archive__heading {
   font-size: 6vw;
   margin-bottom: 30px;
@@ -1353,13 +1368,14 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-archive__heading {
-    font-size: 2.5vw;
+    font-size: 2vw;
+    margin-bottom: 25px;
   }
 }
 .p-archive__description {
   height: 20vw;
-  font-size: 3vw;
   overflow: hidden;
+  font-size: 3vw;
 }
 @media screen and (min-width: 600px) {
   .p-archive__description {
@@ -1369,8 +1385,9 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-archive__description {
-    height: 3.4vw;
-    font-size: 1vw;
+    height: 3.2vw;
+    font-size: 0.8vw;
+    margin-bottom: 70px;
   }
 }
 .p-archive--inner {
