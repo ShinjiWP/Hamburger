@@ -462,7 +462,7 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .c-grid--archive {
-    padding: 10% 6%;
+    padding: 4%;
   }
 }
 .c-grid--sidebar {
@@ -509,6 +509,7 @@ dl, dd {
 
 .c-text {
   font-size: 1.25vw;
+  line-height: 1.4;
 }
 
 .c-title {
@@ -1255,6 +1256,18 @@ dl, dd {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 600px) {
+  .p-card__caption {
+    padding: 5%;
+    height: 40.5vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-card__caption {
+    padding: 4%;
+    height: 24.5vw;
+  }
+}
 .p-card__box__ttl {
   font-weight: 700;
   font-size: 4.5vw;
@@ -1262,7 +1275,7 @@ dl, dd {
 }
 @media screen and (min-width: 600px) {
   .p-card__box__ttl {
-    font-size: 4vw;
+    font-size: 2.5vw;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -1277,7 +1290,7 @@ dl, dd {
 }
 @media screen and (min-width: 600px) {
   .p-card__box__subtitle {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -1292,7 +1305,9 @@ dl, dd {
 }
 @media screen and (min-width: 600px) {
   .p-card__box__text {
-    font-size: 1.6vw;
+    height: 14vw;
+    margin-bottom: 3vw;
+    font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -1304,6 +1319,16 @@ dl, dd {
   margin: auto;
   font-size: 3.5vw;
 }
+@media screen and (min-width: 600px) {
+  .p-card--btn {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-card--btn {
+    font-size: 1vw;
+  }
+}
 .p-card__btn {
   width: 34vw;
   height: 43px;
@@ -1311,7 +1336,12 @@ dl, dd {
   font-weight: 700;
   color: #707070;
 }
-
+@media screen and (min-width: 600px) {
+  .p-card__btn {
+    width: 20vw;
+    height: 35px;
+  }
+}
 .p-archive__heading {
   font-size: 6vw;
   margin-bottom: 30px;

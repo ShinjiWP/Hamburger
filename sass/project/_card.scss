@@ -54,8 +54,12 @@
 		flex-direction: column;
 		justify-content: space-between;
 		@include g.tab {
+			padding: 5%;
+			height: 40.5vw;
 		}
 		@include g.pc {
+			padding: 4%;
+			height: 24.5vw;
 		}
 	}
 
@@ -92,6 +96,8 @@
 			font-size: g.$sp-card-text;
 
 			@include g.tab {
+				height: 14vw;
+				margin-bottom: 3vw;
 				font-size: g.$tab-card-text;
 			}
 			@include g.pc {
@@ -102,12 +108,26 @@
 	&--btn {
 		margin: auto;
 		font-size: g.$sp-card-btn;
+
+		@include g.tab {
+			font-size: g.$tab-card-btn;
+		}
+		@include g.pc {
+			font-size: g.$pc-card-btn;
+		}
 	}
+
 	&__btn {
 		width: 34vw;
 		height: 43px;
 		border-radius: 25px;
 		font-weight: 700;
 		color: g.$font-gray;
+		@include g.tab {
+			width: 20vw;
+			height: 35px;
+		}
+		@include g.pc {
+		}
 	}
 }
