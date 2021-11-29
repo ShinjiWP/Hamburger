@@ -1,0 +1,40 @@
+@use "../global" as g;
+
+.p-pager {
+	height: 10vw;
+	padding: 0 10%;
+	display: flex;
+	justify-content: space-between;
+	&--previous {
+		position: relative;
+	}
+  &--next{
+    position: relative;
+  }
+
+	&--previous::before,
+	&--previous::after {
+		display: block;
+		font-family: "Font Awesome 5 Free";
+		content: "\f101";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-weight: 700;
+    font-size: 5vw;
+	}
+	&--next::before,
+	&--next::after {
+		display: block;
+		font-family: "Font Awesome 5 Free";
+		content: "\f101";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-weight: 700;
+	}
+}
+@include g.tab {
+}
+@include g.pc {
+}
