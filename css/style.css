@@ -1182,13 +1182,15 @@ dl, dd {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   background: url(../../image/png/footer.png);
 }
-.p-footer__info {
+.p-footer__box {
   margin-bottom: 20px;
+}
+.p-footer__info {
   font-size: 20px;
   color: #fff;
+  display: inline-block;
 }
 .p-footer__cr {
   font-size: 14px;
@@ -1318,8 +1320,8 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-card__box__text {
-    height: 7vw;
-    font-size: 0.5vw;
+    height: 5vw;
+    font-size: 0.8vw;
     line-height: 1.8;
   }
 }
@@ -1334,12 +1336,12 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-card--btn {
-    font-size: 0.8vw;
+    font-size: 1vw;
   }
 }
 .p-card__btn {
   width: 34vw;
-  height: 43px;
+  height: 10vw;
   border-radius: 25px;
   font-weight: 700;
   color: #707070;
@@ -1347,13 +1349,13 @@ dl, dd {
 @media screen and (min-width: 600px) {
   .p-card__btn {
     width: 20vw;
-    height: 35px;
+    height: 5vw;
   }
 }
 @media screen and (min-width: 1080px) {
   .p-card__btn {
     width: 15vw;
-    height: 50px;
+    height: 4vw;
   }
 }
 
@@ -1385,8 +1387,8 @@ dl, dd {
 }
 @media screen and (min-width: 1080px) {
   .p-archive__description {
-    height: 3.2vw;
-    font-size: 0.8vw;
+    height: 4vw;
+    font-size: 1vw;
     margin-bottom: 70px;
   }
 }
@@ -1439,5 +1441,14 @@ dl, dd {
   .u-margin--text {
     margin-top: 0.5vw;
   }
+}
+
+.u-margin--footer {
+  margin-right: 10px;
+}
+
+.u-border {
+  width: 137px;
+  border-right: 3px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */

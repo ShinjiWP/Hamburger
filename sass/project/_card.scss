@@ -101,7 +101,7 @@
 				font-size: g.$tab-card-text;
 			}
 			@include g.pc {
-        height: 7vw;
+        height: 5vw;
 				font-size: g.$pc-card-text;
         line-height: 1.8;
 			}
@@ -121,17 +121,17 @@
 
 	&__btn {
 		width: 34vw;
-		height: 43px;
+		height: 10vw;
 		border-radius: 25px;
 		font-weight: 700;
 		color: g.$font-gray;
 		@include g.tab {
 			width: 20vw;
-			height: 35px;
+			height: 5vw;
 		}
 		@include g.pc {
       width:15vw;
-			height: 50px;
+			height: 4vw;
 		}
 	}
 }
