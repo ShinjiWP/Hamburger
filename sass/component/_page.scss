@@ -1,0 +1,10 @@
+@use '../global'as g;
+
+.c-page{
+  font-size: g.$text-font-size;
+  padding: 1vw 1.5vw;
+  border: 1px solid;
+  text-decoration: none;
+}
+@include g.tab{}
+@include g.pc{}

@@ -112,7 +112,7 @@ $tab-card-btn: 2vw;
 /*パソコン用*/
 $pc-card-ttl: 1.6vw;
 $pc-card-subtitle: 1vw;
-$pc-card-text: 0.8vw;
+$pc-card-text: 1vw;
 $pc-card-btn: 1vw;
 
 /*
@@ -153,3 +153,24 @@ $tab-access-text: 2vw;
 $pc-access-ttl: 1.75vw;
 $pc-access-text: 1vw;
 
+/*
+pager内フォントサイズ一覧pager内フォントサイズ一覧pager内フォントサイズ一覧
+pager内フォントサイズ一覧pager内フォントサイズ一覧pager内フォントサイズ一覧
+*/
+
+/*スマートフォン用*/
+$sp-pager-next-previous: 7vw;
+$sp-pager-icon: 4vw;
+
+
+/*タブレット用*/
+$tab-pager-page: 1.25vw;
+$tab-pager-icon: 2vw;
+$tab-pager-next-previous: 3.5vw;
+$tab-pager-number: 2vw;
+
+/*パソコン用*/
+$pc-pager-page: 1.75vw;
+$pc-pager-icon: 1vw;
+$pc-pager-next-previous: 1.75vw;
+$pc-pager-number: 1vw;
