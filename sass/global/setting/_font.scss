@@ -159,18 +159,16 @@ pager内フォントサイズ一覧pager内フォントサイズ一覧pager内�
 */
 
 /*スマートフォン用*/
-$sp-pager-next-previous: 7vw;
-$sp-pager-icon: 4vw;
+$sp-pager-next-previous: 3vw;
+$sp-pager-icon: 5vw;
 
 
 /*タブレット用*/
-$tab-pager-page: 1.25vw;
-$tab-pager-icon: 2vw;
-$tab-pager-next-previous: 3.5vw;
-$tab-pager-number: 2vw;
+$tab-pager-page: 2vw;
+$tab-pager-icon: 3vw;
+$tab-pager-number: 1.5vw;
 
 /*パソコン用*/
-$pc-pager-page: 1.75vw;
-$pc-pager-icon: 1vw;
-$pc-pager-next-previous: 1.75vw;
+$pc-pager-page: 1vw;
+$pc-pager-icon: 1.8vw;
 $pc-pager-number: 1vw;
