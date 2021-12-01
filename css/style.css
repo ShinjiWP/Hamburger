@@ -1573,28 +1573,71 @@ dl, dd {
 .p-single--blockquote {
   font-size: 3vw;
 }
+@media screen and (min-width: 600px) {
+  .p-single--blockquote {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-single--blockquote {
+    font-size: 1vw;
+  }
+}
 .p-single--description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding-top: 5vw;
 }
 .p-single--figure {
-  width: 50%;
+  width: 45%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 .p-single--figcaption {
+  width: 43vw;
   height: 37vw;
   font-size: 3vw;
+}
+@media screen and (min-width: 600px) {
+  .p-single--figcaption {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-single--figcaption {
+    font-size: 1vw;
+  }
 }
 .p-single--top-image {
   padding: 5vw 8vw;
 }
-.p-single--photo {
+@media screen and (min-width: 600px) {
+  .p-single--image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 30vw;
+  }
+}
+.p-single--item {
   padding-bottom: 5vw;
+}
+@media screen and (min-width: 600px) {
+  .p-single--item {
+    width: 49%;
+    padding-bottom: 2vw;
+  }
 }
 
 @media screen and (max-width: 599.9px) {

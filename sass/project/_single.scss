@@ -6,30 +6,57 @@
 
 	&--blockquote {
 		font-size: g.$sp-single-text;
+		@include g.tab {
+			font-size: g.$tab-single-text;
+		}
+		@include g.pc {
+			font-size: g.$pc-single-text;
+		}
 	}
 
 	&--description {
 		display: flex;
+		justify-content: space-between;
 		margin: 0;
 		padding-top: 5vw;
 	}
 
 	&--figure {
-		width: 50%;
+		width: 45%;
 		height: fit-content;
 	}
 
 	&--figcaption {
+		width: 43vw;
 		height: 37vw;
 		font-size: g.$sp-single-text;
+		@include g.tab {
+			font-size: g.$tab-single-text;
+		}
+		@include g.pc {
+			font-size: g.$pc-single-text;
+		}
 	}
 
 	&--top-image {
 		padding: 5vw 8vw;
 	}
 
-	&--photo {
+	&--image {
+		@include g.tab {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+      padding-top: 30vw;
+		}
+	}
+
+	&--item {
 		padding-bottom: 5vw;
+		@include g.tab {
+			width: 49%;
+			padding-bottom: 2vw;
+		}
 	}
 }
 
