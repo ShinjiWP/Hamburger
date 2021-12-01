@@ -559,6 +559,10 @@ dl, dd {
   }
 }
 
+.c-blockquote {
+  background-color: #f5f5f5;
+}
+
 /*mainvisualのグリッド配置*/
 .p-grid--mainvisual {
   display: grid;
