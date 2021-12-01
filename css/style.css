@@ -464,17 +464,17 @@ dl, dd {
     padding: 10% 6%;
   }
 }
-.c-grid--archive {
+.c-grid--archive, .c-grid--main {
   grid-area: main;
   padding: 8%;
 }
 @media screen and (min-width: 600px) {
-  .c-grid--archive {
+  .c-grid--archive, .c-grid--main {
     padding: 8% 6%;
   }
 }
 @media screen and (min-width: 1080px) {
-  .c-grid--archive {
+  .c-grid--archive, .c-grid--main {
     padding: 4% 6%;
   }
 }
@@ -1545,6 +1545,10 @@ dl, dd {
   .p-pager--number {
     font-size: 1vw;
   }
+}
+
+.p-single {
+  margin: 0;
 }
 
 @media screen and (max-width: 599.9px) {
