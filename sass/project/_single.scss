@@ -2,6 +2,35 @@
 
 .p-single {
 	margin: 0;
+	padding: 5vw 0;
+
+	&--blockquote {
+		font-size: g.$sp-single-text;
+	}
+
+	&--description {
+		display: flex;
+		margin: 0;
+		padding-top: 5vw;
+	}
+
+	&--figure {
+		width: 50%;
+		height: fit-content;
+	}
+
+	&--figcaption {
+		height: 37vw;
+		font-size: g.$sp-single-text;
+	}
+
+	&--top-image {
+		padding: 5vw 8vw;
+	}
+
+	&--photo {
+		padding-bottom: 5vw;
+	}
 }
 
 @include g.tab {

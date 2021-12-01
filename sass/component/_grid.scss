@@ -15,7 +15,7 @@
 	@include g.pc {
 		overflow-x: visible;
 		grid-template:
-			"header  sidebar" 7%
+			"header  sidebar" 12vw
 			"figure   sidebar" auto
 			"main    sidebar" auto
 			"access  sidebar" auto
