@@ -422,7 +422,7 @@ template {
           box-sizing: border-box;
 }
 
-ul, li {
+ul, ol, li {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1670,7 +1670,10 @@ dl, dd {
     width: 32%;
   }
 }
-.p-single--btn {
+.p-single--button {
+  padding: 5vw 0;
+}
+.p-single__btn {
   width: 100%;
   height: 13vw;
   border-radius: 15px;
