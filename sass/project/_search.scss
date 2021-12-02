@@ -25,13 +25,8 @@
 	}
 
 	&__btn {
-		font-family: g.$Roboto;
-		color: g.$font-gray;
-		font-weight: 700;
 		width: 18vw;
-		border-radius: 10px;
 		margin: 0 10px;
-		background: linear-gradient(g.$bgc-btn-start, g.$bgc-btn-finish);
 		@include g.pc {
 			width: 7vw;
 			border-radius: 9px;
