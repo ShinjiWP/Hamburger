@@ -3,6 +3,20 @@
 .p-single {
 	margin: 0;
 	padding: 5vw 0;
+	&__description {
+		height: 25vw;
+		overflow: hidden;
+		font-size: g.$sp-single-text;
+		@include g.tab {
+			height: 14vw;
+			font-size: g.$tab-single-text;
+		}
+		@include g.pc {
+			height: 4vw;
+			font-size: g.$pc-single-text;
+			margin-bottom: 70px;
+		}
+	}
 
 	&--blockquote {
 		font-size: g.$sp-single-text;
@@ -21,19 +35,22 @@
 		padding-top: 5vw;
 	}
 
-	&--figure {
+	&__figure {
 		width: 45%;
 		height: fit-content;
 	}
 
-	&--figcaption {
+	&__figcaption {
 		width: 43vw;
 		height: 37vw;
 		font-size: g.$sp-single-text;
 		@include g.tab {
+			height: 36vw;
 			font-size: g.$tab-single-text;
 		}
 		@include g.pc {
+			width: 36vw;
+			height: 11vw;
 			font-size: g.$pc-single-text;
 		}
 	}
@@ -42,22 +59,30 @@
 		padding: 5vw 8vw;
 	}
 
-	&--image {
+	&--items {
 		@include g.tab {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
-      padding-top: 30vw;
+			padding-top: 30vw;
+			@include g.pc {
+				padding-top: 0;
+			}
 		}
 	}
 
-	&--item {
+	&__item {
 		padding-bottom: 5vw;
 		@include g.tab {
 			width: 49%;
-			padding-bottom: 2vw;
+			padding-bottom: 1.5vw;
+			@include g.pc {
+				width: 32%;
+			}
 		}
 	}
+
+	
 }
 
 @include g.tab {

@@ -1,0 +1,20 @@
+@use "../global" as g;
+
+.p-table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+
+  &__row{
+    height: 10vw;
+  }
+
+  &__columnA{
+    width: 40%;
+  }
+}
+
+@include g.tab {
+}
+@include g.pc {
+}

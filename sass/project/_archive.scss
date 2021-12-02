@@ -13,11 +13,11 @@
 		}
 	}
 	&__description {
-		height: 20vw;
+		height: 50vw;
 		overflow: hidden;
 		font-size: g.$sp-archive-text;
 		@include g.tab {
-			height: 16vw;
+			height: 14vw;
 			font-size: g.$tab-archive-text;
 		}
 		@include g.pc {

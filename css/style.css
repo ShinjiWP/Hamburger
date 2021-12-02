@@ -1417,13 +1417,13 @@ dl, dd {
   }
 }
 .p-archive__description {
-  height: 20vw;
+  height: 50vw;
   overflow: hidden;
   font-size: 3vw;
 }
 @media screen and (min-width: 600px) {
   .p-archive__description {
-    height: 16vw;
+    height: 14vw;
     font-size: 2vw;
   }
 }
@@ -1570,12 +1570,30 @@ dl, dd {
   margin: 0;
   padding: 5vw 0;
 }
+.p-single__description {
+  height: 25vw;
+  overflow: hidden;
+  font-size: 3vw;
+}
+@media screen and (min-width: 600px) {
+  .p-single__description {
+    height: 14vw;
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-single__description {
+    height: 4vw;
+    font-size: 1vw;
+    margin-bottom: 70px;
+  }
+}
 .p-single--blockquote {
   font-size: 3vw;
 }
 @media screen and (min-width: 600px) {
   .p-single--blockquote {
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -1593,24 +1611,27 @@ dl, dd {
   margin: 0;
   padding-top: 5vw;
 }
-.p-single--figure {
+.p-single__figure {
   width: 45%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
-.p-single--figcaption {
+.p-single__figcaption {
   width: 43vw;
   height: 37vw;
   font-size: 3vw;
 }
 @media screen and (min-width: 600px) {
-  .p-single--figcaption {
-    font-size: 1.5vw;
+  .p-single__figcaption {
+    height: 36vw;
+    font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
-  .p-single--figcaption {
+  .p-single__figcaption {
+    width: 36vw;
+    height: 11vw;
     font-size: 1vw;
   }
 }
@@ -1618,7 +1639,7 @@ dl, dd {
   padding: 5vw 8vw;
 }
 @media screen and (min-width: 600px) {
-  .p-single--image {
+  .p-single--items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1630,14 +1651,36 @@ dl, dd {
     padding-top: 30vw;
   }
 }
-.p-single--item {
+@media screen and (min-width: 600px) and (min-width: 1080px) {
+  .p-single--items {
+    padding-top: 0;
+  }
+}
+.p-single__item {
   padding-bottom: 5vw;
 }
 @media screen and (min-width: 600px) {
-  .p-single--item {
+  .p-single__item {
     width: 49%;
-    padding-bottom: 2vw;
+    padding-bottom: 1.5vw;
   }
+}
+@media screen and (min-width: 600px) and (min-width: 1080px) {
+  .p-single__item {
+    width: 32%;
+  }
+}
+
+.p-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.p-table__row {
+  height: 10vw;
+}
+.p-table__columnA {
+  width: 40%;
 }
 
 @media screen and (max-width: 599.9px) {
