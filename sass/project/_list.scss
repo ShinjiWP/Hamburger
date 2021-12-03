@@ -1,0 +1,12 @@
+@use '../global'as g;
+.p-list{
+  &--primary{
+    margin: 5vw 0; 
+  }
+  &--secondary{
+    margin-left: 5vw;
+  }
+}
+
+@include g.tab{}
+@include g.pc{}
