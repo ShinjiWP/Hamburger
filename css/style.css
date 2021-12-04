@@ -1708,11 +1708,13 @@ dl, dd {
 }
 @media screen and (min-width: 600px) {
   .p-single--list {
+    margin: 5vw 0;
     font-size: 2vw;
   }
 }
 @media screen and (min-width: 1080px) {
   .p-single--list {
+    margin: 3vw 0;
     font-size: 1vw;
   }
 }
@@ -1725,7 +1727,7 @@ dl, dd {
 }
 .p-single--code {
   margin: 5vw 0;
-  padding: 0 10vw;
+  padding: 0 5vw;
 }
 .p-single--button {
   padding: 5vw 0;
@@ -1767,6 +1769,11 @@ dl, dd {
 
 .p-list--primary {
   margin: 5vw 0;
+}
+@media screen and (min-width: 600px) {
+  .p-list--primary {
+    margin: 3vw 0;
+  }
 }
 @media screen and (min-width: 1080px) {
   .p-list--primary {

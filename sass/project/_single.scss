@@ -62,9 +62,9 @@
 	}
 
 	&__image {
-    width: 80%;
+		width: 80%;
 		@include g.pc {
-      width: 50%;
+			width: 50%;
 		}
 	}
 
@@ -96,10 +96,12 @@
 		font-size: g.$sp-single-list;
 
 		@include g.tab {
+			margin: 5vw 0;
 			font-size: g.$tab-single-list;
 		}
 
 		@include g.pc {
+			margin: 3vw 0;
 			font-size: g.$pc-single-list;
 		}
 
@@ -114,7 +116,7 @@
 
 	&--code {
 		margin: 5vw 0;
-		padding: 0 10vw;
+		padding: 0 5vw;
 	}
 
 	&--button {
@@ -137,9 +139,4 @@
 		display: block;
 		margin-bottom: 40vw;
 	}
-}
-
-@include g.tab {
-}
-@include g.pc {
 }
