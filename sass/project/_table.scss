@@ -3,14 +3,17 @@
 .p-table {
 	width: 100%;
 	border-collapse: collapse;
-	text-align: center;
 
   &__row{
-    height: 15vw;
+    height: 75px;
   }
 
   &__columnA{
-    width: 40%;
+    width: 35%;
+    padding-left: 5vw;
+  }
+  &__columnB{
+    padding-left: 5vw;
   }
 }
 

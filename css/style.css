@@ -73,6 +73,13 @@ pager内フォントサイズ一覧pager内フォントサイズ一覧pager内�
 /*スマートフォン用*/
 /*タブレット用*/
 /*パソコン用*/
+/*
+single-list内フォントサイズ一覧single-list内フォントサイズ一覧single-list内フォントサイズ一覧
+single-list内フォントサイズ一覧single-list内フォントサイズ一覧single-list内フォントサイズ一覧
+*/
+/*スマートフォン用*/
+/*タブレット用*/
+/*パソコン用*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1670,6 +1677,20 @@ dl, dd {
     width: 32%;
   }
 }
+.p-single--list {
+  margin: 10vw 0;
+  font-size: 3vw;
+}
+@media screen and (min-width: 600px) {
+  .p-single--list {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-single--list {
+    font-size: 1vw;
+  }
+}
 .p-single--list-decimal li {
   list-style-type: decimal;
   list-style-position: inside;
@@ -1684,9 +1705,14 @@ dl, dd {
   padding: 5vw 0;
 }
 .p-single__btn {
-  width: 100%;
-  height: 15vw;
+  height: 100px;
   border-radius: 15px;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .p-single__btn {
+    width: 70%;
+  }
 }
 .p-single--bolder {
   display: block;
@@ -1696,13 +1722,16 @@ dl, dd {
 .p-table {
   width: 100%;
   border-collapse: collapse;
-  text-align: center;
 }
 .p-table__row {
-  height: 15vw;
+  height: 75px;
 }
 .p-table__columnA {
-  width: 40%;
+  width: 35%;
+  padding-left: 5vw;
+}
+.p-table__columnB {
+  padding-left: 5vw;
 }
 
 .p-list--primary {
@@ -1710,6 +1739,13 @@ dl, dd {
 }
 .p-list--secondary {
   margin-left: 5vw;
+}
+
+.u-flex {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 @media screen and (max-width: 599.9px) {
@@ -1743,12 +1779,5 @@ dl, dd {
 .u-border {
   width: 137px;
   border-right: 3px solid #fff;
-}
-
-.u-flex {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
 }
 /*# sourceMappingURL=style.css.map */
