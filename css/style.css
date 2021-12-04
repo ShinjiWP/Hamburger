@@ -80,6 +80,13 @@ single-list内フォントサイズ一覧single-list内フォントサイズ一�
 /*スマートフォン用*/
 /*タブレット用*/
 /*パソコン用*/
+/*
+code内フォントサイズ一覧code内フォントサイズ一覧code内フォントサイズ一覧
+code内フォントサイズ一覧code内フォントサイズ一覧code内フォントサイズ一覧
+*/
+/*スマートフォン用*/
+/*タブレット用*/
+/*パソコン用*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -584,6 +591,10 @@ dl, dd {
   background-color: #f5f5f5;
   margin: 0;
   padding: 5vw;
+}
+
+.c-link {
+  text-decoration: underline;
 }
 
 .c-heading {
@@ -1700,6 +1711,7 @@ dl, dd {
 }
 .p-single--code {
   margin: 5vw 0;
+  padding: 0 10vw;
 }
 .p-single--button {
   padding: 5vw 0;
@@ -1712,6 +1724,11 @@ dl, dd {
 @media screen and (min-width: 600px) {
   .p-single__btn {
     width: 70%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-single__btn {
+    width: 35%;
   }
 }
 .p-single--bolder {
@@ -1739,6 +1756,20 @@ dl, dd {
 }
 .p-list--secondary {
   margin-left: 5vw;
+}
+
+.p-code__box {
+  font-size: 3vw;
+}
+@media screen and (min-width: 600px) {
+  .p-code__box {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .p-code__box {
+    font-size: 1vw;
+  }
 }
 
 .u-flex {
