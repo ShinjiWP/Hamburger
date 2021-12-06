@@ -32,8 +32,11 @@
 	&__heading {
 		width: 100%;
 		font-family: g.$Roboto;
-		color: g.$font-gray;
 		font-size: g.$header-ttl;
+		a{
+			color: g.$font-gray;
+			text-decoration: none;
+		}
 
 		@include g.tab {
 			// font-size: g.$tab-header-ttl;
