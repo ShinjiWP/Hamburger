@@ -6,8 +6,10 @@
 	height: 100%;
 	padding: 20% 15%;
 	position: absolute;
-	right: 0%;
+	right: -100%;
 	z-index: 200;
+	overflow-y: auto;
+	top: 0;
 
 	@include g.tab {
 		width: 43%;
